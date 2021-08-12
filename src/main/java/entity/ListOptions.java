@@ -9,7 +9,7 @@ public class ListOptions {
 
     // setting some of the default values
     public ListOptions() {
-        this.page = 1;
+        this.page = 5;
         this.pagination = true;
         this.size = 10;
     }

@@ -28,4 +28,10 @@ public class GetAuthorTest {
         BaseResponse<Object> baseResponse = authorService.getAuthor(Integer.parseInt(PropertiesReader.getProperty("NOT_FOUND_ID")));
         Assert.assertEquals(404, baseResponse.getStatusCode());
     }
+
+    @Test(description = "Test of getting author BAD REQUEST")
+    private void testDeleteAuthorBadRequest(){
+        BaseResponse<Object> baseResponse = authorService.getAuthorBadRequest("BAD REQUEST");
+        Assert.assertEquals(400, baseResponse.getStatusCode());
+    }
 }

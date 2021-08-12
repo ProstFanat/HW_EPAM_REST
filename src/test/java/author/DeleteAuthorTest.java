@@ -23,8 +23,14 @@ public class DeleteAuthorTest {
     }
 
     @Test(description = "Test of deleting author that not found")
-    private void testGetAuthorNotFound(){
+    private void testDeleteAuthorNotFound(){
         BaseResponse<Object> baseResponse = authorService.deleteAuthor(Integer.parseInt(PropertiesReader.getProperty("NOT_FOUND_ID")));
         Assert.assertEquals(404, baseResponse.getStatusCode());
+    }
+
+    @Test(description = "Test of deleting author BAD REQUEST")
+    private void testDeleteAuthorBadRequest(){
+        BaseResponse<Object> baseResponse = authorService.deleteAuthorBadRequest("BAD REQUEST");
+        Assert.assertEquals(400, baseResponse.getStatusCode());
     }
 }

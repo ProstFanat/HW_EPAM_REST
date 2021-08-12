@@ -2,7 +2,6 @@ package author;
 
 import entity.Author;
 import methods.AuthorMethods;
-import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import response.BaseResponse;
