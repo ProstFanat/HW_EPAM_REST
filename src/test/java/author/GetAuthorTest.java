@@ -16,22 +16,27 @@ public class GetAuthorTest {
     private void testGetAuthorById(){
         Author author = AuthorMethods.createNewAuthor();
 
-        BaseResponse<Object> baseResponse = authorService.createAuthor(author);
-        Assert.assertEquals(201, baseResponse.getStatusCode());
+        BaseResponse<Author> baseResponse = authorService.createAuthor(author);
+        Assert.assertEquals(baseResponse.getStatusCode(), 201);
 
         baseResponse = authorService.getAuthor(author.getAuthorId());
-        Assert.assertEquals(200, baseResponse.getStatusCode());
+        Assert.assertEquals(baseResponse.getStatusCode(), 200);
+        Assert.assertTrue(baseResponse.getBody().equals(author));
     }
 
     @Test(description = "Test of getting author that not found")
     private void testGetAuthorNotFound(){
-        BaseResponse<Object> baseResponse = authorService.getAuthor(Integer.parseInt(PropertiesReader.getProperty("NOT_FOUND_ID")));
-        Assert.assertEquals(404, baseResponse.getStatusCode());
+        BaseResponse<Author> baseResponse = authorService.getAuthor(Integer.parseInt(PropertiesReader.getProperty("NOT_FOUND_ID")));
+        Assert.assertEquals(baseResponse.getStatusCode(), 404);
+        Assert.assertEquals(baseResponse.getErrorMessage(),
+                String.format(PropertiesReader.getProperty("ERROR_MESSAGE_AUTHOR_NOT_EXIST"),
+                        PropertiesReader.getProperty("NOT_FOUND_ID")));
     }
 
     @Test(description = "Test of getting author BAD REQUEST")
     private void testDeleteAuthorBadRequest(){
         BaseResponse<Object> baseResponse = authorService.getAuthorBadRequest("BAD REQUEST");
-        Assert.assertEquals(400, baseResponse.getStatusCode());
+        Assert.assertEquals(baseResponse.getStatusCode(), 400);
+        Assert.assertEquals(baseResponse.getErrorMessage(), PropertiesReader.getProperty("ERROR_MESSAGE_ID_MUST_BE_LONG"));
     }
 }

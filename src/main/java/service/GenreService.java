@@ -9,7 +9,7 @@ public class GenreService {
 
     public BaseResponse<Object> getGenre(int genreId) {
         String endpoint = new EndpointBuilder().pathParameter("genre").pathParameter(genreId).get();
-        return new BaseResponse<>(HttpClient.get(endpoint), Object.class);
+        return new BaseResponse<>(HttpClient.get(endpoint, null), Object.class);
     }
 
     public BaseResponse<Object> getGenres(ListOptions options) {
@@ -20,12 +20,12 @@ public class GenreService {
             .queryParam("pagination", options.pagination)
             .queryParam("size", options.size);
         if (options.sortBy != null) endpoint.queryParam("sortBy", options.sortBy);
-        return new BaseResponse<>(HttpClient.get(endpoint.get()), Object.class);
+        return new BaseResponse<>(HttpClient.get(endpoint.get(), null), Object.class);
     }
 
     // TODO properly handle genre entity
     public BaseResponse<Object> createGenre(Object genre) {
         String endpoint = new EndpointBuilder().pathParameter("genre").get();
-        return new BaseResponse<>(HttpClient.post(endpoint, genre.toString()), Object.class);
+        return new BaseResponse<>(HttpClient.post(endpoint, genre.toString(), null), Object.class);
     }
 }

@@ -1,7 +1,8 @@
 package entity;
 
-import groovy.util.logging.Log;
 import org.apache.log4j.Logger;
+
+import java.util.Objects;
 
 public class AuthorName {
     private String first;
@@ -12,6 +13,10 @@ public class AuthorName {
     public AuthorName(String first, String second){
         setFirst(first);
         setSecond(second);
+    }
+
+    public AuthorName(){
+
     }
 
     public String getFirst() {
@@ -38,5 +43,18 @@ public class AuthorName {
                 "first=" + first +
                 ", second=" + second +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        AuthorName that = (AuthorName) o;
+        return Objects.equals(first, that.first) && Objects.equals(second, that.second);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(first, second);
     }
 }

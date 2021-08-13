@@ -1,6 +1,7 @@
 package entity;
 
 import org.apache.log4j.Logger;
+import java.util.Objects;
 
 public class Birth {
     private String date;
@@ -14,6 +15,8 @@ public class Birth {
         setCountry(country);
         setCity(city);
     }
+
+    public Birth(){}
 
     public String getDate() {
         return date;
@@ -49,5 +52,18 @@ public class Birth {
                 ", country=" + country +
                 ", city=" + city +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Birth birth = (Birth) o;
+        return Objects.equals(date, birth.date) && Objects.equals(country, birth.country) && Objects.equals(city, birth.city);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(date, country, city);
     }
 }

@@ -24,7 +24,7 @@ public class ListOptions {
         return this;
     }
 
-    public ListOptions setPagination(boolean pagination) {
+    public ListOptions setPagination(Boolean pagination) {
         this.pagination = pagination;
         return this;
     }

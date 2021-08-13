@@ -15,34 +15,40 @@ public class UpdateAuthorTest {
     private void testPositiveUpdateAuthor(){
         Author author = AuthorMethods.createNewAuthor();
 
-        BaseResponse<Object> baseResponse = authorService.createAuthor(author);
-        Assert.assertEquals(201, baseResponse.getStatusCode());
+        BaseResponse<Author> baseResponse = authorService.createAuthor(author);
+        Assert.assertEquals(baseResponse.getStatusCode(), 201);
+
         author.setNationality(PropertiesReader.getProperty("ANOTHER_NATIONALITY"));
         baseResponse = authorService.updateAuthor(author);
-        Assert.assertEquals(200, baseResponse.getStatusCode());
+        Assert.assertEquals(baseResponse.getStatusCode(), 200);
+        Assert.assertTrue(baseResponse.getBody().equals(author));
     }
 
     @Test(description = "Test of update author that not found")
     private void testUpdateUserThatNotFound(){
         Author author = AuthorMethods.createNewAuthor();
 
-        BaseResponse<Object> baseResponse = authorService.createAuthor(author);
-        Assert.assertEquals(201, baseResponse.getStatusCode());
+        BaseResponse<Author> baseResponse = authorService.createAuthor(author);
+        Assert.assertEquals(baseResponse.getStatusCode(), 201);
         author.setAuthorId(Integer.parseInt(PropertiesReader.getProperty("NOT_FOUND_ID")));
 
         baseResponse = authorService.updateAuthor(author);
-        Assert.assertEquals(404, baseResponse.getStatusCode());
+        Assert.assertEquals(baseResponse.getStatusCode(), 404);
+        Assert.assertEquals(baseResponse.getErrorMessage(),
+                String.format(PropertiesReader.getProperty("ERROR_MESSAGE_AUTHOR_NOT_EXIST"),
+                        PropertiesReader.getProperty("NOT_FOUND_ID")));
     }
 
     @Test(description = "Test of Update Author without body")
     private void testUpdateAuthorWithoutBody(){
         Author author = AuthorMethods.createNewAuthor();
 
-        BaseResponse<Object> baseResponse = authorService.createAuthor(author);
-        Assert.assertEquals(201, baseResponse.getStatusCode());
+        BaseResponse<Author> baseResponse = authorService.createAuthor(author);
+        Assert.assertEquals(baseResponse.getStatusCode(), 201);
         author = null;
 
         baseResponse = authorService.updateAuthor(author);
-        Assert.assertEquals(400, baseResponse.getStatusCode());
+        Assert.assertEquals(baseResponse.getStatusCode(), 400);
+        Assert.assertEquals(baseResponse.getErrorMessage(), PropertiesReader.getProperty("ERROR_MESSAGE_BODY_IS_MISSING"));
     }
 }

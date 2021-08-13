@@ -2,8 +2,10 @@ package entity;
 
 import org.apache.log4j.Logger;
 
+import java.util.Objects;
+
 public class Author {
-    private int authorId;
+    private Integer authorId;
     private AuthorName authorName;
     private String nationality;
     private Birth birth;
@@ -68,5 +70,18 @@ public class Author {
                 ", birth=" + birth +
                 ", authorDescription=" + authorDescription +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return Objects.equals(authorId, author.authorId) && Objects.equals(authorName, author.authorName) && Objects.equals(nationality, author.nationality) && Objects.equals(birth, author.birth) && Objects.equals(authorDescription, author.authorDescription);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(authorId, authorName, nationality, birth, authorDescription);
     }
 }

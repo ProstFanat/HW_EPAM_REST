@@ -1,7 +1,7 @@
 package client;
 
-import com.google.gson.Gson;
 import config.ServiceConfig;
+import io.qameta.allure.Step;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -12,31 +12,37 @@ import static io.restassured.RestAssured.*;
 public class HttpClient {
     private static final Logger LOG = Logger.getLogger(HttpClient.class);
 
-    public static Response get(String endpoint) {
-        return HttpClient.sendRequest(Method.GET, endpoint);
+    @Step("Get {endpoint}")
+    public static Response get(String endpoint, String contentType) {
+        return HttpClient.sendRequest(Method.GET, endpoint, contentType);
     }
 
-    public static Response post(String endpoint, String body) {
-        return HttpClient.sendRequest(Method.POST, endpoint, body);
+    @Step("Post {endpoint} with body - {body}")
+    public static Response post(String endpoint, String body, String contentType) {
+        return HttpClient.sendRequest(Method.POST, endpoint, body, contentType);
     }
 
-    public static Response put(String endpoint, String body) {
-        return HttpClient.sendRequest(Method.PUT, endpoint, body);
+    @Step("Put {endpoint} with body - {body}")
+    public static Response put(String endpoint, String body, String contentType) {
+        return HttpClient.sendRequest(Method.PUT, endpoint, body, contentType);
     }
 
-    public static Response delete(String endpoint) {
-        return HttpClient.sendRequest(Method.DELETE, endpoint);
+    @Step("Delete {endpoint}")
+    public static Response delete(String endpoint, String contentType) {
+        return HttpClient.sendRequest(Method.DELETE, endpoint, contentType);
     }
 
-    private static Response sendRequest(Method method, String endpoint) {
-        return HttpClient.sendRequest(method, endpoint, null);
+    @Step("Send Request {method} to {endpoint}")
+    private static Response sendRequest(Method method, String endpoint, String contentType) {
+        return HttpClient.sendRequest(method, endpoint, null, contentType);
     }
 
-    private static Response sendRequest(Method method, String endpoint, String body) {
+    @Step("Send Request {method} to {endpoint} with body - {body}")
+    private static Response sendRequest(Method method, String endpoint, String body, String contentType) {
         String url = ServiceConfig.HOST + endpoint;
         RequestSpecification spec = given();
-        spec.contentType("application/json");
-        if (body != null) spec.body(body);
+        if(contentType != null) spec.contentType(contentType);
+        if(body != null) spec.body(body);
         Response response = spec.request(method, url);
         LOG.info(String.format("Send %s request to %s with body : %s", method, endpoint, body));
         return response;
