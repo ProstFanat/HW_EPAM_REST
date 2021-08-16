@@ -1,10 +1,12 @@
 package methods;
 
-import entity.Author;
-import entity.AuthorName;
-import entity.Birth;
+import entity.Author.Author;
+import entity.Author.AuthorName;
+import entity.Author.Birth;
 import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
+import response.BaseResponse;
+import service.AuthorService;
 import utils.PropertiesReader;
 
 public class AuthorMethods {
@@ -17,7 +19,8 @@ public class AuthorMethods {
         do {
             id = (int) (Math.random() * 100000);
             LOG.info(String.format("Get id for author: '%s'", id));
-            if(id != Integer.parseInt(PropertiesReader.getProperty("NOT_FOUND_ID"))){
+            BaseResponse<Author> baseResponse = new AuthorService().getAuthor(id);
+            if(id != Integer.parseInt(PropertiesReader.getProperty("NOT_FOUND_ID")) && baseResponse.getStatusCode() == 404){
                 LOG.info("ID is created successful!");
                 isRight = true;
             }

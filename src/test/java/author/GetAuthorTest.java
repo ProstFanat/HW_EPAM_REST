@@ -1,6 +1,6 @@
 package author;
 
-import entity.Author;
+import entity.Author.Author;
 import methods.AuthorMethods;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -34,9 +34,9 @@ public class GetAuthorTest {
     }
 
     @Test(description = "Test of getting author BAD REQUEST")
-    private void testDeleteAuthorBadRequest(){
+    private void testGetAuthorBadRequest(){
         BaseResponse<Object> baseResponse = authorService.getAuthorBadRequest("BAD REQUEST");
         Assert.assertEquals(baseResponse.getStatusCode(), 400);
-        Assert.assertEquals(baseResponse.getErrorMessage(), PropertiesReader.getProperty("ERROR_MESSAGE_ID_MUST_BE_LONG"));
+        Assert.assertEquals(baseResponse.getErrorMessage(), PropertiesReader.getProperty("ERROR_MESSAGE_AUTHOR_ID_MUST_BE_LONG"));
     }
 }

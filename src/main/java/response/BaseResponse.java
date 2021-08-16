@@ -4,6 +4,9 @@ import io.qameta.allure.Attachment;
 import io.restassured.response.Response;
 import org.apache.log4j.Logger;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class BaseResponse<T> {
     protected Response response;
     private Class<T> responseClass;
@@ -40,5 +43,12 @@ public class BaseResponse<T> {
         T body = this.response.body().as(this.responseClass);
         LOG.info(String.format("Get body %s", body));
         return body;
+    }
+
+    @Attachment
+    public List<T> getListOfBody(){
+        List <T> bodys  = response.jsonPath().getList("$", this.responseClass);
+        LOG.info(String.format("Getting list.  List -> %s", bodys));
+        return bodys;
     }
 }

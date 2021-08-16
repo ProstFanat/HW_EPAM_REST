@@ -1,6 +1,6 @@
 package author;
 
-import entity.Author;
+import entity.Author.Author;
 import methods.AuthorMethods;
 import org.testng.Assert;
 import org.testng.annotations.Test;

@@ -1,6 +1,6 @@
 package author;
 
-import entity.Author;
+import entity.Author.Author;
 import entity.ListOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,7 +13,6 @@ public class GetAllAuthorsTest {
 
     @Test(description = "Test of get all authors")
     private void testGetAllAuthors(){
-        //TODO добавить проверку, что только что созданный юзер там отоброжаеться
         BaseResponse<Author> baseResponse = authorService.getAuthors(new ListOptions().setPagination(false));
 
         Assert.assertEquals(baseResponse.getStatusCode(), 200);

@@ -1,13 +1,15 @@
 package service;
 
 import client.HttpClient;
-import entity.Author;
+import entity.Author.Author;
 import entity.ListOptions;
 import io.qameta.allure.Step;
 import response.BaseResponse;
 import utils.EndpointBuilder;
 import utils.JsonBuilder;
 import utils.PropertiesReader;
+
+import java.util.HashMap;
 
 public class AuthorService {
     @Step("Get Author with id {authorId}")
@@ -58,5 +60,25 @@ public class AuthorService {
     public BaseResponse<Object> deleteAuthorBadRequest(String authorId) {
         String endpoint = new EndpointBuilder().pathParameter("author").pathParameter(authorId).get();
         return new BaseResponse<>(HttpClient.delete(endpoint,null), Object.class);
+    }
+
+    @Step("Search Author with name {name}")
+    public BaseResponse<Author> searchAuthor(String name) {
+        HashMap<String, String> queryParam = new HashMap<>();
+        String endpoint = new EndpointBuilder().pathParameter("authors/search").get();
+        queryParam.put("query", name);
+        return new BaseResponse<>(HttpClient.get(endpoint,null, queryParam), Author.class);
+    }
+
+    @Step("Search Author by Book ID")
+    public BaseResponse<Author> searchAuthorByBookId(String bookId) {
+        String endpoint = new EndpointBuilder().pathParameter("book").pathParameter(bookId).pathParameter("author").get();
+        return new BaseResponse<>(HttpClient.get(endpoint,null, null), Author.class);
+    }
+
+    @Step("Search Author by Genre ID")
+    public BaseResponse<Author> searchAuthorByGenreId(String genreId) {
+        String endpoint = new EndpointBuilder().pathParameter("genre").pathParameter(genreId).pathParameter("authors").get();
+        return new BaseResponse<>(HttpClient.get(endpoint,null, null), Author.class);
     }
 }
