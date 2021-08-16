@@ -14,7 +14,6 @@ public class GetAllGenresTest {
     @Test(description = "Test of get all genres")
     private void testGetAllGenres(){
         BaseResponse<Genre> baseResponse = genreService.getGenres(new ListOptions().setPagination(false));
-        //TODO u know
         Assert.assertEquals(baseResponse.getStatusCode(), 200);
     }
 

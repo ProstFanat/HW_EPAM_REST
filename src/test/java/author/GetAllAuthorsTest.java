@@ -2,6 +2,7 @@ package author;
 
 import entity.Author.Author;
 import entity.ListOptions;
+import methods.AuthorMethods;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import response.BaseResponse;
@@ -13,8 +14,12 @@ public class GetAllAuthorsTest {
 
     @Test(description = "Test of get all authors")
     private void testGetAllAuthors(){
-        BaseResponse<Author> baseResponse = authorService.getAuthors(new ListOptions().setPagination(false));
+        Author author = AuthorMethods.createNewAuthor();
 
+        BaseResponse<Author> baseResponse = authorService.createAuthor(author);
+        Assert.assertEquals(baseResponse.getStatusCode(), 201);
+
+        baseResponse = authorService.getAuthors(new ListOptions().setPagination(false));
         Assert.assertEquals(baseResponse.getStatusCode(), 200);
     }
 

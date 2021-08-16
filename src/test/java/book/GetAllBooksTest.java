@@ -14,7 +14,6 @@ public class GetAllBooksTest {
     @Test(description = "Test of get all books")
     private void testGetAllBooks(){
         BaseResponse<Book> baseResponse = bookService.getBooks(new ListOptions().setPagination(false));
-        //TODO u know
         Assert.assertEquals(baseResponse.getStatusCode(), 200);
     }
 
