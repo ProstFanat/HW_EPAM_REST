@@ -14,7 +14,7 @@ public class GetGenreTest {
 
     @Test(description = "Test of getting genre by id")
     private void testGetGenreById(){
-        Genre genre = GenreMethods.createNewGenre();
+        Genre genre = GenreMethods.generateGenre();
 
         BaseResponse<Genre> baseResponse = genreService.createGenre(genre);
         Assert.assertEquals(baseResponse.getStatusCode(), 201);

@@ -3,8 +3,6 @@ package response;
 import io.qameta.allure.Attachment;
 import io.restassured.response.Response;
 import org.apache.log4j.Logger;
-
-import java.util.Arrays;
 import java.util.List;
 
 public class BaseResponse<T> {
@@ -17,7 +15,7 @@ public class BaseResponse<T> {
         this.responseClass = responseClass;
     }
 
-    @Attachment()
+    @Attachment
     public int getStatusCode() {
         int code = this.response.getStatusCode();
         LOG.info(String.format("Get status code - %s", code));

@@ -13,7 +13,7 @@ public class DeleteAuthorTest {
 
     @Test(description = "Test of deleting author by id")
     private void testDeleteAuthorById(){
-        Author author = AuthorMethods.createNewAuthor();
+        Author author = AuthorMethods.generateAuthor();
 
         BaseResponse<Author> baseResponse = authorService.createAuthor(author);
         Assert.assertEquals(baseResponse.getStatusCode(), 201);

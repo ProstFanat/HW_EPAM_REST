@@ -1,12 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 73, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 9.948 s <<< FAILURE! - in TestSuite
-testGetAllBooks(book.GetAllBookOfSpecialGenreTest)  Time elapsed: 1.74 s  <<< FAILURE!
-java.lang.AssertionError: expected [5] but found [505]
+Tests run: 73, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.133 s <<< FAILURE! - in TestSuite
+testGetAllBooks(book.GetAllBookOfSpecialGenreTest)  Time elapsed: 1.871 s  <<< FAILURE!
+java.lang.AssertionError: expected [5] but found [355]
 	at book.GetAllBookOfSpecialGenreTest.testGetAllBooks(GetAllBookOfSpecialGenreTest.java:40)
-
-testSearchAuthorByBook(author.GetAuthorByBookTest)  Time elapsed: 0.044 s  <<< FAILURE!
-java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.util.List
-	at author.GetAuthorByBookTest.testSearchAuthorByBook(GetAuthorByBookTest.java:35)
 

@@ -14,7 +14,7 @@ public class GetAllAuthorsTest {
 
     @Test(description = "Test of get all authors")
     private void testGetAllAuthors(){
-        Author author = AuthorMethods.createNewAuthor();
+        Author author = AuthorMethods.generateAuthor();
 
         BaseResponse<Author> baseResponse = authorService.createAuthor(author);
         Assert.assertEquals(baseResponse.getStatusCode(), 201);

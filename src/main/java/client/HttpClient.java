@@ -39,7 +39,6 @@ public class HttpClient {
         return HttpClient.sendRequest(Method.DELETE, endpoint, contentType);
     }
 
-    @Step("Send Request {method} to {endpoint}")
     private static Response sendRequest(Method method, String endpoint, String contentType) {
         return HttpClient.sendRequest(method, endpoint, null, contentType);
     }

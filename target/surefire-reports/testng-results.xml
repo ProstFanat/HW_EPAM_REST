@@ -1,294 +1,369 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="73" passed="71">
+<testng-results skipped="0" failed="1" ignored="0" total="73" passed="72">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="8746" started-at="2021-08-16T14:51:27Z" finished-at="2021-08-16T14:51:36Z">
+  <suite name="Surefire suite" duration-ms="9322" started-at="2021-08-17T14:37:54Z" finished-at="2021-08-17T14:38:03Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="8746" started-at="2021-08-16T14:51:27Z" finished-at="2021-08-16T14:51:36Z">
+    <test name="Surefire test" duration-ms="9322" started-at="2021-08-17T14:37:54Z" finished-at="2021-08-17T14:38:03Z">
       <class name="book.DeleteBookTest">
-        <test-method status="PASS" signature="testDeleteBookBadRequest()[pri:0, instance:book.DeleteBookTest@7207cb51]" name="testDeleteBookBadRequest" duration-ms="668" started-at="2021-08-16T14:51:31Z" description="Test of deleting book BAD REQUEST" finished-at="2021-08-16T14:51:31Z">
+        <test-method status="PASS" signature="testDeleteBookBadRequest()[pri:0, instance:book.DeleteBookTest@4a6c18ad]" name="testDeleteBookBadRequest" duration-ms="535" started-at="2021-08-17T14:37:58Z" description="Test of deleting book BAD REQUEST" finished-at="2021-08-17T14:37:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteBookBadRequest -->
-        <test-method status="PASS" signature="testDeleteBookById()[pri:0, instance:book.DeleteBookTest@7207cb51]" name="testDeleteBookById" duration-ms="82" started-at="2021-08-16T14:51:31Z" description="Test of deleting book by id" finished-at="2021-08-16T14:51:31Z">
+        <test-method status="PASS" signature="testDeleteBookById()[pri:0, instance:book.DeleteBookTest@4a6c18ad]" name="testDeleteBookById" duration-ms="73" started-at="2021-08-17T14:37:59Z" description="Test of deleting book by id" finished-at="2021-08-17T14:37:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteBookById -->
-        <test-method status="PASS" signature="testDeleteBookNotFound()[pri:0, instance:book.DeleteBookTest@7207cb51]" name="testDeleteBookNotFound" duration-ms="24" started-at="2021-08-16T14:51:31Z" description="Test of deleting book that not found" finished-at="2021-08-16T14:51:31Z">
+        <test-method status="PASS" signature="testDeleteBookNotFound()[pri:0, instance:book.DeleteBookTest@4a6c18ad]" name="testDeleteBookNotFound" duration-ms="29" started-at="2021-08-17T14:37:59Z" description="Test of deleting book that not found" finished-at="2021-08-17T14:37:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteBookNotFound -->
       </class> <!-- book.DeleteBookTest -->
       <class name="genre.GetGenreTest">
-        <test-method status="PASS" signature="testGetGenreBadRequest()[pri:0, instance:genre.GetGenreTest@ae7950d]" name="testGetGenreBadRequest" duration-ms="39" started-at="2021-08-16T14:51:34Z" description="Test of getting genre BAD REQUEST" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="testGetGenreBadRequest()[pri:0, instance:genre.GetGenreTest@621f89b8]" name="testGetGenreBadRequest" duration-ms="25" started-at="2021-08-17T14:38:02Z" description="Test of getting genre BAD REQUEST" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetGenreBadRequest -->
-        <test-method status="PASS" signature="testGetGenreById()[pri:0, instance:genre.GetGenreTest@ae7950d]" name="testGetGenreById" duration-ms="19" started-at="2021-08-16T14:51:34Z" description="Test of getting genre by id" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="testGetGenreById()[pri:0, instance:genre.GetGenreTest@621f89b8]" name="testGetGenreById" duration-ms="23" started-at="2021-08-17T14:38:02Z" description="Test of getting genre by id" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetGenreById -->
-        <test-method status="PASS" signature="testGetGenreNotFound()[pri:0, instance:genre.GetGenreTest@ae7950d]" name="testGetGenreNotFound" duration-ms="18" started-at="2021-08-16T14:51:34Z" description="Test of getting genre that not found" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="testGetGenreNotFound()[pri:0, instance:genre.GetGenreTest@621f89b8]" name="testGetGenreNotFound" duration-ms="18" started-at="2021-08-17T14:38:02Z" description="Test of getting genre that not found" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetGenreNotFound -->
       </class> <!-- genre.GetGenreTest -->
       <class name="genre.UpdateGenreTest">
-        <test-method status="PASS" signature="testPositiveUpdateGenre()[pri:0, instance:genre.UpdateGenreTest@66c83fc8]" name="testPositiveUpdateGenre" duration-ms="30" started-at="2021-08-16T14:51:34Z" description="Test of positive update genre" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:genre.UpdateGenreTest@2822c6ff]" name="setup" is-config="true" duration-ms="15" started-at="2021-08-17T14:38:02Z" finished-at="2021-08-17T14:38:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testPositiveUpdateGenre()[pri:0, instance:genre.UpdateGenreTest@2822c6ff]" name="testPositiveUpdateGenre" duration-ms="18" started-at="2021-08-17T14:38:02Z" description="Test of positive update genre" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPositiveUpdateGenre -->
-        <test-method status="PASS" signature="testUpdateGenreThatNotFound()[pri:0, instance:genre.UpdateGenreTest@66c83fc8]" name="testUpdateGenreThatNotFound" duration-ms="72" started-at="2021-08-16T14:51:34Z" description="Test of update genre that not found" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:genre.UpdateGenreTest@2822c6ff]" name="setup" is-config="true" duration-ms="21" started-at="2021-08-17T14:38:02Z" finished-at="2021-08-17T14:38:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testUpdateGenreThatNotFound()[pri:0, instance:genre.UpdateGenreTest@2822c6ff]" name="testUpdateGenreThatNotFound" duration-ms="48" started-at="2021-08-17T14:38:02Z" description="Test of update genre that not found" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateGenreThatNotFound -->
-        <test-method status="PASS" signature="testUpdateGenreWithoutBody()[pri:0, instance:genre.UpdateGenreTest@66c83fc8]" name="testUpdateGenreWithoutBody" duration-ms="64" started-at="2021-08-16T14:51:34Z" description="Test of Update genre without body" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:genre.UpdateGenreTest@2822c6ff]" name="setup" is-config="true" duration-ms="29" started-at="2021-08-17T14:38:02Z" finished-at="2021-08-17T14:38:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testUpdateGenreWithoutBody()[pri:0, instance:genre.UpdateGenreTest@2822c6ff]" name="testUpdateGenreWithoutBody" duration-ms="51" started-at="2021-08-17T14:38:02Z" description="Test of Update genre without body" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateGenreWithoutBody -->
       </class> <!-- genre.UpdateGenreTest -->
       <class name="book.GetAllBooksTest">
-        <test-method status="PASS" signature="testGetAllBooks()[pri:0, instance:book.GetAllBooksTest@5e8604bf]" name="testGetAllBooks" duration-ms="31" started-at="2021-08-16T14:51:33Z" description="Test of get all books" finished-at="2021-08-16T14:51:33Z">
+        <test-method status="PASS" signature="testGetAllBooks()[pri:0, instance:book.GetAllBooksTest@ae7950d]" name="testGetAllBooks" duration-ms="26" started-at="2021-08-17T14:38:01Z" description="Test of get all books" finished-at="2021-08-17T14:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAllBooks -->
-        <test-method status="PASS" signature="testGetBooksWithBadPageNumber()[pri:0, instance:book.GetAllBooksTest@5e8604bf]" name="testGetBooksWithBadPageNumber" duration-ms="20" started-at="2021-08-16T14:51:33Z" description="Test of get all books with wrong parameters" finished-at="2021-08-16T14:51:33Z">
+        <test-method status="PASS" signature="testGetBooksWithBadPageNumber()[pri:0, instance:book.GetAllBooksTest@ae7950d]" name="testGetBooksWithBadPageNumber" duration-ms="48" started-at="2021-08-17T14:38:01Z" description="Test of get all books with wrong parameters" finished-at="2021-08-17T14:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetBooksWithBadPageNumber -->
-        <test-method status="PASS" signature="testGetBooksWithBadPaginationValue()[pri:0, instance:book.GetAllBooksTest@5e8604bf]" name="testGetBooksWithBadPaginationValue" duration-ms="20" started-at="2021-08-16T14:51:33Z" description="Test of get all books with wrong parameters" finished-at="2021-08-16T14:51:33Z">
+        <test-method status="PASS" signature="testGetBooksWithBadPaginationValue()[pri:0, instance:book.GetAllBooksTest@ae7950d]" name="testGetBooksWithBadPaginationValue" duration-ms="55" started-at="2021-08-17T14:38:01Z" description="Test of get all books with wrong parameters" finished-at="2021-08-17T14:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetBooksWithBadPaginationValue -->
       </class> <!-- book.GetAllBooksTest -->
       <class name="book.GetBookByAuthorTest">
-        <test-method status="PASS" signature="testSearchBookByAuthor()[pri:0, instance:book.GetBookByAuthorTest@4a6c18ad]" name="testSearchBookByAuthor" duration-ms="72" started-at="2021-08-16T14:51:33Z" description="Test of search book by author" finished-at="2021-08-16T14:51:33Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:book.GetBookByAuthorTest@64aad6db]" name="setup" is-config="true" duration-ms="116" started-at="2021-08-17T14:38:00Z" finished-at="2021-08-17T14:38:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchBookByAuthor()[pri:0, instance:book.GetBookByAuthorTest@64aad6db]" name="testSearchBookByAuthor" duration-ms="13" started-at="2021-08-17T14:38:00Z" description="Test of search book by author" finished-at="2021-08-17T14:38:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchBookByAuthor -->
-        <test-method status="PASS" signature="testSearchBookByAuthorBadRequest()[pri:0, instance:book.GetBookByAuthorTest@4a6c18ad]" name="testSearchBookByAuthorBadRequest" duration-ms="91" started-at="2021-08-16T14:51:33Z" description="Test of search book by author Bad Request" finished-at="2021-08-16T14:51:33Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:book.GetBookByAuthorTest@64aad6db]" name="setup" is-config="true" duration-ms="72" started-at="2021-08-17T14:38:00Z" finished-at="2021-08-17T14:38:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchBookByAuthorBadRequest()[pri:0, instance:book.GetBookByAuthorTest@64aad6db]" name="testSearchBookByAuthorBadRequest" duration-ms="56" started-at="2021-08-17T14:38:01Z" description="Test of search book by author Bad Request" finished-at="2021-08-17T14:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchBookByAuthorBadRequest -->
-        <test-method status="PASS" signature="testSearchBookByAuthorThatNotExist()[pri:0, instance:book.GetBookByAuthorTest@4a6c18ad]" name="testSearchBookByAuthorThatNotExist" duration-ms="90" started-at="2021-08-16T14:51:33Z" description="Test of search book by author that not exist" finished-at="2021-08-16T14:51:33Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:book.GetBookByAuthorTest@64aad6db]" name="setup" is-config="true" duration-ms="64" started-at="2021-08-17T14:38:01Z" finished-at="2021-08-17T14:38:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchBookByAuthorThatNotExist()[pri:0, instance:book.GetBookByAuthorTest@64aad6db]" name="testSearchBookByAuthorThatNotExist" duration-ms="46" started-at="2021-08-17T14:38:01Z" description="Test of search book by author that not exist" finished-at="2021-08-17T14:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchBookByAuthorThatNotExist -->
       </class> <!-- book.GetBookByAuthorTest -->
       <class name="author.SearchAuthorTest">
-        <test-method status="PASS" signature="testSearchAuthorBadRequest()[pri:0, instance:author.SearchAuthorTest@4ed38226]" name="testSearchAuthorBadRequest" duration-ms="31" started-at="2021-08-16T14:51:35Z" description="Test of search author with Bad Request" finished-at="2021-08-16T14:51:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.SearchAuthorTest@35ff8fc9]" name="setup" is-config="true" duration-ms="13" started-at="2021-08-17T14:38:03Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchAuthorBadRequest()[pri:0, instance:author.SearchAuthorTest@35ff8fc9]" name="testSearchAuthorBadRequest" duration-ms="28" started-at="2021-08-17T14:38:03Z" description="Test of search author with Bad Request" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchAuthorBadRequest -->
-        <test-method status="PASS" signature="testSearchAuthorByFirstName()[pri:0, instance:author.SearchAuthorTest@4ed38226]" name="testSearchAuthorByFirstName" duration-ms="22" started-at="2021-08-16T14:51:36Z" description="Test of search author by first name" finished-at="2021-08-16T14:51:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.SearchAuthorTest@35ff8fc9]" name="setup" is-config="true" duration-ms="12" started-at="2021-08-17T14:38:03Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchAuthorByFirstName()[pri:0, instance:author.SearchAuthorTest@35ff8fc9]" name="testSearchAuthorByFirstName" duration-ms="16" started-at="2021-08-17T14:38:03Z" description="Test of search author by first name" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchAuthorByFirstName -->
-        <test-method status="PASS" signature="testSearchAuthorByLastName()[pri:0, instance:author.SearchAuthorTest@4ed38226]" name="testSearchAuthorByLastName" duration-ms="23" started-at="2021-08-16T14:51:36Z" description="Test of search author by last name" finished-at="2021-08-16T14:51:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.SearchAuthorTest@35ff8fc9]" name="setup" is-config="true" duration-ms="18" started-at="2021-08-17T14:38:03Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchAuthorByLastName()[pri:0, instance:author.SearchAuthorTest@35ff8fc9]" name="testSearchAuthorByLastName" duration-ms="18" started-at="2021-08-17T14:38:03Z" description="Test of search author by last name" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchAuthorByLastName -->
       </class> <!-- author.SearchAuthorTest -->
       <class name="book.UpdateBookTest">
-        <test-method status="PASS" signature="testPositiveUpdateBook()[pri:0, instance:book.UpdateBookTest@20095ab4]" name="testPositiveUpdateBook" duration-ms="84" started-at="2021-08-16T14:51:33Z" description="Test of positive update book" finished-at="2021-08-16T14:51:33Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:book.UpdateBookTest@60d1b21f]" name="setup" is-config="true" duration-ms="77" started-at="2021-08-17T14:38:01Z" finished-at="2021-08-17T14:38:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testPositiveUpdateBook()[pri:0, instance:book.UpdateBookTest@60d1b21f]" name="testPositiveUpdateBook" duration-ms="49" started-at="2021-08-17T14:38:01Z" description="Test of positive update book" finished-at="2021-08-17T14:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPositiveUpdateBook -->
-        <test-method status="PASS" signature="testUpdateBookThatNotFound()[pri:0, instance:book.UpdateBookTest@20095ab4]" name="testUpdateBookThatNotFound" duration-ms="121" started-at="2021-08-16T14:51:33Z" description="Test of update book that not found" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:book.UpdateBookTest@60d1b21f]" name="setup" is-config="true" duration-ms="76" started-at="2021-08-17T14:38:01Z" finished-at="2021-08-17T14:38:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testUpdateBookThatNotFound()[pri:0, instance:book.UpdateBookTest@60d1b21f]" name="testUpdateBookThatNotFound" duration-ms="63" started-at="2021-08-17T14:38:01Z" description="Test of update book that not found" finished-at="2021-08-17T14:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateBookThatNotFound -->
-        <test-method status="PASS" signature="testUpdateBookWithoutBody()[pri:0, instance:book.UpdateBookTest@20095ab4]" name="testUpdateBookWithoutBody" duration-ms="118" started-at="2021-08-16T14:51:34Z" description="Test of Update book without body" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:book.UpdateBookTest@60d1b21f]" name="setup" is-config="true" duration-ms="72" started-at="2021-08-17T14:38:01Z" finished-at="2021-08-17T14:38:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testUpdateBookWithoutBody()[pri:0, instance:book.UpdateBookTest@60d1b21f]" name="testUpdateBookWithoutBody" duration-ms="71" started-at="2021-08-17T14:38:01Z" description="Test of Update book without body" finished-at="2021-08-17T14:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateBookWithoutBody -->
       </class> <!-- book.UpdateBookTest -->
       <class name="genre.GetAllGenresTest">
-        <test-method status="PASS" signature="testGetAllGenres()[pri:0, instance:genre.GetAllGenresTest@f339eae]" name="testGetAllGenres" duration-ms="18" started-at="2021-08-16T14:51:35Z" description="Test of get all genres" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="testGetAllGenres()[pri:0, instance:genre.GetAllGenresTest@40368a46]" name="testGetAllGenres" duration-ms="11" started-at="2021-08-17T14:38:02Z" description="Test of get all genres" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAllGenres -->
-        <test-method status="PASS" signature="testGetGenresWithBadPageNumber()[pri:0, instance:genre.GetAllGenresTest@f339eae]" name="testGetGenresWithBadPageNumber" duration-ms="22" started-at="2021-08-16T14:51:35Z" description="Test of get all genres with wrong parameters" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="testGetGenresWithBadPageNumber()[pri:0, instance:genre.GetAllGenresTest@40368a46]" name="testGetGenresWithBadPageNumber" duration-ms="26" started-at="2021-08-17T14:38:02Z" description="Test of get all genres with wrong parameters" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetGenresWithBadPageNumber -->
-        <test-method status="PASS" signature="testGetGenresWithBadPaginationValue()[pri:0, instance:genre.GetAllGenresTest@f339eae]" name="testGetGenresWithBadPaginationValue" duration-ms="17" started-at="2021-08-16T14:51:35Z" description="Test of get all genres with wrong parameters" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="testGetGenresWithBadPaginationValue()[pri:0, instance:genre.GetAllGenresTest@40368a46]" name="testGetGenresWithBadPaginationValue" duration-ms="34" started-at="2021-08-17T14:38:02Z" description="Test of get all genres with wrong parameters" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetGenresWithBadPaginationValue -->
       </class> <!-- genre.GetAllGenresTest -->
       <class name="author.GetAuthorTest">
-        <test-method status="PASS" signature="testGetAuthorBadRequest()[pri:0, instance:author.GetAuthorTest@53e3a87a]" name="testGetAuthorBadRequest" duration-ms="31" started-at="2021-08-16T14:51:35Z" description="Test of getting author BAD REQUEST" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="testGetAuthorBadRequest()[pri:0, instance:author.GetAuthorTest@3d43fe]" name="testGetAuthorBadRequest" duration-ms="17" started-at="2021-08-17T14:38:03Z" description="Test of getting author BAD REQUEST" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAuthorBadRequest -->
-        <test-method status="PASS" signature="testGetAuthorById()[pri:0, instance:author.GetAuthorTest@53e3a87a]" name="testGetAuthorById" duration-ms="32" started-at="2021-08-16T14:51:35Z" description="Test of getting author by id" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="testGetAuthorById()[pri:0, instance:author.GetAuthorTest@3d43fe]" name="testGetAuthorById" duration-ms="28" started-at="2021-08-17T14:38:03Z" description="Test of getting author by id" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAuthorById -->
-        <test-method status="PASS" signature="testGetAuthorNotFound()[pri:0, instance:author.GetAuthorTest@53e3a87a]" name="testGetAuthorNotFound" duration-ms="28" started-at="2021-08-16T14:51:35Z" description="Test of getting author that not found" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="testGetAuthorNotFound()[pri:0, instance:author.GetAuthorTest@3d43fe]" name="testGetAuthorNotFound" duration-ms="17" started-at="2021-08-17T14:38:03Z" description="Test of getting author that not found" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAuthorNotFound -->
       </class> <!-- author.GetAuthorTest -->
       <class name="author.UpdateAuthorTest">
-        <test-method status="PASS" signature="testPositiveUpdateAuthor()[pri:0, instance:author.UpdateAuthorTest@3d43fe]" name="testPositiveUpdateAuthor" duration-ms="20" started-at="2021-08-16T14:51:36Z" description="Test of positive update author" finished-at="2021-08-16T14:51:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.UpdateAuthorTest@5fb7183b]" name="setup" is-config="true" duration-ms="13" started-at="2021-08-17T14:38:03Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testPositiveUpdateAuthor()[pri:0, instance:author.UpdateAuthorTest@5fb7183b]" name="testPositiveUpdateAuthor" duration-ms="10" started-at="2021-08-17T14:38:03Z" description="Test of positive update author" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPositiveUpdateAuthor -->
-        <test-method status="PASS" signature="testUpdateAuthorWithoutBody()[pri:0, instance:author.UpdateAuthorTest@3d43fe]" name="testUpdateAuthorWithoutBody" duration-ms="29" started-at="2021-08-16T14:51:36Z" description="Test of Update Author without body" finished-at="2021-08-16T14:51:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.UpdateAuthorTest@5fb7183b]" name="setup" is-config="true" duration-ms="14" started-at="2021-08-17T14:38:03Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testUpdateAuthorWithoutBody()[pri:0, instance:author.UpdateAuthorTest@5fb7183b]" name="testUpdateAuthorWithoutBody" duration-ms="38" started-at="2021-08-17T14:38:03Z" description="Test of Update Author without body" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateAuthorWithoutBody -->
-        <test-method status="PASS" signature="testUpdateUserThatNotFound()[pri:0, instance:author.UpdateAuthorTest@3d43fe]" name="testUpdateUserThatNotFound" duration-ms="33" started-at="2021-08-16T14:51:36Z" description="Test of update author that not found" finished-at="2021-08-16T14:51:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.UpdateAuthorTest@5fb7183b]" name="setup" is-config="true" duration-ms="11" started-at="2021-08-17T14:38:03Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testUpdateUserThatNotFound()[pri:0, instance:author.UpdateAuthorTest@5fb7183b]" name="testUpdateUserThatNotFound" duration-ms="24" started-at="2021-08-17T14:38:03Z" description="Test of update author that not found" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateUserThatNotFound -->
       </class> <!-- author.UpdateAuthorTest -->
       <class name="author.GetAuthorByBookTest">
-        <test-method status="FAIL" signature="testSearchAuthorByBook()[pri:0, instance:author.GetAuthorByBookTest@4dafba3e]" name="testSearchAuthorByBook" duration-ms="48" started-at="2021-08-16T14:51:35Z" description="Test of search author by book" finished-at="2021-08-16T14:51:35Z">
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[java.util.LinkedHashMap cannot be cast to java.util.List]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.util.List
-at io.restassured.path.json.JsonPath.getList(JsonPath.java:391)
-at response.BaseResponse.getListOfBody(BaseResponse.java:50)
-at author.GetAuthorByBookTest.testSearchAuthorByBook(GetAuthorByBookTest.java:35)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.GetAuthorByBookTest@4ed38226]" name="setup" is-config="true" duration-ms="51" started-at="2021-08-17T14:38:02Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchAuthorByBook()[pri:0, instance:author.GetAuthorByBookTest@4ed38226]" name="testSearchAuthorByBook" duration-ms="12" started-at="2021-08-17T14:38:03Z" description="Test of search author by book" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchAuthorByBook -->
-        <test-method status="PASS" signature="testSearchAuthorByBookBadRequest()[pri:0, instance:author.GetAuthorByBookTest@4dafba3e]" name="testSearchAuthorByBookBadRequest" duration-ms="68" started-at="2021-08-16T14:51:35Z" description="Test of search author by book Bad Request" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.GetAuthorByBookTest@4ed38226]" name="setup" is-config="true" duration-ms="61" started-at="2021-08-17T14:38:03Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchAuthorByBookBadRequest()[pri:0, instance:author.GetAuthorByBookTest@4ed38226]" name="testSearchAuthorByBookBadRequest" duration-ms="42" started-at="2021-08-17T14:38:03Z" description="Test of search author by book Bad Request" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchAuthorByBookBadRequest -->
-        <test-method status="PASS" signature="testSearchAuthorByBookThatNotExist()[pri:0, instance:author.GetAuthorByBookTest@4dafba3e]" name="testSearchAuthorByBookThatNotExist" duration-ms="70" started-at="2021-08-16T14:51:35Z" description="Test of search author by book that not exist" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.GetAuthorByBookTest@4ed38226]" name="setup" is-config="true" duration-ms="69" started-at="2021-08-17T14:38:03Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchAuthorByBookThatNotExist()[pri:0, instance:author.GetAuthorByBookTest@4ed38226]" name="testSearchAuthorByBookThatNotExist" duration-ms="22" started-at="2021-08-17T14:38:03Z" description="Test of search author by book that not exist" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchAuthorByBookThatNotExist -->
       </class> <!-- author.GetAuthorByBookTest -->
       <class name="genre.SearchGenreTest">
-        <test-method status="PASS" signature="testSearchGenreBadRequest()[pri:0, instance:genre.SearchGenreTest@621f89b8]" name="testSearchGenreBadRequest" duration-ms="22" started-at="2021-08-16T14:51:35Z" description="Test of search genre with Bad Request" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:genre.SearchGenreTest@53e3a87a]" name="setup" is-config="true" duration-ms="14" started-at="2021-08-17T14:38:02Z" finished-at="2021-08-17T14:38:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchGenreBadRequest()[pri:0, instance:genre.SearchGenreTest@53e3a87a]" name="testSearchGenreBadRequest" duration-ms="21" started-at="2021-08-17T14:38:02Z" description="Test of search genre with Bad Request" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchGenreBadRequest -->
-        <test-method status="PASS" signature="testSearchGenreByName()[pri:0, instance:genre.SearchGenreTest@621f89b8]" name="testSearchGenreByName" duration-ms="30" started-at="2021-08-16T14:51:35Z" description="Test of search genre by name" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:genre.SearchGenreTest@53e3a87a]" name="setup" is-config="true" duration-ms="12" started-at="2021-08-17T14:38:02Z" finished-at="2021-08-17T14:38:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchGenreByName()[pri:0, instance:genre.SearchGenreTest@53e3a87a]" name="testSearchGenreByName" duration-ms="2" started-at="2021-08-17T14:38:02Z" description="Test of search genre by name" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchGenreByName -->
       </class> <!-- genre.SearchGenreTest -->
       <class name="genre.DeleteGenreTest">
-        <test-method status="PASS" signature="testDeleteGenreBadRequest()[pri:0, instance:genre.DeleteGenreTest@60d1b21f]" name="testDeleteGenreBadRequest" duration-ms="19" started-at="2021-08-16T14:51:34Z" description="Test of deleting genre BAD REQUEST" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="testDeleteGenreBadRequest()[pri:0, instance:genre.DeleteGenreTest@f339eae]" name="testDeleteGenreBadRequest" duration-ms="16" started-at="2021-08-17T14:38:02Z" description="Test of deleting genre BAD REQUEST" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteGenreBadRequest -->
-        <test-method status="PASS" signature="testDeleteGenreById()[pri:0, instance:genre.DeleteGenreTest@60d1b21f]" name="testDeleteGenreById" duration-ms="25" started-at="2021-08-16T14:51:34Z" description="Test of deleting genre by id" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="testDeleteGenreById()[pri:0, instance:genre.DeleteGenreTest@f339eae]" name="testDeleteGenreById" duration-ms="22" started-at="2021-08-17T14:38:02Z" description="Test of deleting genre by id" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteGenreById -->
-        <test-method status="PASS" signature="testDeleteGenreNotFound()[pri:0, instance:genre.DeleteGenreTest@60d1b21f]" name="testDeleteGenreNotFound" duration-ms="34" started-at="2021-08-16T14:51:34Z" description="Test of deleting genre that not found" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="testDeleteGenreNotFound()[pri:0, instance:genre.DeleteGenreTest@f339eae]" name="testDeleteGenreNotFound" duration-ms="25" started-at="2021-08-17T14:38:02Z" description="Test of deleting genre that not found" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteGenreNotFound -->
       </class> <!-- genre.DeleteGenreTest -->
-      <class name="author.GetAuthorByGenreTest">
-        <test-method status="PASS" signature="testSearchAuthorByGenre()[pri:0, instance:author.GetAuthorByGenreTest@7e9da981]" name="testSearchAuthorByGenre" duration-ms="92" started-at="2021-08-16T14:51:35Z" description="Test of search author by genre" finished-at="2021-08-16T14:51:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchAuthorByGenre -->
-        <test-method status="PASS" signature="testSearchAuthorByGenreBadRequest()[pri:0, instance:author.GetAuthorByGenreTest@7e9da981]" name="testSearchAuthorByGenreBadRequest" duration-ms="109" started-at="2021-08-16T14:51:35Z" description="Test of search author by genre Bad Request" finished-at="2021-08-16T14:51:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchAuthorByGenreBadRequest -->
-        <test-method status="PASS" signature="testSearchAuthorByGenreThatNotExist()[pri:0, instance:author.GetAuthorByGenreTest@7e9da981]" name="testSearchAuthorByGenreThatNotExist" duration-ms="94" started-at="2021-08-16T14:51:35Z" description="Test of search author by genre that not exist" finished-at="2021-08-16T14:51:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchAuthorByGenreThatNotExist -->
-      </class> <!-- author.GetAuthorByGenreTest -->
       <class name="author.CreateAuthorTest">
-        <test-method status="PASS" signature="testCreateAuthorWithExistsId()[pri:0, instance:author.CreateAuthorTest@40368a46]" name="testCreateAuthorWithExistsId" duration-ms="46" started-at="2021-08-16T14:51:35Z" description="Test of Author with such id already exists" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.CreateAuthorTest@74ad8d05]" name="setup" is-config="true" duration-ms="15" started-at="2021-08-17T14:38:03Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testCreateAuthorWithExistsId()[pri:0, instance:author.CreateAuthorTest@74ad8d05]" name="testCreateAuthorWithExistsId" duration-ms="28" started-at="2021-08-17T14:38:03Z" description="Test of Author with such id already exists" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateAuthorWithExistsId -->
-        <test-method status="PASS" signature="testCreateAuthorWithoutBody()[pri:0, instance:author.CreateAuthorTest@40368a46]" name="testCreateAuthorWithoutBody" duration-ms="35" started-at="2021-08-16T14:51:35Z" description="Test of Author without body" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.CreateAuthorTest@74ad8d05]" name="setup" is-config="true" duration-ms="14" started-at="2021-08-17T14:38:03Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testCreateAuthorWithoutBody()[pri:0, instance:author.CreateAuthorTest@74ad8d05]" name="testCreateAuthorWithoutBody" duration-ms="22" started-at="2021-08-17T14:38:03Z" description="Test of Author without body" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateAuthorWithoutBody -->
-        <test-method status="PASS" signature="testPositiveScenario()[pri:0, instance:author.CreateAuthorTest@40368a46]" name="testPositiveScenario" duration-ms="24" started-at="2021-08-16T14:51:35Z" description="Test of positive creating author" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.CreateAuthorTest@74ad8d05]" name="setup" is-config="true" duration-ms="18" started-at="2021-08-17T14:38:03Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testPositiveScenario()[pri:0, instance:author.CreateAuthorTest@74ad8d05]" name="testPositiveScenario" duration-ms="2" started-at="2021-08-17T14:38:03Z" description="Test of positive creating author" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPositiveScenario -->
       </class> <!-- author.CreateAuthorTest -->
+      <class name="author.GetAuthorByGenreTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.GetAuthorByGenreTest@676ff3b0]" name="setup" is-config="true" duration-ms="39" started-at="2021-08-17T14:38:03Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchAuthorByGenre()[pri:0, instance:author.GetAuthorByGenreTest@676ff3b0]" name="testSearchAuthorByGenre" duration-ms="16" started-at="2021-08-17T14:38:03Z" description="Test of search author by genre" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchAuthorByGenre -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.GetAuthorByGenreTest@676ff3b0]" name="setup" is-config="true" duration-ms="48" started-at="2021-08-17T14:38:03Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchAuthorByGenreBadRequest()[pri:0, instance:author.GetAuthorByGenreTest@676ff3b0]" name="testSearchAuthorByGenreBadRequest" duration-ms="23" started-at="2021-08-17T14:38:03Z" description="Test of search author by genre Bad Request" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchAuthorByGenreBadRequest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:author.GetAuthorByGenreTest@676ff3b0]" name="setup" is-config="true" duration-ms="40" started-at="2021-08-17T14:38:03Z" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchAuthorByGenreThatNotExist()[pri:0, instance:author.GetAuthorByGenreTest@676ff3b0]" name="testSearchAuthorByGenreThatNotExist" duration-ms="21" started-at="2021-08-17T14:38:03Z" description="Test of search author by genre that not exist" finished-at="2021-08-17T14:38:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchAuthorByGenreThatNotExist -->
+      </class> <!-- author.GetAuthorByGenreTest -->
+      <class name="book.GetBookTest">
+        <test-method status="PASS" signature="testGetBookBadRequest()[pri:0, instance:book.GetBookTest@4e2916c3]" name="testGetBookBadRequest" duration-ms="27" started-at="2021-08-17T14:38:00Z" description="Test of getting book BAD REQUEST" finished-at="2021-08-17T14:38:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBookBadRequest -->
+        <test-method status="PASS" signature="testGetBookById()[pri:0, instance:book.GetBookTest@4e2916c3]" name="testGetBookById" duration-ms="215" started-at="2021-08-17T14:38:00Z" description="Test of getting book by id" finished-at="2021-08-17T14:38:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBookById -->
+        <test-method status="PASS" signature="testGetBookNotFound()[pri:0, instance:book.GetBookTest@4e2916c3]" name="testGetBookNotFound" duration-ms="42" started-at="2021-08-17T14:38:00Z" description="Test of getting book that not found" finished-at="2021-08-17T14:38:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBookNotFound -->
+      </class> <!-- book.GetBookTest -->
       <class name="genre.CreateGenreTest">
-        <test-method status="PASS" signature="testCreateAuthorWithExistsId()[pri:0, instance:genre.CreateGenreTest@64aad6db]" name="testCreateAuthorWithExistsId" duration-ms="50" started-at="2021-08-16T14:51:34Z" description="Test of Genre with such id already exists" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:genre.CreateGenreTest@546621c4]" name="setup" is-config="true" duration-ms="17" started-at="2021-08-17T14:38:02Z" finished-at="2021-08-17T14:38:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testCreateAuthorWithExistsId()[pri:0, instance:genre.CreateGenreTest@546621c4]" name="testCreateAuthorWithExistsId" duration-ms="25" started-at="2021-08-17T14:38:02Z" description="Test of Genre with such id already exists" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateAuthorWithExistsId -->
-        <test-method status="PASS" signature="testCreateAuthorWithoutBody()[pri:0, instance:genre.CreateGenreTest@64aad6db]" name="testCreateAuthorWithoutBody" duration-ms="26" started-at="2021-08-16T14:51:34Z" description="Test of Genre without body" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:genre.CreateGenreTest@546621c4]" name="setup" is-config="true" duration-ms="20" started-at="2021-08-17T14:38:02Z" finished-at="2021-08-17T14:38:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testCreateAuthorWithoutBody()[pri:0, instance:genre.CreateGenreTest@546621c4]" name="testCreateAuthorWithoutBody" duration-ms="20" started-at="2021-08-17T14:38:02Z" description="Test of Genre without body" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateAuthorWithoutBody -->
-        <test-method status="PASS" signature="testPositiveScenario()[pri:0, instance:genre.CreateGenreTest@64aad6db]" name="testPositiveScenario" duration-ms="19" started-at="2021-08-16T14:51:34Z" description="Test of positive creating genre" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:genre.CreateGenreTest@546621c4]" name="setup" is-config="true" duration-ms="33" started-at="2021-08-17T14:38:02Z" finished-at="2021-08-17T14:38:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testPositiveScenario()[pri:0, instance:genre.CreateGenreTest@546621c4]" name="testPositiveScenario" duration-ms="3" started-at="2021-08-17T14:38:02Z" description="Test of positive creating genre" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPositiveScenario -->
       </class> <!-- genre.CreateGenreTest -->
-      <class name="genre.GetGenreByAuthorTest">
-        <test-method status="PASS" signature="testSearchGenreByAuthor()[pri:0, instance:genre.GetGenreByAuthorTest@546621c4]" name="testSearchGenreByAuthor" duration-ms="77" started-at="2021-08-16T14:51:34Z" description="Test of search genre by author" finished-at="2021-08-16T14:51:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchGenreByAuthor -->
-        <test-method status="PASS" signature="testSearchGenreByAuthorBadRequest()[pri:0, instance:genre.GetGenreByAuthorTest@546621c4]" name="testSearchGenreByAuthorBadRequest" duration-ms="97" started-at="2021-08-16T14:51:34Z" description="Test of search genre by author Bad Request" finished-at="2021-08-16T14:51:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchGenreByAuthorBadRequest -->
-        <test-method status="PASS" signature="testSearchGenreByAuthorThatNotExist()[pri:0, instance:genre.GetGenreByAuthorTest@546621c4]" name="testSearchGenreByAuthorThatNotExist" duration-ms="70" started-at="2021-08-16T14:51:35Z" description="Test of search Genre by author that not exist" finished-at="2021-08-16T14:51:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchGenreByAuthorThatNotExist -->
-      </class> <!-- genre.GetGenreByAuthorTest -->
       <class name="book.GetAllBookOfSpecialGenreTest">
-        <test-method status="FAIL" signature="testGetAllBooks()[pri:0, instance:book.GetAllBookOfSpecialGenreTest@6892cc6f]" name="testGetAllBooks" duration-ms="935" started-at="2021-08-16T14:51:32Z" description="Test of get all books" finished-at="2021-08-16T14:51:33Z">
+        <test-method status="FAIL" signature="testGetAllBooks()[pri:0, instance:book.GetAllBookOfSpecialGenreTest@20095ab4]" name="testGetAllBooks" duration-ms="737" started-at="2021-08-17T14:37:59Z" description="Test of get all books" finished-at="2021-08-17T14:38:00Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [5] but found [505]]]>
+              <![CDATA[expected [5] but found [355]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [5] but found [505]
+              <![CDATA[java.lang.AssertionError: expected [5] but found [355]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -331,103 +406,147 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAllBooks -->
-        <test-method status="PASS" signature="testGetBooksWithBadPageNumber()[pri:0, instance:book.GetAllBookOfSpecialGenreTest@6892cc6f]" name="testGetBooksWithBadPageNumber" duration-ms="63" started-at="2021-08-16T14:51:33Z" description="Test of get all books with wrong parameters" finished-at="2021-08-16T14:51:33Z">
+        <test-method status="PASS" signature="testGetBooksWithBadPageNumber()[pri:0, instance:book.GetAllBookOfSpecialGenreTest@20095ab4]" name="testGetBooksWithBadPageNumber" duration-ms="57" started-at="2021-08-17T14:38:00Z" description="Test of get all books with wrong parameters" finished-at="2021-08-17T14:38:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetBooksWithBadPageNumber -->
-        <test-method status="PASS" signature="testGetBooksWithBadPaginationValue()[pri:0, instance:book.GetAllBookOfSpecialGenreTest@6892cc6f]" name="testGetBooksWithBadPaginationValue" duration-ms="49" started-at="2021-08-16T14:51:33Z" description="Test of get all books with wrong parameters" finished-at="2021-08-16T14:51:33Z">
+        <test-method status="PASS" signature="testGetBooksWithBadPaginationValue()[pri:0, instance:book.GetAllBookOfSpecialGenreTest@20095ab4]" name="testGetBooksWithBadPaginationValue" duration-ms="39" started-at="2021-08-17T14:38:00Z" description="Test of get all books with wrong parameters" finished-at="2021-08-17T14:38:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetBooksWithBadPaginationValue -->
       </class> <!-- book.GetAllBookOfSpecialGenreTest -->
-      <class name="book.GetBookTest">
-        <test-method status="PASS" signature="testGetBookBadRequest()[pri:0, instance:book.GetBookTest@6fd1660]" name="testGetBookBadRequest" duration-ms="22" started-at="2021-08-16T14:51:33Z" description="Test of getting book BAD REQUEST" finished-at="2021-08-16T14:51:33Z">
+      <class name="genre.GetGenreByAuthorTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:genre.GetGenreByAuthorTest@4dafba3e]" name="setup" is-config="true" duration-ms="56" started-at="2021-08-17T14:38:02Z" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetBookBadRequest -->
-        <test-method status="PASS" signature="testGetBookById()[pri:0, instance:book.GetBookTest@6fd1660]" name="testGetBookById" duration-ms="92" started-at="2021-08-16T14:51:33Z" description="Test of getting book by id" finished-at="2021-08-16T14:51:33Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchGenreByAuthor()[pri:0, instance:genre.GetGenreByAuthorTest@4dafba3e]" name="testSearchGenreByAuthor" duration-ms="13" started-at="2021-08-17T14:38:02Z" description="Test of search genre by author" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetBookById -->
-        <test-method status="PASS" signature="testGetBookNotFound()[pri:0, instance:book.GetBookTest@6fd1660]" name="testGetBookNotFound" duration-ms="32" started-at="2021-08-16T14:51:33Z" description="Test of getting book that not found" finished-at="2021-08-16T14:51:33Z">
+        </test-method> <!-- testSearchGenreByAuthor -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:genre.GetGenreByAuthorTest@4dafba3e]" name="setup" is-config="true" duration-ms="61" started-at="2021-08-17T14:38:02Z" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetBookNotFound -->
-      </class> <!-- book.GetBookTest -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchGenreByAuthorBadRequest()[pri:0, instance:genre.GetGenreByAuthorTest@4dafba3e]" name="testSearchGenreByAuthorBadRequest" duration-ms="32" started-at="2021-08-17T14:38:02Z" description="Test of search genre by author Bad Request" finished-at="2021-08-17T14:38:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchGenreByAuthorBadRequest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:genre.GetGenreByAuthorTest@4dafba3e]" name="setup" is-config="true" duration-ms="72" started-at="2021-08-17T14:38:02Z" finished-at="2021-08-17T14:38:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchGenreByAuthorThatNotExist()[pri:0, instance:genre.GetGenreByAuthorTest@4dafba3e]" name="testSearchGenreByAuthorThatNotExist" duration-ms="29" started-at="2021-08-17T14:38:02Z" description="Test of search Genre by author that not exist" finished-at="2021-08-17T14:38:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchGenreByAuthorThatNotExist -->
+      </class> <!-- genre.GetGenreByAuthorTest -->
       <class name="author.GetAllAuthorsTest">
-        <test-method status="PASS" signature="testGetAllAuthors()[pri:0, instance:author.GetAllAuthorsTest@74ad8d05]" name="testGetAllAuthors" duration-ms="15" started-at="2021-08-16T14:51:36Z" description="Test of get all authors" finished-at="2021-08-16T14:51:36Z">
+        <test-method status="PASS" signature="testGetAllAuthors()[pri:0, instance:author.GetAllAuthorsTest@476a736d]" name="testGetAllAuthors" duration-ms="26" started-at="2021-08-17T14:38:03Z" description="Test of get all authors" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAllAuthors -->
-        <test-method status="PASS" signature="testGetAuthorsWithBadPageNumber()[pri:0, instance:author.GetAllAuthorsTest@74ad8d05]" name="testGetAuthorsWithBadPageNumber" duration-ms="18" started-at="2021-08-16T14:51:36Z" description="Test of get all authors with wrong parameters" finished-at="2021-08-16T14:51:36Z">
+        <test-method status="PASS" signature="testGetAuthorsWithBadPageNumber()[pri:0, instance:author.GetAllAuthorsTest@476a736d]" name="testGetAuthorsWithBadPageNumber" duration-ms="20" started-at="2021-08-17T14:38:03Z" description="Test of get all authors with wrong parameters" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAuthorsWithBadPageNumber -->
-        <test-method status="PASS" signature="testGetAuthorsWithBadPaginationValue()[pri:0, instance:author.GetAllAuthorsTest@74ad8d05]" name="testGetAuthorsWithBadPaginationValue" duration-ms="18" started-at="2021-08-16T14:51:36Z" description="Test of get all authors with wrong parameters" finished-at="2021-08-16T14:51:36Z">
+        <test-method status="PASS" signature="testGetAuthorsWithBadPaginationValue()[pri:0, instance:author.GetAllAuthorsTest@476a736d]" name="testGetAuthorsWithBadPaginationValue" duration-ms="27" started-at="2021-08-17T14:38:03Z" description="Test of get all authors with wrong parameters" finished-at="2021-08-17T14:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetAuthorsWithBadPaginationValue -->
       </class> <!-- author.GetAllAuthorsTest -->
       <class name="book.CreateBookTest">
-        <test-method status="PASS" signature="testCreateAuthorWithExistsId()[pri:0, instance:book.CreateBookTest@4e2916c3]" name="testCreateAuthorWithExistsId" duration-ms="79" started-at="2021-08-16T14:51:34Z" description="Test of book with such id already exists" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:book.CreateBookTest@66c83fc8]" name="setup" is-config="true" duration-ms="60" started-at="2021-08-17T14:38:01Z" finished-at="2021-08-17T14:38:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testCreateAuthorWithExistsId()[pri:0, instance:book.CreateBookTest@66c83fc8]" name="testCreateAuthorWithExistsId" duration-ms="45" started-at="2021-08-17T14:38:01Z" description="Test of book with such id already exists" finished-at="2021-08-17T14:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateAuthorWithExistsId -->
-        <test-method status="PASS" signature="testCreateAuthorWithoutBody()[pri:0, instance:book.CreateBookTest@4e2916c3]" name="testCreateAuthorWithoutBody" duration-ms="51" started-at="2021-08-16T14:51:34Z" description="Test of book without body" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:book.CreateBookTest@66c83fc8]" name="setup" is-config="true" duration-ms="58" started-at="2021-08-17T14:38:01Z" finished-at="2021-08-17T14:38:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testCreateAuthorWithoutBody()[pri:0, instance:book.CreateBookTest@66c83fc8]" name="testCreateAuthorWithoutBody" duration-ms="40" started-at="2021-08-17T14:38:01Z" description="Test of book without body" finished-at="2021-08-17T14:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateAuthorWithoutBody -->
-        <test-method status="PASS" signature="testPositiveScenario()[pri:0, instance:book.CreateBookTest@4e2916c3]" name="testPositiveScenario" duration-ms="53" started-at="2021-08-16T14:51:34Z" description="Test of positive creating book" finished-at="2021-08-16T14:51:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:book.CreateBookTest@66c83fc8]" name="setup" is-config="true" duration-ms="34" started-at="2021-08-17T14:38:01Z" finished-at="2021-08-17T14:38:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testPositiveScenario()[pri:0, instance:book.CreateBookTest@66c83fc8]" name="testPositiveScenario" duration-ms="50" started-at="2021-08-17T14:38:01Z" description="Test of positive creating book" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPositiveScenario -->
       </class> <!-- book.CreateBookTest -->
       <class name="book.SearchBookTest">
-        <test-method status="PASS" signature="testSearchBookBadRequest()[pri:0, instance:book.SearchBookTest@56f71edb]" name="testSearchBookBadRequest" duration-ms="2308" started-at="2021-08-16T14:51:27Z" description="Test of search book with Bad Request" finished-at="2021-08-16T14:51:29Z">
+        <test-method status="PASS" signature="testSearchBookBadRequest()[pri:0, instance:book.SearchBookTest@6fd1660]" name="testSearchBookBadRequest" duration-ms="2571" started-at="2021-08-17T14:37:54Z" description="Test of search book with Bad Request" finished-at="2021-08-17T14:37:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchBookBadRequest -->
-        <test-method status="PASS" signature="testSearchBookByName()[pri:0, instance:book.SearchBookTest@56f71edb]" name="testSearchBookByName" duration-ms="646" started-at="2021-08-16T14:51:29Z" description="Test of search book by name" finished-at="2021-08-16T14:51:30Z">
+        <test-method status="PASS" signature="testSearchBookByName()[pri:0, instance:book.SearchBookTest@6fd1660]" name="testSearchBookByName" duration-ms="594" started-at="2021-08-17T14:37:57Z" description="Test of search book by name" finished-at="2021-08-17T14:37:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchBookByName -->
-        <test-method status="PASS" signature="testSearchBookReturn5Results()[pri:0, instance:book.SearchBookTest@56f71edb]" name="testSearchBookReturn5Results" duration-ms="476" started-at="2021-08-16T14:51:30Z" description="Test of search book returning 5 most relevant results" finished-at="2021-08-16T14:51:31Z">
+        <test-method status="PASS" signature="testSearchBookReturn5Results()[pri:0, instance:book.SearchBookTest@6fd1660]" name="testSearchBookReturn5Results" duration-ms="575" started-at="2021-08-17T14:37:57Z" description="Test of search book returning 5 most relevant results" finished-at="2021-08-17T14:37:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchBookReturn5Results -->
       </class> <!-- book.SearchBookTest -->
       <class name="book.GetBookByAuthorAndGenreTest">
-        <test-method status="PASS" signature="testSearchBookByAuthorAndGenre()[pri:0, instance:book.GetBookByAuthorAndGenreTest@2a27cb34]" name="testSearchBookByAuthorAndGenre" duration-ms="103" started-at="2021-08-16T14:51:31Z" description="Test of search book by author and genre" finished-at="2021-08-16T14:51:31Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:book.GetBookByAuthorAndGenreTest@5e8604bf]" name="setup" is-config="true" duration-ms="89" started-at="2021-08-17T14:37:59Z" finished-at="2021-08-17T14:37:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchBookByAuthorAndGenre()[pri:0, instance:book.GetBookByAuthorAndGenreTest@5e8604bf]" name="testSearchBookByAuthorAndGenre" duration-ms="15" started-at="2021-08-17T14:37:59Z" description="Test of search book by author and genre" finished-at="2021-08-17T14:37:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchBookByAuthorAndGenre -->
-        <test-method status="PASS" signature="testSearchBookByAuthorBadRequestAndGenre()[pri:0, instance:book.GetBookByAuthorAndGenreTest@2a27cb34]" name="testSearchBookByAuthorBadRequestAndGenre" duration-ms="140" started-at="2021-08-16T14:51:31Z" description="Test of search author by book Bad Request and Genre" finished-at="2021-08-16T14:51:32Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:book.GetBookByAuthorAndGenreTest@5e8604bf]" name="setup" is-config="true" duration-ms="72" started-at="2021-08-17T14:37:59Z" finished-at="2021-08-17T14:37:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchBookByAuthorBadRequestAndGenre()[pri:0, instance:book.GetBookByAuthorAndGenreTest@5e8604bf]" name="testSearchBookByAuthorBadRequestAndGenre" duration-ms="27" started-at="2021-08-17T14:37:59Z" description="Test of search author by book Bad Request and Genre" finished-at="2021-08-17T14:37:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchBookByAuthorBadRequestAndGenre -->
-        <test-method status="PASS" signature="testSearchBookByAuthorThatNotExistAndGenre()[pri:0, instance:book.GetBookByAuthorAndGenreTest@2a27cb34]" name="testSearchBookByAuthorThatNotExistAndGenre" duration-ms="90" started-at="2021-08-16T14:51:32Z" description="Test of search book by author that not exist and genre" finished-at="2021-08-16T14:51:32Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:book.GetBookByAuthorAndGenreTest@5e8604bf]" name="setup" is-config="true" duration-ms="55" started-at="2021-08-17T14:37:59Z" finished-at="2021-08-17T14:37:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchBookByAuthorThatNotExistAndGenre()[pri:0, instance:book.GetBookByAuthorAndGenreTest@5e8604bf]" name="testSearchBookByAuthorThatNotExistAndGenre" duration-ms="33" started-at="2021-08-17T14:37:59Z" description="Test of search book by author that not exist and genre" finished-at="2021-08-17T14:37:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchBookByAuthorThatNotExistAndGenre -->
-        <test-method status="PASS" signature="testSearchBookByGenreBadRequestAndAuthor()[pri:0, instance:book.GetBookByAuthorAndGenreTest@2a27cb34]" name="testSearchBookByGenreBadRequestAndAuthor" duration-ms="99" started-at="2021-08-16T14:51:32Z" description="Test of search author by genre Bad Request and Author" finished-at="2021-08-16T14:51:32Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:book.GetBookByAuthorAndGenreTest@5e8604bf]" name="setup" is-config="true" duration-ms="66" started-at="2021-08-17T14:37:59Z" finished-at="2021-08-17T14:37:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchBookByGenreBadRequestAndAuthor()[pri:0, instance:book.GetBookByAuthorAndGenreTest@5e8604bf]" name="testSearchBookByGenreBadRequestAndAuthor" duration-ms="22" started-at="2021-08-17T14:37:59Z" description="Test of search author by genre Bad Request and Author" finished-at="2021-08-17T14:37:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchBookByGenreBadRequestAndAuthor -->
-        <test-method status="PASS" signature="testSearchBookByGenreThatNotExistAndAuthor()[pri:0, instance:book.GetBookByAuthorAndGenreTest@2a27cb34]" name="testSearchBookByGenreThatNotExistAndAuthor" duration-ms="90" started-at="2021-08-16T14:51:32Z" description="Test of search book by genre that not exist and author" finished-at="2021-08-16T14:51:32Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:book.GetBookByAuthorAndGenreTest@5e8604bf]" name="setup" is-config="true" duration-ms="49" started-at="2021-08-17T14:37:59Z" finished-at="2021-08-17T14:37:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearchBookByGenreThatNotExistAndAuthor()[pri:0, instance:book.GetBookByAuthorAndGenreTest@5e8604bf]" name="testSearchBookByGenreThatNotExistAndAuthor" duration-ms="30" started-at="2021-08-17T14:37:59Z" description="Test of search book by genre that not exist and author" finished-at="2021-08-17T14:37:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchBookByGenreThatNotExistAndAuthor -->
       </class> <!-- book.GetBookByAuthorAndGenreTest -->
       <class name="author.DeleteAuthorTest">
-        <test-method status="PASS" signature="testDeleteAuthorBadRequest()[pri:0, instance:author.DeleteAuthorTest@2822c6ff]" name="testDeleteAuthorBadRequest" duration-ms="20" started-at="2021-08-16T14:51:35Z" description="Test of deleting author BAD REQUEST" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="testDeleteAuthorBadRequest()[pri:0, instance:author.DeleteAuthorTest@7e9da981]" name="testDeleteAuthorBadRequest" duration-ms="37" started-at="2021-08-17T14:38:02Z" description="Test of deleting author BAD REQUEST" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteAuthorBadRequest -->
-        <test-method status="PASS" signature="testDeleteAuthorById()[pri:0, instance:author.DeleteAuthorTest@2822c6ff]" name="testDeleteAuthorById" duration-ms="25" started-at="2021-08-16T14:51:35Z" description="Test of deleting author by id" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="testDeleteAuthorById()[pri:0, instance:author.DeleteAuthorTest@7e9da981]" name="testDeleteAuthorById" duration-ms="41" started-at="2021-08-17T14:38:02Z" description="Test of deleting author by id" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteAuthorById -->
-        <test-method status="PASS" signature="testDeleteAuthorNotFound()[pri:0, instance:author.DeleteAuthorTest@2822c6ff]" name="testDeleteAuthorNotFound" duration-ms="20" started-at="2021-08-16T14:51:35Z" description="Test of deleting author that not found" finished-at="2021-08-16T14:51:35Z">
+        <test-method status="PASS" signature="testDeleteAuthorNotFound()[pri:0, instance:author.DeleteAuthorTest@7e9da981]" name="testDeleteAuthorNotFound" duration-ms="21" started-at="2021-08-17T14:38:02Z" description="Test of deleting author that not found" finished-at="2021-08-17T14:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteAuthorNotFound -->

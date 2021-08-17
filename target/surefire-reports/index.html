@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">73 methods, 2 failed,   71 passed</span>
+                    <span class="method-stats">73 methods, 1 failed,   72 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,11 +103,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="book.GetAllBookOfSpecialGenreTest" hash-for-method="testGetAllBooks">testGetAllBooks</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="author.GetAuthorByBookTest" hash-for-method="testSearchAuthorByBook">testSearchAuthorByBook</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -251,12 +246,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="book.GetAllBookOfSpecialGenreTest" hash-for-method="testGetBooksWithBadPageNumber">testGetBooksWithBadPageNumber</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="book.GetAllBooksTest" hash-for-method="testGetBooksWithBadPageNumber">testGetBooksWithBadPageNumber</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="book.GetAllBooksTest" hash-for-method="testGetBooksWithBadPageNumber">testGetBooksWithBadPageNumber</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="book.GetAllBookOfSpecialGenreTest" hash-for-method="testGetBooksWithBadPageNumber">testGetBooksWithBadPageNumber</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -296,7 +291,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="author.CreateAuthorTest" hash-for-method="testPositiveScenario">testPositiveScenario</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="genre.CreateGenreTest" hash-for-method="testPositiveScenario">testPositiveScenario</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -306,7 +301,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="genre.CreateGenreTest" hash-for-method="testPositiveScenario">testPositiveScenario</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="author.CreateAuthorTest" hash-for-method="testPositiveScenario">testPositiveScenario</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -327,6 +322,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="author.SearchAuthorTest" hash-for-method="testSearchAuthorBadRequest">testSearchAuthorBadRequest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="author.GetAuthorByBookTest" hash-for-method="testSearchAuthorByBook">testSearchAuthorByBook</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -489,29 +489,6 @@
           <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">author.GetAuthorByBookTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchAuthorByBook">
-                  </a> <!-- testSearchAuthorByBook -->
-                  <span class="method-name">testSearchAuthorByBook</span>
-                  <div class="stack-trace">java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.util.List
-	at io.restassured.path.json.JsonPath.getList(JsonPath.java:391)
-	at response.BaseResponse.getListOfBody(BaseResponse.java:50)
-	at author.GetAuthorByBookTest.testSearchAuthorByBook(GetAuthorByBookTest.java:35)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Test of search author by book)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">book.GetAllBookOfSpecialGenreTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -520,7 +497,7 @@
                   <a name="testGetAllBooks">
                   </a> <!-- testGetAllBooks -->
                   <span class="method-name">testGetAllBooks</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [5] but found [505]
+                  <div class="stack-trace">java.lang.AssertionError: expected [5] but found [355]
 	at book.GetAllBookOfSpecialGenreTest.testGetAllBooks(GetAllBookOfSpecialGenreTest.java:40)
 ... Removed 35 stack frames
 </div> <!-- stack-trace -->
@@ -533,165 +510,34 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">genre.UpdateGenreTest</span>
+              <span class="class-name">genre.GetGenreTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testPositiveUpdateGenre">
-                  </a> <!-- testPositiveUpdateGenre -->
-                  <span class="method-name">testPositiveUpdateGenre</span>
+                  <a name="testGetGenreBadRequest">
+                  </a> <!-- testGetGenreBadRequest -->
+                  <span class="method-name">testGetGenreBadRequest</span>
                   <em>
-(Test of positive update genre)                  </em>
+(Test of getting genre BAD REQUEST)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testUpdateGenreThatNotFound">
-                  </a> <!-- testUpdateGenreThatNotFound -->
-                  <span class="method-name">testUpdateGenreThatNotFound</span>
+                  <a name="testGetGenreById">
+                  </a> <!-- testGetGenreById -->
+                  <span class="method-name">testGetGenreById</span>
                   <em>
-(Test of update genre that not found)                  </em>
+(Test of getting genre by id)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testUpdateGenreWithoutBody">
-                  </a> <!-- testUpdateGenreWithoutBody -->
-                  <span class="method-name">testUpdateGenreWithoutBody</span>
+                  <a name="testGetGenreNotFound">
+                  </a> <!-- testGetGenreNotFound -->
+                  <span class="method-name">testGetGenreNotFound</span>
                   <em>
-(Test of Update genre without body)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">genre.CreateGenreTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCreateAuthorWithExistsId">
-                  </a> <!-- testCreateAuthorWithExistsId -->
-                  <span class="method-name">testCreateAuthorWithExistsId</span>
-                  <em>
-(Test of Genre with such id already exists)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCreateAuthorWithoutBody">
-                  </a> <!-- testCreateAuthorWithoutBody -->
-                  <span class="method-name">testCreateAuthorWithoutBody</span>
-                  <em>
-(Test of Genre without body)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testPositiveScenario">
-                  </a> <!-- testPositiveScenario -->
-                  <span class="method-name">testPositiveScenario</span>
-                  <em>
-(Test of positive creating genre)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">author.GetAuthorByBookTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchAuthorByBookBadRequest">
-                  </a> <!-- testSearchAuthorByBookBadRequest -->
-                  <span class="method-name">testSearchAuthorByBookBadRequest</span>
-                  <em>
-(Test of search author by book Bad Request)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchAuthorByBookThatNotExist">
-                  </a> <!-- testSearchAuthorByBookThatNotExist -->
-                  <span class="method-name">testSearchAuthorByBookThatNotExist</span>
-                  <em>
-(Test of search author by book that not exist)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">author.CreateAuthorTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCreateAuthorWithExistsId">
-                  </a> <!-- testCreateAuthorWithExistsId -->
-                  <span class="method-name">testCreateAuthorWithExistsId</span>
-                  <em>
-(Test of Author with such id already exists)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCreateAuthorWithoutBody">
-                  </a> <!-- testCreateAuthorWithoutBody -->
-                  <span class="method-name">testCreateAuthorWithoutBody</span>
-                  <em>
-(Test of Author without body)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testPositiveScenario">
-                  </a> <!-- testPositiveScenario -->
-                  <span class="method-name">testPositiveScenario</span>
-                  <em>
-(Test of positive creating author)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">book.SearchBookTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchBookBadRequest">
-                  </a> <!-- testSearchBookBadRequest -->
-                  <span class="method-name">testSearchBookBadRequest</span>
-                  <em>
-(Test of search book with Bad Request)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchBookByName">
-                  </a> <!-- testSearchBookByName -->
-                  <span class="method-name">testSearchBookByName</span>
-                  <em>
-(Test of search book by name)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchBookReturn5Results">
-                  </a> <!-- testSearchBookReturn5Results -->
-                  <span class="method-name">testSearchBookReturn5Results</span>
-                  <em>
-(Test of search book returning 5 most relevant results)                  </em>
+(Test of getting genre that not found)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -734,181 +580,6 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">book.GetBookTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetBookBadRequest">
-                  </a> <!-- testGetBookBadRequest -->
-                  <span class="method-name">testGetBookBadRequest</span>
-                  <em>
-(Test of getting book BAD REQUEST)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetBookById">
-                  </a> <!-- testGetBookById -->
-                  <span class="method-name">testGetBookById</span>
-                  <em>
-(Test of getting book by id)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetBookNotFound">
-                  </a> <!-- testGetBookNotFound -->
-                  <span class="method-name">testGetBookNotFound</span>
-                  <em>
-(Test of getting book that not found)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">genre.DeleteGenreTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDeleteGenreBadRequest">
-                  </a> <!-- testDeleteGenreBadRequest -->
-                  <span class="method-name">testDeleteGenreBadRequest</span>
-                  <em>
-(Test of deleting genre BAD REQUEST)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDeleteGenreById">
-                  </a> <!-- testDeleteGenreById -->
-                  <span class="method-name">testDeleteGenreById</span>
-                  <em>
-(Test of deleting genre by id)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDeleteGenreNotFound">
-                  </a> <!-- testDeleteGenreNotFound -->
-                  <span class="method-name">testDeleteGenreNotFound</span>
-                  <em>
-(Test of deleting genre that not found)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">author.GetAuthorTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetAuthorBadRequest">
-                  </a> <!-- testGetAuthorBadRequest -->
-                  <span class="method-name">testGetAuthorBadRequest</span>
-                  <em>
-(Test of getting author BAD REQUEST)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetAuthorById">
-                  </a> <!-- testGetAuthorById -->
-                  <span class="method-name">testGetAuthorById</span>
-                  <em>
-(Test of getting author by id)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetAuthorNotFound">
-                  </a> <!-- testGetAuthorNotFound -->
-                  <span class="method-name">testGetAuthorNotFound</span>
-                  <em>
-(Test of getting author that not found)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">genre.GetGenreTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetGenreBadRequest">
-                  </a> <!-- testGetGenreBadRequest -->
-                  <span class="method-name">testGetGenreBadRequest</span>
-                  <em>
-(Test of getting genre BAD REQUEST)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetGenreById">
-                  </a> <!-- testGetGenreById -->
-                  <span class="method-name">testGetGenreById</span>
-                  <em>
-(Test of getting genre by id)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetGenreNotFound">
-                  </a> <!-- testGetGenreNotFound -->
-                  <span class="method-name">testGetGenreNotFound</span>
-                  <em>
-(Test of getting genre that not found)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">author.SearchAuthorTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchAuthorBadRequest">
-                  </a> <!-- testSearchAuthorBadRequest -->
-                  <span class="method-name">testSearchAuthorBadRequest</span>
-                  <em>
-(Test of search author with Bad Request)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchAuthorByFirstName">
-                  </a> <!-- testSearchAuthorByFirstName -->
-                  <span class="method-name">testSearchAuthorByFirstName</span>
-                  <em>
-(Test of search author by first name)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchAuthorByLastName">
-                  </a> <!-- testSearchAuthorByLastName -->
-                  <span class="method-name">testSearchAuthorByLastName</span>
-                  <em>
-(Test of search author by last name)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">book.UpdateBookTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -937,268 +608,6 @@
                   <span class="method-name">testUpdateBookWithoutBody</span>
                   <em>
 (Test of Update book without body)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">book.GetAllBooksTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetAllBooks">
-                  </a> <!-- testGetAllBooks -->
-                  <span class="method-name">testGetAllBooks</span>
-                  <em>
-(Test of get all books)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetBooksWithBadPageNumber">
-                  </a> <!-- testGetBooksWithBadPageNumber -->
-                  <span class="method-name">testGetBooksWithBadPageNumber</span>
-                  <em>
-(Test of get all books with wrong parameters)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetBooksWithBadPaginationValue">
-                  </a> <!-- testGetBooksWithBadPaginationValue -->
-                  <span class="method-name">testGetBooksWithBadPaginationValue</span>
-                  <em>
-(Test of get all books with wrong parameters)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">genre.SearchGenreTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchGenreBadRequest">
-                  </a> <!-- testSearchGenreBadRequest -->
-                  <span class="method-name">testSearchGenreBadRequest</span>
-                  <em>
-(Test of search genre with Bad Request)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchGenreByName">
-                  </a> <!-- testSearchGenreByName -->
-                  <span class="method-name">testSearchGenreByName</span>
-                  <em>
-(Test of search genre by name)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">author.DeleteAuthorTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDeleteAuthorBadRequest">
-                  </a> <!-- testDeleteAuthorBadRequest -->
-                  <span class="method-name">testDeleteAuthorBadRequest</span>
-                  <em>
-(Test of deleting author BAD REQUEST)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDeleteAuthorById">
-                  </a> <!-- testDeleteAuthorById -->
-                  <span class="method-name">testDeleteAuthorById</span>
-                  <em>
-(Test of deleting author by id)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDeleteAuthorNotFound">
-                  </a> <!-- testDeleteAuthorNotFound -->
-                  <span class="method-name">testDeleteAuthorNotFound</span>
-                  <em>
-(Test of deleting author that not found)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">book.GetAllBookOfSpecialGenreTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetBooksWithBadPageNumber">
-                  </a> <!-- testGetBooksWithBadPageNumber -->
-                  <span class="method-name">testGetBooksWithBadPageNumber</span>
-                  <em>
-(Test of get all books with wrong parameters)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetBooksWithBadPaginationValue">
-                  </a> <!-- testGetBooksWithBadPaginationValue -->
-                  <span class="method-name">testGetBooksWithBadPaginationValue</span>
-                  <em>
-(Test of get all books with wrong parameters)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">author.GetAuthorByGenreTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchAuthorByGenre">
-                  </a> <!-- testSearchAuthorByGenre -->
-                  <span class="method-name">testSearchAuthorByGenre</span>
-                  <em>
-(Test of search author by genre)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchAuthorByGenreBadRequest">
-                  </a> <!-- testSearchAuthorByGenreBadRequest -->
-                  <span class="method-name">testSearchAuthorByGenreBadRequest</span>
-                  <em>
-(Test of search author by genre Bad Request)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchAuthorByGenreThatNotExist">
-                  </a> <!-- testSearchAuthorByGenreThatNotExist -->
-                  <span class="method-name">testSearchAuthorByGenreThatNotExist</span>
-                  <em>
-(Test of search author by genre that not exist)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">book.GetBookByAuthorTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchBookByAuthor">
-                  </a> <!-- testSearchBookByAuthor -->
-                  <span class="method-name">testSearchBookByAuthor</span>
-                  <em>
-(Test of search book by author)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchBookByAuthorBadRequest">
-                  </a> <!-- testSearchBookByAuthorBadRequest -->
-                  <span class="method-name">testSearchBookByAuthorBadRequest</span>
-                  <em>
-(Test of search book by author Bad Request)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchBookByAuthorThatNotExist">
-                  </a> <!-- testSearchBookByAuthorThatNotExist -->
-                  <span class="method-name">testSearchBookByAuthorThatNotExist</span>
-                  <em>
-(Test of search book by author that not exist)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">author.GetAllAuthorsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetAllAuthors">
-                  </a> <!-- testGetAllAuthors -->
-                  <span class="method-name">testGetAllAuthors</span>
-                  <em>
-(Test of get all authors)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetAuthorsWithBadPageNumber">
-                  </a> <!-- testGetAuthorsWithBadPageNumber -->
-                  <span class="method-name">testGetAuthorsWithBadPageNumber</span>
-                  <em>
-(Test of get all authors with wrong parameters)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGetAuthorsWithBadPaginationValue">
-                  </a> <!-- testGetAuthorsWithBadPaginationValue -->
-                  <span class="method-name">testGetAuthorsWithBadPaginationValue</span>
-                  <em>
-(Test of get all authors with wrong parameters)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">book.CreateBookTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCreateAuthorWithExistsId">
-                  </a> <!-- testCreateAuthorWithExistsId -->
-                  <span class="method-name">testCreateAuthorWithExistsId</span>
-                  <em>
-(Test of book with such id already exists)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCreateAuthorWithoutBody">
-                  </a> <!-- testCreateAuthorWithoutBody -->
-                  <span class="method-name">testCreateAuthorWithoutBody</span>
-                  <em>
-(Test of book without body)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testPositiveScenario">
-                  </a> <!-- testPositiveScenario -->
-                  <span class="method-name">testPositiveScenario</span>
-                  <em>
-(Test of positive creating book)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1241,34 +650,104 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">genre.GetGenreByAuthorTest</span>
+              <span class="class-name">author.GetAuthorByBookTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testSearchGenreByAuthor">
-                  </a> <!-- testSearchGenreByAuthor -->
-                  <span class="method-name">testSearchGenreByAuthor</span>
+                  <a name="testSearchAuthorByBook">
+                  </a> <!-- testSearchAuthorByBook -->
+                  <span class="method-name">testSearchAuthorByBook</span>
                   <em>
-(Test of search genre by author)                  </em>
+(Test of search author by book)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testSearchGenreByAuthorBadRequest">
-                  </a> <!-- testSearchGenreByAuthorBadRequest -->
-                  <span class="method-name">testSearchGenreByAuthorBadRequest</span>
+                  <a name="testSearchAuthorByBookBadRequest">
+                  </a> <!-- testSearchAuthorByBookBadRequest -->
+                  <span class="method-name">testSearchAuthorByBookBadRequest</span>
                   <em>
-(Test of search genre by author Bad Request)                  </em>
+(Test of search author by book Bad Request)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testSearchGenreByAuthorThatNotExist">
-                  </a> <!-- testSearchGenreByAuthorThatNotExist -->
-                  <span class="method-name">testSearchGenreByAuthorThatNotExist</span>
+                  <a name="testSearchAuthorByBookThatNotExist">
+                  </a> <!-- testSearchAuthorByBookThatNotExist -->
+                  <span class="method-name">testSearchAuthorByBookThatNotExist</span>
                   <em>
-(Test of search Genre by author that not exist)                  </em>
+(Test of search author by book that not exist)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">book.DeleteBookTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteBookBadRequest">
+                  </a> <!-- testDeleteBookBadRequest -->
+                  <span class="method-name">testDeleteBookBadRequest</span>
+                  <em>
+(Test of deleting book BAD REQUEST)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteBookById">
+                  </a> <!-- testDeleteBookById -->
+                  <span class="method-name">testDeleteBookById</span>
+                  <em>
+(Test of deleting book by id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteBookNotFound">
+                  </a> <!-- testDeleteBookNotFound -->
+                  <span class="method-name">testDeleteBookNotFound</span>
+                  <em>
+(Test of deleting book that not found)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">author.GetAuthorByGenreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchAuthorByGenre">
+                  </a> <!-- testSearchAuthorByGenre -->
+                  <span class="method-name">testSearchAuthorByGenre</span>
+                  <em>
+(Test of search author by genre)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchAuthorByGenreBadRequest">
+                  </a> <!-- testSearchAuthorByGenreBadRequest -->
+                  <span class="method-name">testSearchAuthorByGenreBadRequest</span>
+                  <em>
+(Test of search author by genre Bad Request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchAuthorByGenreThatNotExist">
+                  </a> <!-- testSearchAuthorByGenreThatNotExist -->
+                  <span class="method-name">testSearchAuthorByGenreThatNotExist</span>
+                  <em>
+(Test of search author by genre that not exist)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1329,34 +808,541 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">book.DeleteBookTest</span>
+              <span class="class-name">author.GetAllAuthorsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testDeleteBookBadRequest">
-                  </a> <!-- testDeleteBookBadRequest -->
-                  <span class="method-name">testDeleteBookBadRequest</span>
+                  <a name="testGetAllAuthors">
+                  </a> <!-- testGetAllAuthors -->
+                  <span class="method-name">testGetAllAuthors</span>
                   <em>
-(Test of deleting book BAD REQUEST)                  </em>
+(Test of get all authors)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testDeleteBookById">
-                  </a> <!-- testDeleteBookById -->
-                  <span class="method-name">testDeleteBookById</span>
+                  <a name="testGetAuthorsWithBadPageNumber">
+                  </a> <!-- testGetAuthorsWithBadPageNumber -->
+                  <span class="method-name">testGetAuthorsWithBadPageNumber</span>
                   <em>
-(Test of deleting book by id)                  </em>
+(Test of get all authors with wrong parameters)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testDeleteBookNotFound">
-                  </a> <!-- testDeleteBookNotFound -->
-                  <span class="method-name">testDeleteBookNotFound</span>
+                  <a name="testGetAuthorsWithBadPaginationValue">
+                  </a> <!-- testGetAuthorsWithBadPaginationValue -->
+                  <span class="method-name">testGetAuthorsWithBadPaginationValue</span>
                   <em>
-(Test of deleting book that not found)                  </em>
+(Test of get all authors with wrong parameters)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">book.SearchBookTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchBookBadRequest">
+                  </a> <!-- testSearchBookBadRequest -->
+                  <span class="method-name">testSearchBookBadRequest</span>
+                  <em>
+(Test of search book with Bad Request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchBookByName">
+                  </a> <!-- testSearchBookByName -->
+                  <span class="method-name">testSearchBookByName</span>
+                  <em>
+(Test of search book by name)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchBookReturn5Results">
+                  </a> <!-- testSearchBookReturn5Results -->
+                  <span class="method-name">testSearchBookReturn5Results</span>
+                  <em>
+(Test of search book returning 5 most relevant results)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">genre.CreateGenreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateAuthorWithExistsId">
+                  </a> <!-- testCreateAuthorWithExistsId -->
+                  <span class="method-name">testCreateAuthorWithExistsId</span>
+                  <em>
+(Test of Genre with such id already exists)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateAuthorWithoutBody">
+                  </a> <!-- testCreateAuthorWithoutBody -->
+                  <span class="method-name">testCreateAuthorWithoutBody</span>
+                  <em>
+(Test of Genre without body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveScenario">
+                  </a> <!-- testPositiveScenario -->
+                  <span class="method-name">testPositiveScenario</span>
+                  <em>
+(Test of positive creating genre)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">author.DeleteAuthorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteAuthorBadRequest">
+                  </a> <!-- testDeleteAuthorBadRequest -->
+                  <span class="method-name">testDeleteAuthorBadRequest</span>
+                  <em>
+(Test of deleting author BAD REQUEST)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteAuthorById">
+                  </a> <!-- testDeleteAuthorById -->
+                  <span class="method-name">testDeleteAuthorById</span>
+                  <em>
+(Test of deleting author by id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteAuthorNotFound">
+                  </a> <!-- testDeleteAuthorNotFound -->
+                  <span class="method-name">testDeleteAuthorNotFound</span>
+                  <em>
+(Test of deleting author that not found)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">book.CreateBookTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateAuthorWithExistsId">
+                  </a> <!-- testCreateAuthorWithExistsId -->
+                  <span class="method-name">testCreateAuthorWithExistsId</span>
+                  <em>
+(Test of book with such id already exists)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateAuthorWithoutBody">
+                  </a> <!-- testCreateAuthorWithoutBody -->
+                  <span class="method-name">testCreateAuthorWithoutBody</span>
+                  <em>
+(Test of book without body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveScenario">
+                  </a> <!-- testPositiveScenario -->
+                  <span class="method-name">testPositiveScenario</span>
+                  <em>
+(Test of positive creating book)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">author.CreateAuthorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateAuthorWithExistsId">
+                  </a> <!-- testCreateAuthorWithExistsId -->
+                  <span class="method-name">testCreateAuthorWithExistsId</span>
+                  <em>
+(Test of Author with such id already exists)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateAuthorWithoutBody">
+                  </a> <!-- testCreateAuthorWithoutBody -->
+                  <span class="method-name">testCreateAuthorWithoutBody</span>
+                  <em>
+(Test of Author without body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveScenario">
+                  </a> <!-- testPositiveScenario -->
+                  <span class="method-name">testPositiveScenario</span>
+                  <em>
+(Test of positive creating author)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">book.GetBookByAuthorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchBookByAuthor">
+                  </a> <!-- testSearchBookByAuthor -->
+                  <span class="method-name">testSearchBookByAuthor</span>
+                  <em>
+(Test of search book by author)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchBookByAuthorBadRequest">
+                  </a> <!-- testSearchBookByAuthorBadRequest -->
+                  <span class="method-name">testSearchBookByAuthorBadRequest</span>
+                  <em>
+(Test of search book by author Bad Request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchBookByAuthorThatNotExist">
+                  </a> <!-- testSearchBookByAuthorThatNotExist -->
+                  <span class="method-name">testSearchBookByAuthorThatNotExist</span>
+                  <em>
+(Test of search book by author that not exist)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">book.GetBookTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookBadRequest">
+                  </a> <!-- testGetBookBadRequest -->
+                  <span class="method-name">testGetBookBadRequest</span>
+                  <em>
+(Test of getting book BAD REQUEST)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookById">
+                  </a> <!-- testGetBookById -->
+                  <span class="method-name">testGetBookById</span>
+                  <em>
+(Test of getting book by id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookNotFound">
+                  </a> <!-- testGetBookNotFound -->
+                  <span class="method-name">testGetBookNotFound</span>
+                  <em>
+(Test of getting book that not found)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">genre.UpdateGenreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveUpdateGenre">
+                  </a> <!-- testPositiveUpdateGenre -->
+                  <span class="method-name">testPositiveUpdateGenre</span>
+                  <em>
+(Test of positive update genre)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateGenreThatNotFound">
+                  </a> <!-- testUpdateGenreThatNotFound -->
+                  <span class="method-name">testUpdateGenreThatNotFound</span>
+                  <em>
+(Test of update genre that not found)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateGenreWithoutBody">
+                  </a> <!-- testUpdateGenreWithoutBody -->
+                  <span class="method-name">testUpdateGenreWithoutBody</span>
+                  <em>
+(Test of Update genre without body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">genre.SearchGenreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchGenreBadRequest">
+                  </a> <!-- testSearchGenreBadRequest -->
+                  <span class="method-name">testSearchGenreBadRequest</span>
+                  <em>
+(Test of search genre with Bad Request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchGenreByName">
+                  </a> <!-- testSearchGenreByName -->
+                  <span class="method-name">testSearchGenreByName</span>
+                  <em>
+(Test of search genre by name)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">author.GetAuthorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAuthorBadRequest">
+                  </a> <!-- testGetAuthorBadRequest -->
+                  <span class="method-name">testGetAuthorBadRequest</span>
+                  <em>
+(Test of getting author BAD REQUEST)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAuthorById">
+                  </a> <!-- testGetAuthorById -->
+                  <span class="method-name">testGetAuthorById</span>
+                  <em>
+(Test of getting author by id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAuthorNotFound">
+                  </a> <!-- testGetAuthorNotFound -->
+                  <span class="method-name">testGetAuthorNotFound</span>
+                  <em>
+(Test of getting author that not found)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">book.GetAllBookOfSpecialGenreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBooksWithBadPageNumber">
+                  </a> <!-- testGetBooksWithBadPageNumber -->
+                  <span class="method-name">testGetBooksWithBadPageNumber</span>
+                  <em>
+(Test of get all books with wrong parameters)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBooksWithBadPaginationValue">
+                  </a> <!-- testGetBooksWithBadPaginationValue -->
+                  <span class="method-name">testGetBooksWithBadPaginationValue</span>
+                  <em>
+(Test of get all books with wrong parameters)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">book.GetAllBooksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAllBooks">
+                  </a> <!-- testGetAllBooks -->
+                  <span class="method-name">testGetAllBooks</span>
+                  <em>
+(Test of get all books)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBooksWithBadPageNumber">
+                  </a> <!-- testGetBooksWithBadPageNumber -->
+                  <span class="method-name">testGetBooksWithBadPageNumber</span>
+                  <em>
+(Test of get all books with wrong parameters)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBooksWithBadPaginationValue">
+                  </a> <!-- testGetBooksWithBadPaginationValue -->
+                  <span class="method-name">testGetBooksWithBadPaginationValue</span>
+                  <em>
+(Test of get all books with wrong parameters)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">author.SearchAuthorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchAuthorBadRequest">
+                  </a> <!-- testSearchAuthorBadRequest -->
+                  <span class="method-name">testSearchAuthorBadRequest</span>
+                  <em>
+(Test of search author with Bad Request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchAuthorByFirstName">
+                  </a> <!-- testSearchAuthorByFirstName -->
+                  <span class="method-name">testSearchAuthorByFirstName</span>
+                  <em>
+(Test of search author by first name)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchAuthorByLastName">
+                  </a> <!-- testSearchAuthorByLastName -->
+                  <span class="method-name">testSearchAuthorByLastName</span>
+                  <em>
+(Test of search author by last name)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">genre.GetGenreByAuthorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchGenreByAuthor">
+                  </a> <!-- testSearchGenreByAuthor -->
+                  <span class="method-name">testSearchGenreByAuthor</span>
+                  <em>
+(Test of search genre by author)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchGenreByAuthorBadRequest">
+                  </a> <!-- testSearchGenreByAuthorBadRequest -->
+                  <span class="method-name">testSearchGenreByAuthorBadRequest</span>
+                  <em>
+(Test of search genre by author Bad Request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchGenreByAuthorThatNotExist">
+                  </a> <!-- testSearchGenreByAuthorThatNotExist -->
+                  <span class="method-name">testSearchGenreByAuthorThatNotExist</span>
+                  <em>
+(Test of search Genre by author that not exist)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">genre.DeleteGenreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteGenreBadRequest">
+                  </a> <!-- testDeleteGenreBadRequest -->
+                  <span class="method-name">testDeleteGenreBadRequest</span>
+                  <em>
+(Test of deleting genre BAD REQUEST)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteGenreById">
+                  </a> <!-- testDeleteGenreById -->
+                  <span class="method-name">testDeleteGenreById</span>
+                  <em>
+(Test of deleting genre by id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteGenreNotFound">
+                  </a> <!-- testDeleteGenreNotFound -->
+                  <span class="method-name">testDeleteGenreNotFound</span>
+                  <em>
+(Test of deleting genre that not found)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1439,300 +1425,300 @@ data.addRows(73);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testSearchBookBadRequest')
 data.setCell(0, 2, 'book.SearchBookTest')
-data.setCell(0, 3, 2308);
+data.setCell(0, 3, 2571);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testGetAllBooks')
 data.setCell(1, 2, 'book.GetAllBookOfSpecialGenreTest')
-data.setCell(1, 3, 935);
+data.setCell(1, 3, 737);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testDeleteBookBadRequest')
-data.setCell(2, 2, 'book.DeleteBookTest')
-data.setCell(2, 3, 668);
+data.setCell(2, 1, 'testSearchBookByName')
+data.setCell(2, 2, 'book.SearchBookTest')
+data.setCell(2, 3, 594);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testSearchBookByName')
+data.setCell(3, 1, 'testSearchBookReturn5Results')
 data.setCell(3, 2, 'book.SearchBookTest')
-data.setCell(3, 3, 646);
+data.setCell(3, 3, 575);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testSearchBookReturn5Results')
-data.setCell(4, 2, 'book.SearchBookTest')
-data.setCell(4, 3, 476);
+data.setCell(4, 1, 'testDeleteBookBadRequest')
+data.setCell(4, 2, 'book.DeleteBookTest')
+data.setCell(4, 3, 535);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testSearchBookByAuthorBadRequestAndGenre')
-data.setCell(5, 2, 'book.GetBookByAuthorAndGenreTest')
-data.setCell(5, 3, 140);
+data.setCell(5, 1, 'testGetBookById')
+data.setCell(5, 2, 'book.GetBookTest')
+data.setCell(5, 3, 215);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testUpdateBookThatNotFound')
-data.setCell(6, 2, 'book.UpdateBookTest')
-data.setCell(6, 3, 121);
+data.setCell(6, 1, 'testDeleteBookById')
+data.setCell(6, 2, 'book.DeleteBookTest')
+data.setCell(6, 3, 73);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'testUpdateBookWithoutBody')
 data.setCell(7, 2, 'book.UpdateBookTest')
-data.setCell(7, 3, 118);
+data.setCell(7, 3, 71);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testSearchAuthorByGenreBadRequest')
-data.setCell(8, 2, 'author.GetAuthorByGenreTest')
-data.setCell(8, 3, 109);
+data.setCell(8, 1, 'testUpdateBookThatNotFound')
+data.setCell(8, 2, 'book.UpdateBookTest')
+data.setCell(8, 3, 63);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testSearchBookByAuthorAndGenre')
-data.setCell(9, 2, 'book.GetBookByAuthorAndGenreTest')
-data.setCell(9, 3, 103);
+data.setCell(9, 1, 'testGetBooksWithBadPageNumber')
+data.setCell(9, 2, 'book.GetAllBookOfSpecialGenreTest')
+data.setCell(9, 3, 57);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testSearchBookByGenreBadRequestAndAuthor')
-data.setCell(10, 2, 'book.GetBookByAuthorAndGenreTest')
-data.setCell(10, 3, 99);
+data.setCell(10, 1, 'testSearchBookByAuthorBadRequest')
+data.setCell(10, 2, 'book.GetBookByAuthorTest')
+data.setCell(10, 3, 56);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testSearchGenreByAuthorBadRequest')
-data.setCell(11, 2, 'genre.GetGenreByAuthorTest')
-data.setCell(11, 3, 97);
+data.setCell(11, 1, 'testGetBooksWithBadPaginationValue')
+data.setCell(11, 2, 'book.GetAllBooksTest')
+data.setCell(11, 3, 55);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testSearchAuthorByGenreThatNotExist')
-data.setCell(12, 2, 'author.GetAuthorByGenreTest')
-data.setCell(12, 3, 94);
+data.setCell(12, 1, 'testUpdateGenreWithoutBody')
+data.setCell(12, 2, 'genre.UpdateGenreTest')
+data.setCell(12, 3, 51);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testSearchAuthorByGenre')
-data.setCell(13, 2, 'author.GetAuthorByGenreTest')
-data.setCell(13, 3, 92);
+data.setCell(13, 1, 'testPositiveScenario')
+data.setCell(13, 2, 'book.CreateBookTest')
+data.setCell(13, 3, 50);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'testGetBookById')
-data.setCell(14, 2, 'book.GetBookTest')
-data.setCell(14, 3, 92);
+data.setCell(14, 1, 'testPositiveUpdateBook')
+data.setCell(14, 2, 'book.UpdateBookTest')
+data.setCell(14, 3, 49);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testSearchBookByAuthorBadRequest')
-data.setCell(15, 2, 'book.GetBookByAuthorTest')
-data.setCell(15, 3, 91);
+data.setCell(15, 1, 'testUpdateGenreThatNotFound')
+data.setCell(15, 2, 'genre.UpdateGenreTest')
+data.setCell(15, 3, 48);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'testSearchBookByGenreThatNotExistAndAuthor')
-data.setCell(16, 2, 'book.GetBookByAuthorAndGenreTest')
-data.setCell(16, 3, 90);
+data.setCell(16, 1, 'testGetBooksWithBadPageNumber')
+data.setCell(16, 2, 'book.GetAllBooksTest')
+data.setCell(16, 3, 48);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'testSearchBookByAuthorThatNotExistAndGenre')
-data.setCell(17, 2, 'book.GetBookByAuthorAndGenreTest')
-data.setCell(17, 3, 90);
+data.setCell(17, 1, 'testSearchBookByAuthorThatNotExist')
+data.setCell(17, 2, 'book.GetBookByAuthorTest')
+data.setCell(17, 3, 46);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'testSearchBookByAuthorThatNotExist')
-data.setCell(18, 2, 'book.GetBookByAuthorTest')
-data.setCell(18, 3, 90);
+data.setCell(18, 1, 'testCreateAuthorWithExistsId')
+data.setCell(18, 2, 'book.CreateBookTest')
+data.setCell(18, 3, 45);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'testPositiveUpdateBook')
-data.setCell(19, 2, 'book.UpdateBookTest')
-data.setCell(19, 3, 84);
+data.setCell(19, 1, 'testSearchAuthorByBookBadRequest')
+data.setCell(19, 2, 'author.GetAuthorByBookTest')
+data.setCell(19, 3, 42);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'testDeleteBookById')
-data.setCell(20, 2, 'book.DeleteBookTest')
-data.setCell(20, 3, 82);
+data.setCell(20, 1, 'testGetBookNotFound')
+data.setCell(20, 2, 'book.GetBookTest')
+data.setCell(20, 3, 42);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'testCreateAuthorWithExistsId')
-data.setCell(21, 2, 'book.CreateBookTest')
-data.setCell(21, 3, 79);
+data.setCell(21, 1, 'testDeleteAuthorById')
+data.setCell(21, 2, 'author.DeleteAuthorTest')
+data.setCell(21, 3, 41);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'testSearchGenreByAuthor')
-data.setCell(22, 2, 'genre.GetGenreByAuthorTest')
-data.setCell(22, 3, 77);
+data.setCell(22, 1, 'testCreateAuthorWithoutBody')
+data.setCell(22, 2, 'book.CreateBookTest')
+data.setCell(22, 3, 40);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'testUpdateGenreThatNotFound')
-data.setCell(23, 2, 'genre.UpdateGenreTest')
-data.setCell(23, 3, 72);
+data.setCell(23, 1, 'testGetBooksWithBadPaginationValue')
+data.setCell(23, 2, 'book.GetAllBookOfSpecialGenreTest')
+data.setCell(23, 3, 39);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'testSearchBookByAuthor')
-data.setCell(24, 2, 'book.GetBookByAuthorTest')
-data.setCell(24, 3, 72);
+data.setCell(24, 1, 'testUpdateAuthorWithoutBody')
+data.setCell(24, 2, 'author.UpdateAuthorTest')
+data.setCell(24, 3, 38);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'testSearchAuthorByBookThatNotExist')
-data.setCell(25, 2, 'author.GetAuthorByBookTest')
-data.setCell(25, 3, 70);
+data.setCell(25, 1, 'testDeleteAuthorBadRequest')
+data.setCell(25, 2, 'author.DeleteAuthorTest')
+data.setCell(25, 3, 37);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'testSearchGenreByAuthorThatNotExist')
-data.setCell(26, 2, 'genre.GetGenreByAuthorTest')
-data.setCell(26, 3, 70);
+data.setCell(26, 1, 'testGetGenresWithBadPaginationValue')
+data.setCell(26, 2, 'genre.GetAllGenresTest')
+data.setCell(26, 3, 34);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'testSearchAuthorByBookBadRequest')
-data.setCell(27, 2, 'author.GetAuthorByBookTest')
-data.setCell(27, 3, 68);
+data.setCell(27, 1, 'testSearchBookByAuthorThatNotExistAndGenre')
+data.setCell(27, 2, 'book.GetBookByAuthorAndGenreTest')
+data.setCell(27, 3, 33);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'testUpdateGenreWithoutBody')
-data.setCell(28, 2, 'genre.UpdateGenreTest')
-data.setCell(28, 3, 64);
+data.setCell(28, 1, 'testSearchGenreByAuthorBadRequest')
+data.setCell(28, 2, 'genre.GetGenreByAuthorTest')
+data.setCell(28, 3, 32);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'testGetBooksWithBadPageNumber')
-data.setCell(29, 2, 'book.GetAllBookOfSpecialGenreTest')
-data.setCell(29, 3, 63);
+data.setCell(29, 1, 'testSearchBookByGenreThatNotExistAndAuthor')
+data.setCell(29, 2, 'book.GetBookByAuthorAndGenreTest')
+data.setCell(29, 3, 30);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'testPositiveScenario')
-data.setCell(30, 2, 'book.CreateBookTest')
-data.setCell(30, 3, 53);
+data.setCell(30, 1, 'testDeleteBookNotFound')
+data.setCell(30, 2, 'book.DeleteBookTest')
+data.setCell(30, 3, 29);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'testCreateAuthorWithoutBody')
-data.setCell(31, 2, 'book.CreateBookTest')
-data.setCell(31, 3, 51);
+data.setCell(31, 1, 'testSearchGenreByAuthorThatNotExist')
+data.setCell(31, 2, 'genre.GetGenreByAuthorTest')
+data.setCell(31, 3, 29);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'testCreateAuthorWithExistsId')
-data.setCell(32, 2, 'genre.CreateGenreTest')
-data.setCell(32, 3, 50);
+data.setCell(32, 1, 'testGetAuthorById')
+data.setCell(32, 2, 'author.GetAuthorTest')
+data.setCell(32, 3, 28);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'testGetBooksWithBadPaginationValue')
-data.setCell(33, 2, 'book.GetAllBookOfSpecialGenreTest')
-data.setCell(33, 3, 49);
+data.setCell(33, 1, 'testSearchAuthorBadRequest')
+data.setCell(33, 2, 'author.SearchAuthorTest')
+data.setCell(33, 3, 28);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'testSearchAuthorByBook')
-data.setCell(34, 2, 'author.GetAuthorByBookTest')
-data.setCell(34, 3, 48);
+data.setCell(34, 1, 'testCreateAuthorWithExistsId')
+data.setCell(34, 2, 'author.CreateAuthorTest')
+data.setCell(34, 3, 28);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'testCreateAuthorWithExistsId')
-data.setCell(35, 2, 'author.CreateAuthorTest')
-data.setCell(35, 3, 46);
+data.setCell(35, 1, 'testGetAuthorsWithBadPaginationValue')
+data.setCell(35, 2, 'author.GetAllAuthorsTest')
+data.setCell(35, 3, 27);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'testGetGenreBadRequest')
-data.setCell(36, 2, 'genre.GetGenreTest')
-data.setCell(36, 3, 39);
+data.setCell(36, 1, 'testGetBookBadRequest')
+data.setCell(36, 2, 'book.GetBookTest')
+data.setCell(36, 3, 27);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'testCreateAuthorWithoutBody')
-data.setCell(37, 2, 'author.CreateAuthorTest')
-data.setCell(37, 3, 35);
+data.setCell(37, 1, 'testSearchBookByAuthorBadRequestAndGenre')
+data.setCell(37, 2, 'book.GetBookByAuthorAndGenreTest')
+data.setCell(37, 3, 27);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'testDeleteGenreNotFound')
-data.setCell(38, 2, 'genre.DeleteGenreTest')
-data.setCell(38, 3, 34);
+data.setCell(38, 1, 'testGetGenresWithBadPageNumber')
+data.setCell(38, 2, 'genre.GetAllGenresTest')
+data.setCell(38, 3, 26);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'testUpdateUserThatNotFound')
-data.setCell(39, 2, 'author.UpdateAuthorTest')
-data.setCell(39, 3, 33);
+data.setCell(39, 1, 'testGetAllBooks')
+data.setCell(39, 2, 'book.GetAllBooksTest')
+data.setCell(39, 3, 26);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'testGetAuthorById')
-data.setCell(40, 2, 'author.GetAuthorTest')
-data.setCell(40, 3, 32);
+data.setCell(40, 1, 'testGetAllAuthors')
+data.setCell(40, 2, 'author.GetAllAuthorsTest')
+data.setCell(40, 3, 26);
 data.setCell(41, 0, 41)
-data.setCell(41, 1, 'testGetBookNotFound')
-data.setCell(41, 2, 'book.GetBookTest')
-data.setCell(41, 3, 32);
+data.setCell(41, 1, 'testCreateAuthorWithExistsId')
+data.setCell(41, 2, 'genre.CreateGenreTest')
+data.setCell(41, 3, 25);
 data.setCell(42, 0, 42)
-data.setCell(42, 1, 'testGetAuthorBadRequest')
-data.setCell(42, 2, 'author.GetAuthorTest')
-data.setCell(42, 3, 31);
+data.setCell(42, 1, 'testDeleteGenreNotFound')
+data.setCell(42, 2, 'genre.DeleteGenreTest')
+data.setCell(42, 3, 25);
 data.setCell(43, 0, 43)
-data.setCell(43, 1, 'testGetAllBooks')
-data.setCell(43, 2, 'book.GetAllBooksTest')
-data.setCell(43, 3, 31);
+data.setCell(43, 1, 'testGetGenreBadRequest')
+data.setCell(43, 2, 'genre.GetGenreTest')
+data.setCell(43, 3, 25);
 data.setCell(44, 0, 44)
-data.setCell(44, 1, 'testSearchAuthorBadRequest')
-data.setCell(44, 2, 'author.SearchAuthorTest')
-data.setCell(44, 3, 31);
+data.setCell(44, 1, 'testUpdateUserThatNotFound')
+data.setCell(44, 2, 'author.UpdateAuthorTest')
+data.setCell(44, 3, 24);
 data.setCell(45, 0, 45)
-data.setCell(45, 1, 'testSearchGenreByName')
-data.setCell(45, 2, 'genre.SearchGenreTest')
-data.setCell(45, 3, 30);
+data.setCell(45, 1, 'testSearchAuthorByGenreBadRequest')
+data.setCell(45, 2, 'author.GetAuthorByGenreTest')
+data.setCell(45, 3, 23);
 data.setCell(46, 0, 46)
-data.setCell(46, 1, 'testPositiveUpdateGenre')
-data.setCell(46, 2, 'genre.UpdateGenreTest')
-data.setCell(46, 3, 30);
+data.setCell(46, 1, 'testGetGenreById')
+data.setCell(46, 2, 'genre.GetGenreTest')
+data.setCell(46, 3, 23);
 data.setCell(47, 0, 47)
-data.setCell(47, 1, 'testUpdateAuthorWithoutBody')
-data.setCell(47, 2, 'author.UpdateAuthorTest')
-data.setCell(47, 3, 29);
+data.setCell(47, 1, 'testCreateAuthorWithoutBody')
+data.setCell(47, 2, 'author.CreateAuthorTest')
+data.setCell(47, 3, 22);
 data.setCell(48, 0, 48)
-data.setCell(48, 1, 'testGetAuthorNotFound')
-data.setCell(48, 2, 'author.GetAuthorTest')
-data.setCell(48, 3, 28);
+data.setCell(48, 1, 'testDeleteGenreById')
+data.setCell(48, 2, 'genre.DeleteGenreTest')
+data.setCell(48, 3, 22);
 data.setCell(49, 0, 49)
-data.setCell(49, 1, 'testCreateAuthorWithoutBody')
-data.setCell(49, 2, 'genre.CreateGenreTest')
-data.setCell(49, 3, 26);
+data.setCell(49, 1, 'testSearchBookByGenreBadRequestAndAuthor')
+data.setCell(49, 2, 'book.GetBookByAuthorAndGenreTest')
+data.setCell(49, 3, 22);
 data.setCell(50, 0, 50)
-data.setCell(50, 1, 'testDeleteAuthorById')
-data.setCell(50, 2, 'author.DeleteAuthorTest')
-data.setCell(50, 3, 25);
+data.setCell(50, 1, 'testSearchAuthorByBookThatNotExist')
+data.setCell(50, 2, 'author.GetAuthorByBookTest')
+data.setCell(50, 3, 22);
 data.setCell(51, 0, 51)
-data.setCell(51, 1, 'testDeleteGenreById')
-data.setCell(51, 2, 'genre.DeleteGenreTest')
-data.setCell(51, 3, 25);
+data.setCell(51, 1, 'testSearchAuthorByGenreThatNotExist')
+data.setCell(51, 2, 'author.GetAuthorByGenreTest')
+data.setCell(51, 3, 21);
 data.setCell(52, 0, 52)
-data.setCell(52, 1, 'testPositiveScenario')
-data.setCell(52, 2, 'author.CreateAuthorTest')
-data.setCell(52, 3, 24);
+data.setCell(52, 1, 'testSearchGenreBadRequest')
+data.setCell(52, 2, 'genre.SearchGenreTest')
+data.setCell(52, 3, 21);
 data.setCell(53, 0, 53)
-data.setCell(53, 1, 'testDeleteBookNotFound')
-data.setCell(53, 2, 'book.DeleteBookTest')
-data.setCell(53, 3, 24);
+data.setCell(53, 1, 'testDeleteAuthorNotFound')
+data.setCell(53, 2, 'author.DeleteAuthorTest')
+data.setCell(53, 3, 21);
 data.setCell(54, 0, 54)
-data.setCell(54, 1, 'testSearchAuthorByLastName')
-data.setCell(54, 2, 'author.SearchAuthorTest')
-data.setCell(54, 3, 23);
+data.setCell(54, 1, 'testCreateAuthorWithoutBody')
+data.setCell(54, 2, 'genre.CreateGenreTest')
+data.setCell(54, 3, 20);
 data.setCell(55, 0, 55)
-data.setCell(55, 1, 'testGetGenresWithBadPageNumber')
-data.setCell(55, 2, 'genre.GetAllGenresTest')
-data.setCell(55, 3, 22);
+data.setCell(55, 1, 'testGetAuthorsWithBadPageNumber')
+data.setCell(55, 2, 'author.GetAllAuthorsTest')
+data.setCell(55, 3, 20);
 data.setCell(56, 0, 56)
-data.setCell(56, 1, 'testSearchGenreBadRequest')
-data.setCell(56, 2, 'genre.SearchGenreTest')
-data.setCell(56, 3, 22);
+data.setCell(56, 1, 'testPositiveUpdateGenre')
+data.setCell(56, 2, 'genre.UpdateGenreTest')
+data.setCell(56, 3, 18);
 data.setCell(57, 0, 57)
-data.setCell(57, 1, 'testSearchAuthorByFirstName')
+data.setCell(57, 1, 'testSearchAuthorByLastName')
 data.setCell(57, 2, 'author.SearchAuthorTest')
-data.setCell(57, 3, 22);
+data.setCell(57, 3, 18);
 data.setCell(58, 0, 58)
-data.setCell(58, 1, 'testGetBookBadRequest')
-data.setCell(58, 2, 'book.GetBookTest')
-data.setCell(58, 3, 22);
+data.setCell(58, 1, 'testGetGenreNotFound')
+data.setCell(58, 2, 'genre.GetGenreTest')
+data.setCell(58, 3, 18);
 data.setCell(59, 0, 59)
-data.setCell(59, 1, 'testDeleteAuthorNotFound')
-data.setCell(59, 2, 'author.DeleteAuthorTest')
-data.setCell(59, 3, 20);
+data.setCell(59, 1, 'testGetAuthorNotFound')
+data.setCell(59, 2, 'author.GetAuthorTest')
+data.setCell(59, 3, 17);
 data.setCell(60, 0, 60)
-data.setCell(60, 1, 'testPositiveUpdateAuthor')
-data.setCell(60, 2, 'author.UpdateAuthorTest')
-data.setCell(60, 3, 20);
+data.setCell(60, 1, 'testGetAuthorBadRequest')
+data.setCell(60, 2, 'author.GetAuthorTest')
+data.setCell(60, 3, 17);
 data.setCell(61, 0, 61)
-data.setCell(61, 1, 'testGetBooksWithBadPageNumber')
-data.setCell(61, 2, 'book.GetAllBooksTest')
-data.setCell(61, 3, 20);
+data.setCell(61, 1, 'testDeleteGenreBadRequest')
+data.setCell(61, 2, 'genre.DeleteGenreTest')
+data.setCell(61, 3, 16);
 data.setCell(62, 0, 62)
-data.setCell(62, 1, 'testDeleteAuthorBadRequest')
-data.setCell(62, 2, 'author.DeleteAuthorTest')
-data.setCell(62, 3, 20);
+data.setCell(62, 1, 'testSearchAuthorByFirstName')
+data.setCell(62, 2, 'author.SearchAuthorTest')
+data.setCell(62, 3, 16);
 data.setCell(63, 0, 63)
-data.setCell(63, 1, 'testGetBooksWithBadPaginationValue')
-data.setCell(63, 2, 'book.GetAllBooksTest')
-data.setCell(63, 3, 20);
+data.setCell(63, 1, 'testSearchAuthorByGenre')
+data.setCell(63, 2, 'author.GetAuthorByGenreTest')
+data.setCell(63, 3, 16);
 data.setCell(64, 0, 64)
-data.setCell(64, 1, 'testDeleteGenreBadRequest')
-data.setCell(64, 2, 'genre.DeleteGenreTest')
-data.setCell(64, 3, 19);
+data.setCell(64, 1, 'testSearchBookByAuthorAndGenre')
+data.setCell(64, 2, 'book.GetBookByAuthorAndGenreTest')
+data.setCell(64, 3, 15);
 data.setCell(65, 0, 65)
-data.setCell(65, 1, 'testPositiveScenario')
-data.setCell(65, 2, 'genre.CreateGenreTest')
-data.setCell(65, 3, 19);
+data.setCell(65, 1, 'testSearchBookByAuthor')
+data.setCell(65, 2, 'book.GetBookByAuthorTest')
+data.setCell(65, 3, 13);
 data.setCell(66, 0, 66)
-data.setCell(66, 1, 'testGetGenreById')
-data.setCell(66, 2, 'genre.GetGenreTest')
-data.setCell(66, 3, 19);
+data.setCell(66, 1, 'testSearchGenreByAuthor')
+data.setCell(66, 2, 'genre.GetGenreByAuthorTest')
+data.setCell(66, 3, 13);
 data.setCell(67, 0, 67)
-data.setCell(67, 1, 'testGetAllGenres')
-data.setCell(67, 2, 'genre.GetAllGenresTest')
-data.setCell(67, 3, 18);
+data.setCell(67, 1, 'testSearchAuthorByBook')
+data.setCell(67, 2, 'author.GetAuthorByBookTest')
+data.setCell(67, 3, 12);
 data.setCell(68, 0, 68)
-data.setCell(68, 1, 'testGetGenreNotFound')
-data.setCell(68, 2, 'genre.GetGenreTest')
-data.setCell(68, 3, 18);
+data.setCell(68, 1, 'testGetAllGenres')
+data.setCell(68, 2, 'genre.GetAllGenresTest')
+data.setCell(68, 3, 11);
 data.setCell(69, 0, 69)
-data.setCell(69, 1, 'testGetAuthorsWithBadPageNumber')
-data.setCell(69, 2, 'author.GetAllAuthorsTest')
-data.setCell(69, 3, 18);
+data.setCell(69, 1, 'testPositiveUpdateAuthor')
+data.setCell(69, 2, 'author.UpdateAuthorTest')
+data.setCell(69, 3, 10);
 data.setCell(70, 0, 70)
-data.setCell(70, 1, 'testGetAuthorsWithBadPaginationValue')
-data.setCell(70, 2, 'author.GetAllAuthorsTest')
-data.setCell(70, 3, 18);
+data.setCell(70, 1, 'testPositiveScenario')
+data.setCell(70, 2, 'genre.CreateGenreTest')
+data.setCell(70, 3, 3);
 data.setCell(71, 0, 71)
-data.setCell(71, 1, 'testGetGenresWithBadPaginationValue')
-data.setCell(71, 2, 'genre.GetAllGenresTest')
-data.setCell(71, 3, 17);
+data.setCell(71, 1, 'testSearchGenreByName')
+data.setCell(71, 2, 'genre.SearchGenreTest')
+data.setCell(71, 3, 2);
 data.setCell(72, 0, 72)
-data.setCell(72, 1, 'testGetAllAuthors')
-data.setCell(72, 2, 'author.GetAllAuthorsTest')
-data.setCell(72, 3, 15);
+data.setCell(72, 1, 'testPositiveScenario')
+data.setCell(72, 2, 'author.CreateAuthorTest')
+data.setCell(72, 3, 2);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -1765,49 +1751,69 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSearchBookByName</span>
-                <span class="method-start">2414 ms</span>
+                <span class="method-start">2687 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSearchBookReturn5Results</span>
-                <span class="method-start">3062 ms</span>
+                <span class="method-start">3283 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">book.DeleteBookTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testDeleteBookBadRequest</span>
-                <span class="method-start">3545 ms</span>
+                <span class="method-start">3866 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDeleteBookById</span>
-                <span class="method-start">4214 ms</span>
+                <span class="method-start">4402 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDeleteBookNotFound</span>
-                <span class="method-start">4298 ms</span>
+                <span class="method-start">4477 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">book.GetBookByAuthorAndGenreTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4507 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchBookByAuthorAndGenre</span>
-                <span class="method-start">4323 ms</span>
+                <span class="method-start">4608 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4624 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchBookByAuthorBadRequestAndGenre</span>
-                <span class="method-start">4430 ms</span>
+                <span class="method-start">4697 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4725 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchBookByAuthorThatNotExistAndGenre</span>
-                <span class="method-start">4571 ms</span>
+                <span class="method-start">4781 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4817 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchBookByGenreBadRequestAndAuthor</span>
-                <span class="method-start">4663 ms</span>
+                <span class="method-start">4884 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4906 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchBookByGenreThatNotExistAndAuthor</span>
-                <span class="method-start">4764 ms</span>
+                <span class="method-start">4955 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -1816,313 +1822,451 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testGetAllBooks</span>
-                <span class="method-start">4855 ms</span>
+                <span class="method-start">4986 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetBooksWithBadPageNumber</span>
-                <span class="method-start">5803 ms</span>
+                <span class="method-start">5743 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetBooksWithBadPaginationValue</span>
-                <span class="method-start">5867 ms</span>
+                <span class="method-start">5801 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">book.GetBookTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testGetBookBadRequest</span>
-                <span class="method-start">5917 ms</span>
+                <span class="method-start">5841 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetBookById</span>
-                <span class="method-start">5940 ms</span>
+                <span class="method-start">5868 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetBookNotFound</span>
-                <span class="method-start">6035 ms</span>
+                <span class="method-start">6088 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">book.GetBookByAuthorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6131 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchBookByAuthor</span>
-                <span class="method-start">6068 ms</span>
+                <span class="method-start">6247 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6261 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchBookByAuthorBadRequest</span>
-                <span class="method-start">6142 ms</span>
+                <span class="method-start">6334 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6392 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchBookByAuthorThatNotExist</span>
-                <span class="method-start">6234 ms</span>
+                <span class="method-start">6457 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">book.GetAllBooksTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testGetAllBooks</span>
-                <span class="method-start">6325 ms</span>
+                <span class="method-start">6504 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetBooksWithBadPageNumber</span>
-                <span class="method-start">6356 ms</span>
+                <span class="method-start">6530 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetBooksWithBadPaginationValue</span>
-                <span class="method-start">6376 ms</span>
+                <span class="method-start">6579 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">book.UpdateBookTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6635 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPositiveUpdateBook</span>
-                <span class="method-start">6397 ms</span>
+                <span class="method-start">6713 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6762 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUpdateBookThatNotFound</span>
-                <span class="method-start">6482 ms</span>
+                <span class="method-start">6839 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6904 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUpdateBookWithoutBody</span>
-                <span class="method-start">6604 ms</span>
+                <span class="method-start">6976 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">book.CreateBookTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7049 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCreateAuthorWithExistsId</span>
-                <span class="method-start">6724 ms</span>
+                <span class="method-start">7110 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7155 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCreateAuthorWithoutBody</span>
-                <span class="method-start">6804 ms</span>
+                <span class="method-start">7214 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7255 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPositiveScenario</span>
-                <span class="method-start">6856 ms</span>
+                <span class="method-start">7290 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">genre.CreateGenreTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7342 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCreateAuthorWithExistsId</span>
-                <span class="method-start">6910 ms</span>
+                <span class="method-start">7359 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7385 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCreateAuthorWithoutBody</span>
-                <span class="method-start">6961 ms</span>
+                <span class="method-start">7407 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7427 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPositiveScenario</span>
-                <span class="method-start">6987 ms</span>
+                <span class="method-start">7461 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">genre.GetGenreTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testGetGenreBadRequest</span>
-                <span class="method-start">7008 ms</span>
+                <span class="method-start">7465 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetGenreById</span>
-                <span class="method-start">7047 ms</span>
+                <span class="method-start">7491 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetGenreNotFound</span>
-                <span class="method-start">7066 ms</span>
+                <span class="method-start">7515 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">genre.DeleteGenreTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testDeleteGenreBadRequest</span>
-                <span class="method-start">7085 ms</span>
+                <span class="method-start">7534 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDeleteGenreById</span>
-                <span class="method-start">7107 ms</span>
+                <span class="method-start">7550 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDeleteGenreNotFound</span>
-                <span class="method-start">7133 ms</span>
+                <span class="method-start">7572 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">genre.UpdateGenreTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7598 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPositiveUpdateGenre</span>
-                <span class="method-start">7168 ms</span>
+                <span class="method-start">7613 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7636 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUpdateGenreThatNotFound</span>
-                <span class="method-start">7205 ms</span>
+                <span class="method-start">7657 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7705 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUpdateGenreWithoutBody</span>
-                <span class="method-start">7277 ms</span>
+                <span class="method-start">7735 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">genre.GetGenreByAuthorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7787 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchGenreByAuthor</span>
-                <span class="method-start">7342 ms</span>
+                <span class="method-start">7844 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7857 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchGenreByAuthorBadRequest</span>
-                <span class="method-start">7420 ms</span>
+                <span class="method-start">7920 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7952 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchGenreByAuthorThatNotExist</span>
-                <span class="method-start">7518 ms</span>
+                <span class="method-start">8025 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">genre.SearchGenreTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8054 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchGenreBadRequest</span>
-                <span class="method-start">7589 ms</span>
+                <span class="method-start">8068 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8089 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchGenreByName</span>
-                <span class="method-start">7612 ms</span>
+                <span class="method-start">8102 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">genre.GetAllGenresTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testGetAllGenres</span>
-                <span class="method-start">7644 ms</span>
+                <span class="method-start">8104 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetGenresWithBadPageNumber</span>
-                <span class="method-start">7663 ms</span>
+                <span class="method-start">8116 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetGenresWithBadPaginationValue</span>
-                <span class="method-start">7686 ms</span>
+                <span class="method-start">8142 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">author.DeleteAuthorTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testDeleteAuthorBadRequest</span>
-                <span class="method-start">7703 ms</span>
+                <span class="method-start">8179 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDeleteAuthorById</span>
-                <span class="method-start">7723 ms</span>
+                <span class="method-start">8217 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDeleteAuthorNotFound</span>
-                <span class="method-start">7749 ms</span>
+                <span class="method-start">8259 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">author.GetAuthorByBookTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8281 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testSearchAuthorByBook</span>
-                <span class="method-start">7770 ms</span>
+                <span class="method-start">8333 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8346 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchAuthorByBookBadRequest</span>
-                <span class="method-start">7819 ms</span>
+                <span class="method-start">8407 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8451 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchAuthorByBookThatNotExist</span>
-                <span class="method-start">7888 ms</span>
+                <span class="method-start">8520 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">author.GetAuthorTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testGetAuthorBadRequest</span>
-                <span class="method-start">7959 ms</span>
+                <span class="method-start">8542 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetAuthorById</span>
-                <span class="method-start">7990 ms</span>
+                <span class="method-start">8559 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetAuthorNotFound</span>
-                <span class="method-start">8022 ms</span>
+                <span class="method-start">8588 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">author.CreateAuthorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8605 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCreateAuthorWithExistsId</span>
-                <span class="method-start">8051 ms</span>
+                <span class="method-start">8620 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8649 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCreateAuthorWithoutBody</span>
-                <span class="method-start">8098 ms</span>
+                <span class="method-start">8663 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8686 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPositiveScenario</span>
-                <span class="method-start">8134 ms</span>
+                <span class="method-start">8705 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">author.GetAuthorByGenreTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8708 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchAuthorByGenre</span>
-                <span class="method-start">8159 ms</span>
+                <span class="method-start">8748 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8766 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchAuthorByGenreBadRequest</span>
-                <span class="method-start">8267 ms</span>
+                <span class="method-start">8814 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8838 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchAuthorByGenreThatNotExist</span>
-                <span class="method-start">8377 ms</span>
+                <span class="method-start">8879 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">author.SearchAuthorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8902 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchAuthorBadRequest</span>
-                <span class="method-start">8472 ms</span>
+                <span class="method-start">8915 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8944 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchAuthorByFirstName</span>
-                <span class="method-start">8504 ms</span>
+                <span class="method-start">8956 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8973 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchAuthorByLastName</span>
-                <span class="method-start">8527 ms</span>
+                <span class="method-start">8991 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">author.UpdateAuthorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">9009 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPositiveUpdateAuthor</span>
-                <span class="method-start">8551 ms</span>
+                <span class="method-start">9023 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">9033 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUpdateAuthorWithoutBody</span>
-                <span class="method-start">8572 ms</span>
+                <span class="method-start">9047 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">9086 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUpdateUserThatNotFound</span>
-                <span class="method-start">8601 ms</span>
+                <span class="method-start">9097 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">author.GetAllAuthorsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testGetAllAuthors</span>
-                <span class="method-start">8634 ms</span>
+                <span class="method-start">9121 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetAuthorsWithBadPageNumber</span>
-                <span class="method-start">8651 ms</span>
+                <span class="method-start">9147 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetAuthorsWithBadPaginationValue</span>
-                <span class="method-start">8670 ms</span>
+                <span class="method-start">9168 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

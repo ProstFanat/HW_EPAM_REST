@@ -3,6 +3,7 @@ package methods;
 import entity.book.Additional;
 import entity.book.Book;
 import entity.book.Size;
+import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
 import response.BaseResponse;
@@ -12,8 +13,8 @@ import utils.PropertiesReader;
 public class BookMethods {
     private static final Logger LOG = Logger.getLogger(BookMethods.class);
 
-    @Step("Creating book object {book}")
-    public static Book createNewBook(){
+    @Step("Generating book object")
+    public static Book generateBook(){
         boolean isRight = false;
         int id;
         do {
@@ -40,4 +41,6 @@ public class BookMethods {
                                 .setLength(Integer.parseInt(PropertiesReader.getProperty("BOOK_LENGTH")))))
                 .setPublicationYear(2001);
     }
+
+
 }

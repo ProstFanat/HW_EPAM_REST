@@ -21,9 +21,9 @@ public class SearchBookTest {
 
     @Test(description = "Test of search book by name")
     private void testSearchBookByName(){
-        Book book = BookMethods.createNewBook();
-        Genre genre = GenreMethods.createNewGenre();
-        Author author = AuthorMethods.createNewAuthor();
+        Book book = BookMethods.generateBook();
+        Genre genre = GenreMethods.generateGenre();
+        Author author = AuthorMethods.generateAuthor();
 
         BaseResponse<Author> baseResponseAuthor = authorService.createAuthor(author);
         BaseResponse<Genre> baseResponseGenre = genreService.createGenre(genre);
@@ -42,9 +42,9 @@ public class SearchBookTest {
         BaseResponse<Book> baseResponseBook;
 
         for(int i = 0; i <= 6; i++) {
-            Book book = BookMethods.createNewBook();
-            Genre genre = GenreMethods.createNewGenre();
-            Author author = AuthorMethods.createNewAuthor();
+            Book book = BookMethods.generateBook();
+            Genre genre = GenreMethods.generateGenre();
+            Author author = AuthorMethods.generateAuthor();
 
             baseResponseAuthor = authorService.createAuthor(author);
             baseResponseGenre = genreService.createGenre(genre);
@@ -59,9 +59,9 @@ public class SearchBookTest {
 
     @Test(description = "Test of search book with Bad Request")
     private void testSearchBookBadRequest(){
-        Book book = BookMethods.createNewBook();
-        Genre genre = GenreMethods.createNewGenre();
-        Author author = AuthorMethods.createNewAuthor();
+        Book book = BookMethods.generateBook();
+        Genre genre = GenreMethods.generateGenre();
+        Author author = AuthorMethods.generateAuthor();
 
         BaseResponse<Author> baseResponseAuthor = authorService.createAuthor(author);
         BaseResponse<Genre> baseResponseGenre = genreService.createGenre(genre);

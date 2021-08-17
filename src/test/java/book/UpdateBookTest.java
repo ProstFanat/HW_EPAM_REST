@@ -7,6 +7,7 @@ import methods.AuthorMethods;
 import methods.BookMethods;
 import methods.GenreMethods;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import response.BaseResponse;
 import service.AuthorService;
@@ -18,19 +19,27 @@ public class UpdateBookTest {
     private final BookService bookService = new BookService();
     private final GenreService genreService = new GenreService();
     private final AuthorService authorService = new AuthorService();
+    private Author author;
+    private Book book;
+    private Genre genre;
+    private BaseResponse<Author> baseResponseAuthor;
+    private BaseResponse<Genre> baseResponseGenre;
+    private BaseResponse<Book> baseResponseBook;
+
+    @BeforeMethod
+    public void setup(){
+        book = BookMethods.generateBook();
+        genre = GenreMethods.generateGenre();
+        author = AuthorMethods.generateAuthor();
+
+        baseResponseAuthor = authorService.createAuthor(author);
+        baseResponseGenre = genreService.createGenre(genre);
+        baseResponseBook = bookService.createBook(book, genre.getGenreId(), author.getAuthorId());
+        Assert.assertEquals(baseResponseBook.getStatusCode(), 201);
+    }
 
     @Test(description = "Test of positive update book")
     private void testPositiveUpdateBook(){
-        Book book = BookMethods.createNewBook();
-        Genre genre = GenreMethods.createNewGenre();
-        Author author = AuthorMethods.createNewAuthor();
-
-        BaseResponse<Author> baseResponseAuthor = authorService.createAuthor(author);
-        BaseResponse<Genre> baseResponseGenre = genreService.createGenre(genre);
-        BaseResponse<Book> baseResponseBook = bookService.createBook(book, genre.getGenreId(), author.getAuthorId());
-
-        Assert.assertEquals(baseResponseBook.getStatusCode(), 201);
-
         book.setBookDescription(PropertiesReader.getProperty("BOOK_ANOTHER_DESCRIPTION"));
         baseResponseBook = bookService.updateBook(book);
         Assert.assertEquals(baseResponseBook.getStatusCode(), 200);
@@ -39,14 +48,6 @@ public class UpdateBookTest {
 
     @Test(description = "Test of update book that not found")
     private void testUpdateBookThatNotFound(){
-        Book book = BookMethods.createNewBook();
-        Genre genre = GenreMethods.createNewGenre();
-        Author author = AuthorMethods.createNewAuthor();
-
-        BaseResponse<Author> baseResponseAuthor = authorService.createAuthor(author);
-        BaseResponse<Genre> baseResponseGenre = genreService.createGenre(genre);
-        BaseResponse<Book> baseResponseBook = bookService.createBook(book, genre.getGenreId(), author.getAuthorId());
-
         book.setBookId(Integer.parseInt(PropertiesReader.getProperty("NOT_FOUND_ID")));
 
         baseResponseBook = bookService.updateBook(book);
@@ -58,14 +59,6 @@ public class UpdateBookTest {
 
     @Test(description = "Test of Update book without body")
     private void testUpdateBookWithoutBody(){
-        Book book = BookMethods.createNewBook();
-        Genre genre = GenreMethods.createNewGenre();
-        Author author = AuthorMethods.createNewAuthor();
-
-        BaseResponse<Author> baseResponseAuthor = authorService.createAuthor(author);
-        BaseResponse<Genre> baseResponseGenre = genreService.createGenre(genre);
-        BaseResponse<Book> baseResponseBook = bookService.createBook(book, genre.getGenreId(), author.getAuthorId());
-        Assert.assertEquals(baseResponseBook.getStatusCode(), 201);
         book = null;
 
         baseResponseBook = bookService.updateBook(book);

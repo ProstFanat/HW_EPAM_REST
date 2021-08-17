@@ -84,4 +84,5 @@ public class Author {
     public int hashCode() {
         return Objects.hash(authorId, authorName, nationality, birth, authorDescription);
     }
+
 }

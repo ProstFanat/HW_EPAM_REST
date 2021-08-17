@@ -13,7 +13,7 @@ public class DeleteGenreTest {
 
     @Test(description = "Test of deleting genre by id")
     private void testDeleteGenreById(){
-        Genre genre = GenreMethods.createNewGenre();
+        Genre genre = GenreMethods.generateGenre();
 
         BaseResponse<Genre> baseResponse = genreService.createGenre(genre);
         Assert.assertEquals(baseResponse.getStatusCode(), 201);

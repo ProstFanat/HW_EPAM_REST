@@ -3,11 +3,6 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
   <test thread-count="1" verbose="0" name="Surefire test(failed)">
     <classes>
-      <class name="author.GetAuthorByBookTest">
-        <methods>
-          <include name="testSearchAuthorByBook"/>
-        </methods>
-      </class> <!-- author.GetAuthorByBookTest -->
       <class name="book.GetAllBookOfSpecialGenreTest">
         <methods>
           <include name="testGetAllBooks"/>

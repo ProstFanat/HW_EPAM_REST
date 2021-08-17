@@ -21,9 +21,9 @@ public class DeleteBookTest {
 
     @Test(description = "Test of deleting book by id")
     private void testDeleteBookById(){
-        Book book = BookMethods.createNewBook();
-        Genre genre = GenreMethods.createNewGenre();
-        Author author = AuthorMethods.createNewAuthor();
+        Book book = BookMethods.generateBook();
+        Genre genre = GenreMethods.generateGenre();
+        Author author = AuthorMethods.generateAuthor();
 
         BaseResponse<Author> baseResponseAuthor = authorService.createAuthor(author);
         BaseResponse<Genre> baseResponseGenre = genreService.createGenre(genre);

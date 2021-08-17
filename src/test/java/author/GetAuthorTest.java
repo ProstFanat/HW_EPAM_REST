@@ -3,6 +3,7 @@ package author;
 import entity.Author.Author;
 import methods.AuthorMethods;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import response.BaseResponse;
 import service.AuthorService;
@@ -14,7 +15,7 @@ public class GetAuthorTest {
 
     @Test(description = "Test of getting author by id")
     private void testGetAuthorById(){
-        Author author = AuthorMethods.createNewAuthor();
+        Author author = AuthorMethods.generateAuthor();
 
         BaseResponse<Author> baseResponse = authorService.createAuthor(author);
         Assert.assertEquals(baseResponse.getStatusCode(), 201);

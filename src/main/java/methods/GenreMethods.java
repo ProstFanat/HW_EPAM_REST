@@ -1,6 +1,7 @@
 package methods;
 
 import entity.Genre.Genre;
+import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
 import response.BaseResponse;
@@ -10,8 +11,8 @@ import utils.PropertiesReader;
 public class GenreMethods {
     private static final Logger LOG = Logger.getLogger(AuthorMethods.class);
 
-    @Step("Creating author object {Author}")
-    public static Genre createNewGenre(){
+    @Step("Generating author object")
+    public static Genre generateGenre(){
         boolean isRight = false;
         int id;
         do {
