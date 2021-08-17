@@ -17,7 +17,7 @@ public class CreateGenreTest {
 
         BaseResponse<Genre> baseResponse = genreService.createGenre(genre);
         Assert.assertEquals(baseResponse.getStatusCode(), 201);
-        Assert.assertTrue(baseResponse.getBody().equals(genre));
+        Assert.assertEquals(baseResponse.getBody(), genre);
     }
 
     @Test(description = "Test of Genre with such id already exists")

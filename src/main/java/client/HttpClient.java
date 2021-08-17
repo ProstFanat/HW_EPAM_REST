@@ -16,40 +16,39 @@ public class HttpClient {
 
     @Step("Get {endpoint}")
     public static Response get(String endpoint, String contentType) {
-        return HttpClient.sendRequest(Method.GET, endpoint, contentType, null);
+        return HttpClient.sendRequest(Method.GET, endpoint, contentType);
     }
 
-    @Step("Get {endpoint} and queryParam - {queryParam}")
-    public static Response get(String endpoint, String contentType, HashMap<String, String> queryParam) {
-        return HttpClient.sendRequest(Method.GET, endpoint, contentType, queryParam);
+    @Step("Get {endpoint}")
+    public static Response get(String endpoint, String contentType, String test) {
+        return HttpClient.sendRequest(Method.GET, endpoint, contentType);
     }
 
     @Step("Post {endpoint} with body - {body}")
     public static Response post(String endpoint, String body, String contentType) {
-        return HttpClient.sendRequest(Method.POST, endpoint, body, contentType, null);
+        return HttpClient.sendRequest(Method.POST, endpoint, body, contentType);
     }
 
     @Step("Put {endpoint} with body - {body}")
     public static Response put(String endpoint, String body, String contentType) {
-        return HttpClient.sendRequest(Method.PUT, endpoint, body, contentType, null);
+        return HttpClient.sendRequest(Method.PUT, endpoint, body, contentType);
     }
 
     @Step("Delete {endpoint}")
     public static Response delete(String endpoint, String contentType) {
-        return HttpClient.sendRequest(Method.DELETE, endpoint, contentType, null);
+        return HttpClient.sendRequest(Method.DELETE, endpoint, contentType);
     }
 
     @Step("Send Request {method} to {endpoint}")
-    private static Response sendRequest(Method method, String endpoint, String contentType, HashMap<String, String> queryParams) {
-        return HttpClient.sendRequest(method, endpoint, null, contentType, queryParams);
+    private static Response sendRequest(Method method, String endpoint, String contentType) {
+        return HttpClient.sendRequest(method, endpoint, null, contentType);
     }
 
     @Step("Send Request {method} to {endpoint} with body - {body}")
-    private static Response sendRequest(Method method, String endpoint, String body, String contentType, HashMap<String, String> queryParams) {
+    private static Response sendRequest(Method method, String endpoint, String body, String contentType) {
         String url = ServiceConfig.HOST + endpoint;
         RequestSpecification spec = given();
         if(contentType != null) spec.contentType(contentType);
-        if(queryParams != null) spec.queryParams(queryParams);
         if(body != null) spec.body(body);
         Response response = spec.request(method, url);
         LOG.info(String.format("Send %s request to %s with body : %s", method, endpoint, body));

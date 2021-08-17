@@ -12,14 +12,13 @@ public class CreateAuthorTest {
 
     private final AuthorService authorService = new AuthorService();
 
-
     @Test(description = "Test of positive creating author")
     private void testPositiveScenario(){
         Author author = AuthorMethods.createNewAuthor();
 
         BaseResponse<Author> baseResponse = authorService.createAuthor(author);
         Assert.assertEquals(baseResponse.getStatusCode(), 201);
-        Assert.assertTrue(baseResponse.getBody().equals(author));
+        Assert.assertEquals(baseResponse.getBody(), author);
     }
 
     @Test(description = "Test of Author with such id already exists")

@@ -21,7 +21,7 @@ public class GetAuthorTest {
 
         baseResponse = authorService.getAuthor(author.getAuthorId());
         Assert.assertEquals(baseResponse.getStatusCode(), 200);
-        Assert.assertTrue(baseResponse.getBody().equals(author));
+        Assert.assertEquals(baseResponse.getBody(), author);
     }
 
     @Test(description = "Test of getting author that not found")

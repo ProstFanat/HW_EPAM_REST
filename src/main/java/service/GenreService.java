@@ -29,7 +29,7 @@ public class GenreService {
                 .queryParam("pagination", options.pagination)
                 .queryParam("size", options.size);
         if (options.sortBy != null) endpoint.queryParam("sortBy", options.sortBy);
-        return new BaseResponse<>(HttpClient.get(endpoint.get(), null), Genre.class);
+        return new BaseResponse<>(HttpClient.get(endpoint.get(), null, "ass"), Genre.class);
     }
 
     @Step("Create Genre {genre}")
@@ -66,24 +66,19 @@ public class GenreService {
 
     @Step("Search Genre with name {name}")
     public BaseResponse<Genre> searchGenre(String name) {
-        HashMap<String, String> queryParam = new HashMap<>();
-        String endpoint = new EndpointBuilder().pathParameter("genres/search").get();
-        queryParam.put("query", name);
-        return new BaseResponse<>(HttpClient.get(endpoint,null, queryParam), Genre.class);
+        String endpoint = new EndpointBuilder().pathParameter("genres/search").queryParam("query", name).get();
+        return new BaseResponse<>(HttpClient.get(endpoint,null), Genre.class);
     }
 
     @Step("Search Genre by Author Id {authorId}")
     public BaseResponse<Genre> searchGenreByAuthorId(String authorId) {
-        HashMap<String, String> queryParam = new HashMap<>();
         String endpoint = new EndpointBuilder().pathParameter("author").pathParameter(authorId).pathParameter("genres").get();
-        queryParam.put("orderType", "asc");
-        queryParam.put("sortBy", "genreId");
-        return new BaseResponse<>(HttpClient.get(endpoint,null, queryParam), Genre.class);
+        return new BaseResponse<>(HttpClient.get(endpoint,null), Genre.class);
     }
 
     @Step("Search Genre by Book Id {bookId}")
     public BaseResponse<Genre> searchGenreByBookId(String bookId) {
         String endpoint = new EndpointBuilder().pathParameter("book").pathParameter(bookId).pathParameter("genre").get();
-        return new BaseResponse<>(HttpClient.get(endpoint,null, null), Genre.class);
+        return new BaseResponse<>(HttpClient.get(endpoint,null), Genre.class);
     }
 }

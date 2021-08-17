@@ -33,7 +33,7 @@ public class GetGenreByBook {
 
         baseResponseGenre = genreService.searchGenreByBookId(String.valueOf(book.getBookId()));
 
-        Assert.assertTrue(baseResponseGenre.getListOfBody().get(0).equals(genre));
+        Assert.assertEquals(baseResponseGenre.getBody(), genre);
     }
 
     @Test(description = "Test of search genre by book Bad Request")

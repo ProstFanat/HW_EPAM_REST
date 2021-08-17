@@ -32,7 +32,7 @@ public class GetBookByAuthorAndGenreTest {
 
         baseResponseBook = bookService.searchBookByAuthorIdAndGenreId(String.valueOf(author.getAuthorId()), String.valueOf(genre.getGenreId()));
 
-        Assert.assertTrue(baseResponseBook.getListOfBody().get(0).equals(book));
+        Assert.assertEquals(baseResponseBook.getListOfBody().get(0), book);
     }
 
     @Test(description = "Test of search author by book Bad Request and Genre")

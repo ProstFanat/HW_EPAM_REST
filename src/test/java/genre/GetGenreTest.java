@@ -21,7 +21,7 @@ public class GetGenreTest {
 
         baseResponse = genreService.getGenre(genre.getGenreId());
         Assert.assertEquals(baseResponse.getStatusCode(), 200);
-        Assert.assertTrue(baseResponse.getBody().equals(genre));
+        Assert.assertEquals(baseResponse.getBody(), genre);
     }
 
     @Test(description = "Test of getting genre that not found")

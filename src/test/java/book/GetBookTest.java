@@ -31,7 +31,7 @@ public class GetBookTest {
 
         baseResponseBook = bookService.getBook(book.getBookId());
         Assert.assertEquals(baseResponseBook.getStatusCode(), 200);
-        Assert.assertTrue(baseResponseBook.getBody().equals(book));
+        Assert.assertEquals(baseResponseBook.getBody(), book);
     }
 
     @Test(description = "Test of getting book that not found")

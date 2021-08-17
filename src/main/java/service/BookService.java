@@ -78,27 +78,19 @@ public class BookService {
 
     @Step("Search book with name {name}")
     public BaseResponse<Book> searchBook(String name) {
-        HashMap<String, String> queryParam = new HashMap<>();
-        String endpoint = new EndpointBuilder().pathParameter("books/search").get();
-        queryParam.put("q", name);
-        return new BaseResponse<>(HttpClient.get(endpoint,null, queryParam), Book.class);
+        String endpoint = new EndpointBuilder().pathParameter("books/search").queryParam("q", name).get();
+        return new BaseResponse<>(HttpClient.get(endpoint,null), Book.class);
     }
 
     @Step("Search book by Author Id {authorId}")
     public BaseResponse<Book> searchBookByAuthorId(String authorId) {
-        HashMap<String, String> queryParam = new HashMap<>();
         String endpoint = new EndpointBuilder().pathParameter("author").pathParameter(authorId).pathParameter("books").get();
-        queryParam.put("orderType", "asc");
-        queryParam.put("sortBy", "bookId");
-        return new BaseResponse<>(HttpClient.get(endpoint,null, queryParam), Book.class);
+        return new BaseResponse<>(HttpClient.get(endpoint,null), Book.class);
     }
 
     @Step("Search book by Author Id {authorId} and genre id {genreId}")
     public BaseResponse<Book> searchBookByAuthorIdAndGenreId(String authorId, String genreId) {
-        HashMap<String, String> queryParam = new HashMap<>();
         String endpoint = new EndpointBuilder().pathParameter("author").pathParameter(authorId).pathParameter("genre").pathParameter(genreId).pathParameter("books").get();
-        queryParam.put("orderType", "asc");
-        queryParam.put("sortBy", "bookId");
-        return new BaseResponse<>(HttpClient.get(endpoint,null, queryParam), Book.class);
+        return new BaseResponse<>(HttpClient.get(endpoint,null), Book.class);
     }
 }

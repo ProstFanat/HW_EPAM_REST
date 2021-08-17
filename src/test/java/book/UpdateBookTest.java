@@ -34,7 +34,7 @@ public class UpdateBookTest {
         book.setBookDescription(PropertiesReader.getProperty("BOOK_ANOTHER_DESCRIPTION"));
         baseResponseBook = bookService.updateBook(book);
         Assert.assertEquals(baseResponseBook.getStatusCode(), 200);
-        Assert.assertTrue(baseResponseBook.getBody().equals(book));
+        Assert.assertEquals(baseResponseBook.getBody(), book);
     }
 
     @Test(description = "Test of update book that not found")

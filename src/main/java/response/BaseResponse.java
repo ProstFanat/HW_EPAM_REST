@@ -40,8 +40,8 @@ public class BaseResponse<T> {
 
     @Attachment
     public T getBody() {
+        LOG.info(this.response.getBody().prettyPrint());
         T body = this.response.body().as(this.responseClass);
-        LOG.info(String.format("Get body %s", body));
         return body;
     }
 

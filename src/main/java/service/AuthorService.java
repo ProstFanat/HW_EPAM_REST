@@ -64,10 +64,8 @@ public class AuthorService {
 
     @Step("Search Author with name {name}")
     public BaseResponse<Author> searchAuthor(String name) {
-        HashMap<String, String> queryParam = new HashMap<>();
-        String endpoint = new EndpointBuilder().pathParameter("authors/search").get();
-        queryParam.put("query", name);
-        return new BaseResponse<>(HttpClient.get(endpoint,null, queryParam), Author.class);
+        String endpoint = new EndpointBuilder().pathParameter("authors/search").queryParam("query", name).get();
+        return new BaseResponse<>(HttpClient.get(endpoint,null), Author.class);
     }
 
     @Step("Search Author by Book ID")

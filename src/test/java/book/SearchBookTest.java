@@ -32,7 +32,7 @@ public class SearchBookTest {
         Assert.assertEquals(baseResponseBook.getStatusCode(), 201);
 
         baseResponseBook = bookService.searchBook(book.getBookName());
-        Assert.assertTrue(baseResponseBook.getListOfBody().get(0).equals(book));
+        Assert.assertEquals(baseResponseBook.getListOfBody().get(0), book);
     }
 
     @Test(description = "Test of search book returning 5 most relevant results")

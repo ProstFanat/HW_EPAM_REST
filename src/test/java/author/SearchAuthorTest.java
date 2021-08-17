@@ -20,7 +20,7 @@ public class SearchAuthorTest {
         Assert.assertEquals(baseResponse.getStatusCode(), 201);
 
         baseResponse = authorService.searchAuthor(author.getAuthorName().getFirst());
-        Assert.assertTrue(baseResponse.getListOfBody().get(0).equals(author));
+        Assert.assertEquals(baseResponse.getListOfBody().get(0), author);
     }
 
     @Test(description = "Test of search author by last name")
@@ -31,7 +31,7 @@ public class SearchAuthorTest {
         Assert.assertEquals(baseResponse.getStatusCode(), 201);
 
         baseResponse = authorService.searchAuthor(author.getAuthorName().getSecond());
-        Assert.assertTrue(baseResponse.getListOfBody().get(0).equals(author));
+        Assert.assertEquals(baseResponse.getListOfBody().get(0), author);
     }
 
     @Test(description = "Test of search author with Bad Request")
@@ -41,7 +41,7 @@ public class SearchAuthorTest {
         BaseResponse<Author> baseResponse = authorService.createAuthor(author);
         Assert.assertEquals(baseResponse.getStatusCode(), 201);
 
-        baseResponse = authorService.searchAuthor(null);
+        baseResponse = authorService.searchAuthor(PropertiesReader.getProperty("EMPTY"));
         Assert.assertEquals(baseResponse.getStatusCode(), 400);
         Assert.assertEquals(baseResponse.getErrorMessage(), PropertiesReader.getProperty("ERROR_MESSAGE_PHRASE_CANT_BE_BLANK"));
     }

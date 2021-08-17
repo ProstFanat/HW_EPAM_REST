@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import response.BaseResponse;
 import service.GenreService;
+import utils.PropertiesReader;
 
 public class SearchGenreTest {
     private final GenreService genreService = new GenreService();
@@ -18,7 +19,7 @@ public class SearchGenreTest {
         Assert.assertEquals(baseResponse.getStatusCode(), 201);
 
         baseResponse = genreService.searchGenre(genre.getGenreName());
-        Assert.assertTrue(baseResponse.getListOfBody().get(0).equals(genre));
+        Assert.assertEquals(baseResponse.getListOfBody().get(0), genre);
     }
 
     @Test(description = "Test of search genre with Bad Request")
@@ -28,7 +29,8 @@ public class SearchGenreTest {
         BaseResponse<Genre> baseResponse = genreService.createGenre(genre);
         Assert.assertEquals(baseResponse.getStatusCode(), 201);
 
-        baseResponse = genreService.searchGenre(null);
+        baseResponse = genreService.searchGenre(PropertiesReader.getProperty("EMPTY"));
         Assert.assertEquals(baseResponse.getStatusCode(), 400);
+        Assert.assertEquals(baseResponse.getErrorMessage(), PropertiesReader.getProperty("ERROR_MESSAGE_PHRASE_CANT_BE_BLANK"));
     }
 }

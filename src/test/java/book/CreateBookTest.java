@@ -30,7 +30,7 @@ public class CreateBookTest {
         BaseResponse<Book> baseResponseBook = bookService.createBook(book, genre.getGenreId(), author.getAuthorId());
 
         Assert.assertEquals(baseResponseBook.getStatusCode(), 201);
-        Assert.assertTrue(baseResponseBook.getBody().equals(book));
+        Assert.assertEquals(baseResponseBook.getBody(), book);
     }
 
     @Test(description = "Test of book with such id already exists")

@@ -22,7 +22,7 @@ public class UpdateGenreTest {
         genre.setGenreDescription(PropertiesReader.getProperty("GENRE_ANOTHER_DESCRIPTION"));
         baseResponse = genreService.updateGenre(genre);
         Assert.assertEquals(baseResponse.getStatusCode(), 200);
-        Assert.assertTrue(baseResponse.getBody().equals(genre));
+        Assert.assertEquals(baseResponse.getBody(), genre);
     }
 
     @Test(description = "Test of update genre that not found")
