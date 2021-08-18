@@ -1,9 +1,6 @@
 package methods;
 
-import entity.Author.Author;
-import entity.Author.AuthorName;
-import entity.Author.Birth;
-import io.qameta.allure.Attachment;
+import entity.Author;
 import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
 import response.BaseResponse;
@@ -28,10 +25,10 @@ public class AuthorMethods {
         } while (!isRight);
 
         return new Author().setAuthorId(id)
-                .setAuthorName(new AuthorName(PropertiesReader.getProperty("FIRST_NAME") + id,
+                .setAuthorName(new Author.AuthorName(PropertiesReader.getProperty("FIRST_NAME") + id,
                         PropertiesReader.getProperty("LAST_NAME") + id))
                 .setNationality(PropertiesReader.getProperty("NATIONALITY") + id)
-                .setBirth(new Birth(PropertiesReader.getProperty("BIRTH_DATE"),
+                .setBirth(new Author.Birth(PropertiesReader.getProperty("BIRTH_DATE"),
                         PropertiesReader.getProperty("BIRTH_COUNTRY"),
                         PropertiesReader.getProperty("BIRTH_CITY")))
                 .setAuthorDescription(PropertiesReader.getProperty("AUTHOR_DESCRIPTION"));

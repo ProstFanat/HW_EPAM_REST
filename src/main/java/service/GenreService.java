@@ -1,16 +1,13 @@
 package service;
 
 import client.HttpClient;
-import entity.Genre.Genre;
+import entity.Genre;
 import entity.ListOptions;
-import entity.book.Book;
 import io.qameta.allure.Step;
 import response.BaseResponse;
 import utils.EndpointBuilder;
 import utils.JsonBuilder;
 import utils.PropertiesReader;
-
-import java.util.HashMap;
 
 public class GenreService {
 

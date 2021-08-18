@@ -1,8 +1,8 @@
 package author;
 
-import entity.Author.Author;
-import entity.Genre.Genre;
-import entity.book.Book;
+import entity.Author;
+import entity.Genre;
+import entity.Book;
 import methods.AuthorMethods;
 import methods.BookMethods;
 import methods.GenreMethods;
@@ -21,21 +21,18 @@ public class GetAuthorByGenreTest {
     private final AuthorService authorService = new AuthorService();
 
     private Author author;
-    private Book book;
     private Genre genre;
     private BaseResponse<Author> baseResponseAuthor;
-    private BaseResponse<Genre> baseResponseGenre;
-    private BaseResponse<Book> baseResponseBook;
 
     @BeforeMethod
     public void setup(){
-        book = BookMethods.generateBook();
+        Book book = BookMethods.generateBook();
         genre = GenreMethods.generateGenre();
         author = AuthorMethods.generateAuthor();
 
         baseResponseAuthor = authorService.createAuthor(author);
-        baseResponseGenre = genreService.createGenre(genre);
-        baseResponseBook = bookService.createBook(book, genre.getGenreId(), author.getAuthorId());
+        BaseResponse<Genre> baseResponseGenre = genreService.createGenre(genre);
+        BaseResponse<Book> baseResponseBook = bookService.createBook(book, genre.getGenreId(), author.getAuthorId());
         Assert.assertEquals(baseResponseBook.getStatusCode(), 201);
     }
 

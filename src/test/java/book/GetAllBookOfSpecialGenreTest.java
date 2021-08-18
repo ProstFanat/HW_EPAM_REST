@@ -1,9 +1,9 @@
 package book;
 
-import entity.Author.Author;
-import entity.Genre.Genre;
+import entity.Author;
+import entity.Genre;
 import entity.ListOptions;
-import entity.book.Book;
+import entity.Book;
 import methods.AuthorMethods;
 import methods.BookMethods;
 import methods.GenreMethods;

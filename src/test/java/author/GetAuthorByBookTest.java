@@ -1,12 +1,13 @@
 package author;
 
-import entity.Author.Author;
-import entity.Genre.Genre;
-import entity.book.Book;
+import entity.Author;
+import entity.Genre;
+import entity.Book;
 import methods.AuthorMethods;
 import methods.BookMethods;
 import methods.GenreMethods;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import response.BaseResponse;
@@ -22,22 +23,20 @@ public class GetAuthorByBookTest {
 
     private Author author;
     private Book book;
-    private Genre genre;
     private BaseResponse<Author> baseResponseAuthor;
-    private BaseResponse<Genre> baseResponseGenre;
-    private BaseResponse<Book> baseResponseBook;
 
     @BeforeMethod
     public void setup(){
         book = BookMethods.generateBook();
-        genre = GenreMethods.generateGenre();
+        Genre genre = GenreMethods.generateGenre();
         author = AuthorMethods.generateAuthor();
 
         baseResponseAuthor = authorService.createAuthor(author);
-        baseResponseGenre = genreService.createGenre(genre);
-        baseResponseBook = bookService.createBook(book, genre.getGenreId(), author.getAuthorId());
+        BaseResponse<Genre> baseResponseGenre = genreService.createGenre(genre);
+        BaseResponse<Book> baseResponseBook = bookService.createBook(book, genre.getGenreId(), author.getAuthorId());
         Assert.assertEquals(baseResponseBook.getStatusCode(), 201);
     }
+
 
     @Test(description = "Test of search author by book")
     private void testSearchAuthorByBook(){

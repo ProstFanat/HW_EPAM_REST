@@ -1,5 +1,6 @@
 package response;
 
+import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import io.restassured.response.Response;
 import org.apache.log4j.Logger;

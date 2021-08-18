@@ -1,6 +1,6 @@
 package author;
 
-import entity.Author.Author;
+import entity.Author;
 import entity.ListOptions;
 import methods.AuthorMethods;
 import org.testng.Assert;
@@ -21,6 +21,9 @@ public class GetAllAuthorsTest {
 
         baseResponse = authorService.getAuthors(new ListOptions().setPagination(false));
         Assert.assertEquals(baseResponse.getStatusCode(), 200);
+
+        baseResponse = authorService.deleteAuthor(author.getAuthorId());
+        Assert.assertEquals(baseResponse.getStatusCode(), 204);
     }
 
     @Test(description = "Test of get all authors with wrong parameters")

@@ -1,8 +1,6 @@
 package genre;
 
-import entity.Author.Author;
-import entity.Genre.Genre;
-import methods.AuthorMethods;
+import entity.Genre;
 import methods.GenreMethods;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;

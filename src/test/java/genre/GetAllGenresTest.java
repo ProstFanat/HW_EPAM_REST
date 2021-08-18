@@ -1,6 +1,6 @@
 package genre;
 
-import entity.Genre.Genre;
+import entity.Genre;
 import entity.ListOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;

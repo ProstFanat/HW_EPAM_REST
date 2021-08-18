@@ -1,9 +1,6 @@
 package methods;
 
-import entity.book.Additional;
-import entity.book.Book;
-import entity.book.Size;
-import io.qameta.allure.Attachment;
+import entity.Book;
 import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
 import response.BaseResponse;
@@ -32,10 +29,10 @@ public class BookMethods {
                 .setBookLanguage(PropertiesReader.getProperty("BOOK_LANGUAGE"))
                 .setBookDescription(PropertiesReader.getProperty("BOOK_DESCRIPTION"))
                 .setAdditional(
-                        new Additional()
+                        new Book.Additional()
                                 .setPageCount(Integer.parseInt(PropertiesReader.getProperty("BOOK_PAGE_COUNT")))
                         .setSize(
-                        new Size()
+                        new Book.Size()
                                 .setHeight(Integer.parseInt(PropertiesReader.getProperty("BOOK_HEIGHT")))
                                 .setWidth(Integer.parseInt(PropertiesReader.getProperty("BOOK_WIDTH")))
                                 .setLength(Integer.parseInt(PropertiesReader.getProperty("BOOK_LENGTH")))))

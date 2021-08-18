@@ -1,15 +1,13 @@
 package service;
 
 import client.HttpClient;
-import entity.Author.Author;
+import entity.Author;
 import entity.ListOptions;
 import io.qameta.allure.Step;
 import response.BaseResponse;
 import utils.EndpointBuilder;
 import utils.JsonBuilder;
 import utils.PropertiesReader;
-
-import java.util.HashMap;
 
 public class AuthorService {
     @Step("Get Author with id {authorId}")

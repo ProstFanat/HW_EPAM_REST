@@ -1,9 +1,8 @@
 package author;
 
-import entity.Author.Author;
+import entity.Author;
 import methods.AuthorMethods;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import response.BaseResponse;
 import service.AuthorService;

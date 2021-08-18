@@ -1,6 +1,6 @@
 package book;
 
-import entity.book.Book;
+import entity.Book;
 import entity.ListOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;

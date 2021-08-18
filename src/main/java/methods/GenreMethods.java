@@ -1,7 +1,6 @@
 package methods;
 
-import entity.Genre.Genre;
-import io.qameta.allure.Attachment;
+import entity.Genre;
 import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
 import response.BaseResponse;
