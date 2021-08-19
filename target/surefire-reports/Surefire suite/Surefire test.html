@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>72/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 18 16:04:32 EEST 2021</td>
+<td>Started on:</td><td>Thu Aug 19 13:15:17 EEST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9161 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9943 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='book.GetAllBookOfSpecialGenreTest.testGetAllBooks()'><b>testGetAllBooks</b><br>Test class: book.GetAllBookOfSpecialGenreTest<br>Test method: Test of get all books</td>
-<td><div><pre>java.lang.AssertionError: expected [5] but found [453]
+<td><div><pre>java.lang.AssertionError: Size not equals of expected expected [5] but found [398]
+	at service.VerifyService.verifyThatResponseBodySizeEquals(VerifyService.java:100)
 	at book.GetAllBookOfSpecialGenreTest.testGetAllBooks(GetAllBookOfSpecialGenreTest.java:40)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace470804165", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace470804165'><pre>java.lang.AssertionError: expected [5] but found [453]
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace508186325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace508186325'><pre>java.lang.AssertionError: Size not equals of expected expected [5] but found [398]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:652)
-	at org.testng.Assert.assertEquals(Assert.java:662)
+	at service.VerifyService.verifyThatResponseBodySizeEquals(VerifyService.java:100)
 	at book.GetAllBookOfSpecialGenreTest.testGetAllBooks(GetAllBookOfSpecialGenreTest.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -118,7 +119,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 </pre></div></td>
 <td>0</td>
-<td>book.GetAllBookOfSpecialGenreTest@2822c6ff</td></tr>
+<td>book.GetAllBookOfSpecialGenreTest@670ce331</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -131,362 +132,362 @@ function toggleAllBoxes() {
 <td title='book.CreateBookTest.testCreateAuthorWithExistsId()'><b>testCreateAuthorWithExistsId</b><br>Test class: book.CreateBookTest<br>Test method: Test of book with such id already exists</td>
 <td></td>
 <td>0</td>
-<td>book.CreateBookTest@4ed38226</td></tr>
+<td>book.CreateBookTest@f096f37</td></tr>
 <tr>
 <td title='genre.CreateGenreTest.testCreateAuthorWithExistsId()'><b>testCreateAuthorWithExistsId</b><br>Test class: genre.CreateGenreTest<br>Test method: Test of Genre with such id already exists</td>
 <td></td>
 <td>0</td>
-<td>genre.CreateGenreTest@3d43fe</td></tr>
+<td>genre.CreateGenreTest@3effd4f3</td></tr>
 <tr>
 <td title='author.CreateAuthorTest.testCreateAuthorWithExistsId()'><b>testCreateAuthorWithExistsId</b><br>Test class: author.CreateAuthorTest<br>Test method: Test of Author with such id already exists</td>
 <td></td>
 <td>0</td>
-<td>author.CreateAuthorTest@3db64bd4</td></tr>
+<td>author.CreateAuthorTest@186cb891</td></tr>
 <tr>
 <td title='book.CreateBookTest.testCreateAuthorWithoutBody()'><b>testCreateAuthorWithoutBody</b><br>Test class: book.CreateBookTest<br>Test method: Test of book without body</td>
 <td></td>
 <td>0</td>
-<td>book.CreateBookTest@4ed38226</td></tr>
+<td>book.CreateBookTest@f096f37</td></tr>
 <tr>
 <td title='genre.CreateGenreTest.testCreateAuthorWithoutBody()'><b>testCreateAuthorWithoutBody</b><br>Test class: genre.CreateGenreTest<br>Test method: Test of Genre without body</td>
 <td></td>
 <td>0</td>
-<td>genre.CreateGenreTest@3d43fe</td></tr>
+<td>genre.CreateGenreTest@3effd4f3</td></tr>
 <tr>
 <td title='author.CreateAuthorTest.testCreateAuthorWithoutBody()'><b>testCreateAuthorWithoutBody</b><br>Test class: author.CreateAuthorTest<br>Test method: Test of Author without body</td>
 <td></td>
 <td>0</td>
-<td>author.CreateAuthorTest@3db64bd4</td></tr>
+<td>author.CreateAuthorTest@186cb891</td></tr>
 <tr>
 <td title='author.DeleteAuthorTest.testDeleteAuthorBadRequest()'><b>testDeleteAuthorBadRequest</b><br>Test class: author.DeleteAuthorTest<br>Test method: Test of deleting author BAD REQUEST</td>
 <td></td>
 <td>0</td>
-<td>author.DeleteAuthorTest@16c8b7bd</td></tr>
+<td>author.DeleteAuthorTest@eb507b9</td></tr>
 <tr>
 <td title='author.DeleteAuthorTest.testDeleteAuthorById()'><b>testDeleteAuthorById</b><br>Test class: author.DeleteAuthorTest<br>Test method: Test of deleting author by id</td>
 <td></td>
 <td>0</td>
-<td>author.DeleteAuthorTest@16c8b7bd</td></tr>
+<td>author.DeleteAuthorTest@eb507b9</td></tr>
 <tr>
 <td title='author.DeleteAuthorTest.testDeleteAuthorNotFound()'><b>testDeleteAuthorNotFound</b><br>Test class: author.DeleteAuthorTest<br>Test method: Test of deleting author that not found</td>
 <td></td>
 <td>0</td>
-<td>author.DeleteAuthorTest@16c8b7bd</td></tr>
+<td>author.DeleteAuthorTest@eb507b9</td></tr>
 <tr>
 <td title='book.DeleteBookTest.testDeleteBookBadRequest()'><b>testDeleteBookBadRequest</b><br>Test class: book.DeleteBookTest<br>Test method: Test of deleting book BAD REQUEST</td>
 <td></td>
 <td>0</td>
-<td>book.DeleteBookTest@621f89b8</td></tr>
+<td>book.DeleteBookTest@213c3543</td></tr>
 <tr>
 <td title='book.DeleteBookTest.testDeleteBookById()'><b>testDeleteBookById</b><br>Test class: book.DeleteBookTest<br>Test method: Test of deleting book by id</td>
 <td></td>
 <td>0</td>
-<td>book.DeleteBookTest@621f89b8</td></tr>
+<td>book.DeleteBookTest@213c3543</td></tr>
 <tr>
 <td title='book.DeleteBookTest.testDeleteBookNotFound()'><b>testDeleteBookNotFound</b><br>Test class: book.DeleteBookTest<br>Test method: Test of deleting book that not found</td>
 <td></td>
 <td>0</td>
-<td>book.DeleteBookTest@621f89b8</td></tr>
+<td>book.DeleteBookTest@213c3543</td></tr>
 <tr>
 <td title='genre.DeleteGenreTest.testDeleteGenreBadRequest()'><b>testDeleteGenreBadRequest</b><br>Test class: genre.DeleteGenreTest<br>Test method: Test of deleting genre BAD REQUEST</td>
 <td></td>
 <td>0</td>
-<td>genre.DeleteGenreTest@676ff3b0</td></tr>
+<td>genre.DeleteGenreTest@15f8701f</td></tr>
 <tr>
 <td title='genre.DeleteGenreTest.testDeleteGenreById()'><b>testDeleteGenreById</b><br>Test class: genre.DeleteGenreTest<br>Test method: Test of deleting genre by id</td>
 <td></td>
 <td>0</td>
-<td>genre.DeleteGenreTest@676ff3b0</td></tr>
+<td>genre.DeleteGenreTest@15f8701f</td></tr>
 <tr>
 <td title='genre.DeleteGenreTest.testDeleteGenreNotFound()'><b>testDeleteGenreNotFound</b><br>Test class: genre.DeleteGenreTest<br>Test method: Test of deleting genre that not found</td>
 <td></td>
 <td>0</td>
-<td>genre.DeleteGenreTest@676ff3b0</td></tr>
+<td>genre.DeleteGenreTest@15f8701f</td></tr>
 <tr>
 <td title='author.GetAllAuthorsTest.testGetAllAuthors()'><b>testGetAllAuthors</b><br>Test class: author.GetAllAuthorsTest<br>Test method: Test of get all authors</td>
 <td></td>
 <td>0</td>
-<td>author.GetAllAuthorsTest@5a8ba37c</td></tr>
+<td>author.GetAllAuthorsTest@7aa9e414</td></tr>
 <tr>
 <td title='book.GetAllBooksTest.testGetAllBooks()'><b>testGetAllBooks</b><br>Test class: book.GetAllBooksTest<br>Test method: Test of get all books</td>
 <td></td>
 <td>0</td>
-<td>book.GetAllBooksTest@40368a46</td></tr>
+<td>book.GetAllBooksTest@4b2e3e8f</td></tr>
 <tr>
 <td title='genre.GetAllGenresTest.testGetAllGenres()'><b>testGetAllGenres</b><br>Test class: genre.GetAllGenresTest<br>Test method: Test of get all genres</td>
 <td></td>
 <td>0</td>
-<td>genre.GetAllGenresTest@5f80fa43</td></tr>
+<td>genre.GetAllGenresTest@39e43310</td></tr>
 <tr>
 <td title='author.GetAuthorTest.testGetAuthorBadRequest()'><b>testGetAuthorBadRequest</b><br>Test class: author.GetAuthorTest<br>Test method: Test of getting author BAD REQUEST</td>
 <td></td>
 <td>0</td>
-<td>author.GetAuthorTest@65bcf7c2</td></tr>
+<td>author.GetAuthorTest@86733</td></tr>
 <tr>
 <td title='author.GetAuthorTest.testGetAuthorById()'><b>testGetAuthorById</b><br>Test class: author.GetAuthorTest<br>Test method: Test of getting author by id</td>
 <td></td>
 <td>0</td>
-<td>author.GetAuthorTest@65bcf7c2</td></tr>
+<td>author.GetAuthorTest@86733</td></tr>
 <tr>
 <td title='author.GetAuthorTest.testGetAuthorNotFound()'><b>testGetAuthorNotFound</b><br>Test class: author.GetAuthorTest<br>Test method: Test of getting author that not found</td>
 <td></td>
 <td>0</td>
-<td>author.GetAuthorTest@65bcf7c2</td></tr>
+<td>author.GetAuthorTest@86733</td></tr>
 <tr>
 <td title='author.GetAllAuthorsTest.testGetAuthorsWithBadPageNumber()'><b>testGetAuthorsWithBadPageNumber</b><br>Test class: author.GetAllAuthorsTest<br>Test method: Test of get all authors with wrong parameters</td>
 <td></td>
 <td>0</td>
-<td>author.GetAllAuthorsTest@5a8ba37c</td></tr>
+<td>author.GetAllAuthorsTest@7aa9e414</td></tr>
 <tr>
 <td title='author.GetAllAuthorsTest.testGetAuthorsWithBadPaginationValue()'><b>testGetAuthorsWithBadPaginationValue</b><br>Test class: author.GetAllAuthorsTest<br>Test method: Test of get all authors with wrong parameters</td>
 <td></td>
 <td>0</td>
-<td>author.GetAllAuthorsTest@5a8ba37c</td></tr>
+<td>author.GetAllAuthorsTest@7aa9e414</td></tr>
 <tr>
 <td title='book.GetBookTest.testGetBookBadRequest()'><b>testGetBookBadRequest</b><br>Test class: book.GetBookTest<br>Test method: Test of getting book BAD REQUEST</td>
 <td></td>
 <td>0</td>
-<td>book.GetBookTest@4dafba3e</td></tr>
+<td>book.GetBookTest@3cff0139</td></tr>
 <tr>
 <td title='book.GetBookTest.testGetBookById()'><b>testGetBookById</b><br>Test class: book.GetBookTest<br>Test method: Test of getting book by id</td>
 <td></td>
 <td>0</td>
-<td>book.GetBookTest@4dafba3e</td></tr>
+<td>book.GetBookTest@3cff0139</td></tr>
 <tr>
 <td title='book.GetBookTest.testGetBookNotFound()'><b>testGetBookNotFound</b><br>Test class: book.GetBookTest<br>Test method: Test of getting book that not found</td>
 <td></td>
 <td>0</td>
-<td>book.GetBookTest@4dafba3e</td></tr>
+<td>book.GetBookTest@3cff0139</td></tr>
 <tr>
 <td title='book.GetAllBookOfSpecialGenreTest.testGetBooksWithBadPageNumber()'><b>testGetBooksWithBadPageNumber</b><br>Test class: book.GetAllBookOfSpecialGenreTest<br>Test method: Test of get all books with wrong parameters</td>
 <td></td>
 <td>0</td>
-<td>book.GetAllBookOfSpecialGenreTest@2822c6ff</td></tr>
+<td>book.GetAllBookOfSpecialGenreTest@670ce331</td></tr>
 <tr>
 <td title='book.GetAllBooksTest.testGetBooksWithBadPageNumber()'><b>testGetBooksWithBadPageNumber</b><br>Test class: book.GetAllBooksTest<br>Test method: Test of get all books with wrong parameters</td>
 <td></td>
 <td>0</td>
-<td>book.GetAllBooksTest@40368a46</td></tr>
+<td>book.GetAllBooksTest@4b2e3e8f</td></tr>
 <tr>
 <td title='book.GetAllBookOfSpecialGenreTest.testGetBooksWithBadPaginationValue()'><b>testGetBooksWithBadPaginationValue</b><br>Test class: book.GetAllBookOfSpecialGenreTest<br>Test method: Test of get all books with wrong parameters</td>
 <td></td>
 <td>0</td>
-<td>book.GetAllBookOfSpecialGenreTest@2822c6ff</td></tr>
+<td>book.GetAllBookOfSpecialGenreTest@670ce331</td></tr>
 <tr>
 <td title='book.GetAllBooksTest.testGetBooksWithBadPaginationValue()'><b>testGetBooksWithBadPaginationValue</b><br>Test class: book.GetAllBooksTest<br>Test method: Test of get all books with wrong parameters</td>
 <td></td>
 <td>0</td>
-<td>book.GetAllBooksTest@40368a46</td></tr>
+<td>book.GetAllBooksTest@4b2e3e8f</td></tr>
 <tr>
 <td title='genre.GetGenreTest.testGetGenreBadRequest()'><b>testGetGenreBadRequest</b><br>Test class: genre.GetGenreTest<br>Test method: Test of getting genre BAD REQUEST</td>
 <td></td>
 <td>0</td>
-<td>genre.GetGenreTest@74ad8d05</td></tr>
+<td>genre.GetGenreTest@41f4fe5</td></tr>
 <tr>
 <td title='genre.GetGenreTest.testGetGenreById()'><b>testGetGenreById</b><br>Test class: genre.GetGenreTest<br>Test method: Test of getting genre by id</td>
 <td></td>
 <td>0</td>
-<td>genre.GetGenreTest@74ad8d05</td></tr>
+<td>genre.GetGenreTest@41f4fe5</td></tr>
 <tr>
 <td title='genre.GetGenreTest.testGetGenreNotFound()'><b>testGetGenreNotFound</b><br>Test class: genre.GetGenreTest<br>Test method: Test of getting genre that not found</td>
 <td></td>
 <td>0</td>
-<td>genre.GetGenreTest@74ad8d05</td></tr>
+<td>genre.GetGenreTest@41f4fe5</td></tr>
 <tr>
 <td title='genre.GetAllGenresTest.testGetGenresWithBadPageNumber()'><b>testGetGenresWithBadPageNumber</b><br>Test class: genre.GetAllGenresTest<br>Test method: Test of get all genres with wrong parameters</td>
 <td></td>
 <td>0</td>
-<td>genre.GetAllGenresTest@5f80fa43</td></tr>
+<td>genre.GetAllGenresTest@39e43310</td></tr>
 <tr>
 <td title='genre.GetAllGenresTest.testGetGenresWithBadPaginationValue()'><b>testGetGenresWithBadPaginationValue</b><br>Test class: genre.GetAllGenresTest<br>Test method: Test of get all genres with wrong parameters</td>
 <td></td>
 <td>0</td>
-<td>genre.GetAllGenresTest@5f80fa43</td></tr>
+<td>genre.GetAllGenresTest@39e43310</td></tr>
 <tr>
 <td title='book.CreateBookTest.testPositiveScenario()'><b>testPositiveScenario</b><br>Test class: book.CreateBookTest<br>Test method: Test of positive creating book</td>
 <td></td>
 <td>0</td>
-<td>book.CreateBookTest@4ed38226</td></tr>
+<td>book.CreateBookTest@f096f37</td></tr>
 <tr>
 <td title='genre.CreateGenreTest.testPositiveScenario()'><b>testPositiveScenario</b><br>Test class: genre.CreateGenreTest<br>Test method: Test of positive creating genre</td>
 <td></td>
 <td>0</td>
-<td>genre.CreateGenreTest@3d43fe</td></tr>
+<td>genre.CreateGenreTest@3effd4f3</td></tr>
 <tr>
 <td title='author.CreateAuthorTest.testPositiveScenario()'><b>testPositiveScenario</b><br>Test class: author.CreateAuthorTest<br>Test method: Test of positive creating author</td>
 <td></td>
 <td>0</td>
-<td>author.CreateAuthorTest@3db64bd4</td></tr>
+<td>author.CreateAuthorTest@186cb891</td></tr>
 <tr>
 <td title='author.UpdateAuthorTest.testPositiveUpdateAuthor()'><b>testPositiveUpdateAuthor</b><br>Test class: author.UpdateAuthorTest<br>Test method: Test of positive update author</td>
 <td></td>
 <td>0</td>
-<td>author.UpdateAuthorTest@55ecbafe</td></tr>
+<td>author.UpdateAuthorTest@7fc7c4a</td></tr>
 <tr>
 <td title='book.UpdateBookTest.testPositiveUpdateBook()'><b>testPositiveUpdateBook</b><br>Test class: book.UpdateBookTest<br>Test method: Test of positive update book</td>
 <td></td>
 <td>0</td>
-<td>book.UpdateBookTest@7e9da981</td></tr>
+<td>book.UpdateBookTest@4bbb49b0</td></tr>
 <tr>
 <td title='genre.UpdateGenreTest.testPositiveUpdateGenre()'><b>testPositiveUpdateGenre</b><br>Test class: genre.UpdateGenreTest<br>Test method: Test of positive update genre</td>
 <td></td>
 <td>0</td>
-<td>genre.UpdateGenreTest@35ff8fc9</td></tr>
+<td>genre.UpdateGenreTest@514cd540</td></tr>
 <tr>
 <td title='author.SearchAuthorTest.testSearchAuthorBadRequest()'><b>testSearchAuthorBadRequest</b><br>Test class: author.SearchAuthorTest<br>Test method: Test of search author with Bad Request</td>
 <td></td>
 <td>0</td>
-<td>author.SearchAuthorTest@576c5536</td></tr>
+<td>author.SearchAuthorTest@440eaa07</td></tr>
 <tr>
 <td title='author.GetAuthorByBookTest.testSearchAuthorByBook()'><b>testSearchAuthorByBook</b><br>Test class: author.GetAuthorByBookTest<br>Test method: Test of search author by book</td>
 <td></td>
 <td>0</td>
-<td>author.GetAuthorByBookTest@7159139f</td></tr>
+<td>author.GetAuthorByBookTest@390877d2</td></tr>
 <tr>
 <td title='author.GetAuthorByBookTest.testSearchAuthorByBookBadRequest()'><b>testSearchAuthorByBookBadRequest</b><br>Test class: author.GetAuthorByBookTest<br>Test method: Test of search author by book Bad Request</td>
 <td></td>
 <td>0</td>
-<td>author.GetAuthorByBookTest@7159139f</td></tr>
+<td>author.GetAuthorByBookTest@390877d2</td></tr>
 <tr>
 <td title='author.GetAuthorByBookTest.testSearchAuthorByBookThatNotExist()'><b>testSearchAuthorByBookThatNotExist</b><br>Test class: author.GetAuthorByBookTest<br>Test method: Test of search author by book that not exist</td>
 <td></td>
 <td>0</td>
-<td>author.GetAuthorByBookTest@7159139f</td></tr>
+<td>author.GetAuthorByBookTest@390877d2</td></tr>
 <tr>
 <td title='author.SearchAuthorTest.testSearchAuthorByFirstName()'><b>testSearchAuthorByFirstName</b><br>Test class: author.SearchAuthorTest<br>Test method: Test of search author by first name</td>
 <td></td>
 <td>0</td>
-<td>author.SearchAuthorTest@576c5536</td></tr>
+<td>author.SearchAuthorTest@440eaa07</td></tr>
 <tr>
 <td title='author.GetAuthorByGenreTest.testSearchAuthorByGenre()'><b>testSearchAuthorByGenre</b><br>Test class: author.GetAuthorByGenreTest<br>Test method: Test of search author by genre</td>
 <td></td>
 <td>0</td>
-<td>author.GetAuthorByGenreTest@6e106680</td></tr>
+<td>author.GetAuthorByGenreTest@3ec2ecea</td></tr>
 <tr>
 <td title='author.GetAuthorByGenreTest.testSearchAuthorByGenreBadRequest()'><b>testSearchAuthorByGenreBadRequest</b><br>Test class: author.GetAuthorByGenreTest<br>Test method: Test of search author by genre Bad Request</td>
 <td></td>
 <td>0</td>
-<td>author.GetAuthorByGenreTest@6e106680</td></tr>
+<td>author.GetAuthorByGenreTest@3ec2ecea</td></tr>
 <tr>
 <td title='author.GetAuthorByGenreTest.testSearchAuthorByGenreThatNotExist()'><b>testSearchAuthorByGenreThatNotExist</b><br>Test class: author.GetAuthorByGenreTest<br>Test method: Test of search author by genre that not exist</td>
 <td></td>
 <td>0</td>
-<td>author.GetAuthorByGenreTest@6e106680</td></tr>
+<td>author.GetAuthorByGenreTest@3ec2ecea</td></tr>
 <tr>
 <td title='author.SearchAuthorTest.testSearchAuthorByLastName()'><b>testSearchAuthorByLastName</b><br>Test class: author.SearchAuthorTest<br>Test method: Test of search author by last name</td>
 <td></td>
 <td>0</td>
-<td>author.SearchAuthorTest@576c5536</td></tr>
+<td>author.SearchAuthorTest@440eaa07</td></tr>
 <tr>
 <td title='book.SearchBookTest.testSearchBookBadRequest()'><b>testSearchBookBadRequest</b><br>Test class: book.SearchBookTest<br>Test method: Test of search book with Bad Request</td>
 <td></td>
-<td>2</td>
-<td>book.SearchBookTest@546621c4</td></tr>
+<td>0</td>
+<td>book.SearchBookTest@36ddaebf</td></tr>
 <tr>
 <td title='book.GetBookByAuthorTest.testSearchBookByAuthor()'><b>testSearchBookByAuthor</b><br>Test class: book.GetBookByAuthorTest<br>Test method: Test of search book by author</td>
 <td></td>
 <td>0</td>
-<td>book.GetBookByAuthorTest@53e3a87a</td></tr>
+<td>book.GetBookByAuthorTest@7c29adc8</td></tr>
 <tr>
 <td title='book.GetBookByAuthorAndGenreTest.testSearchBookByAuthorAndGenre()'><b>testSearchBookByAuthorAndGenre</b><br>Test class: book.GetBookByAuthorAndGenreTest<br>Test method: Test of search book by author and genre</td>
 <td></td>
 <td>0</td>
-<td>book.GetBookByAuthorAndGenreTest@f339eae</td></tr>
+<td>book.GetBookByAuthorAndGenreTest@9d7ccfe</td></tr>
 <tr>
 <td title='book.GetBookByAuthorTest.testSearchBookByAuthorBadRequest()'><b>testSearchBookByAuthorBadRequest</b><br>Test class: book.GetBookByAuthorTest<br>Test method: Test of search book by author Bad Request</td>
 <td></td>
 <td>0</td>
-<td>book.GetBookByAuthorTest@53e3a87a</td></tr>
+<td>book.GetBookByAuthorTest@7c29adc8</td></tr>
 <tr>
 <td title='book.GetBookByAuthorAndGenreTest.testSearchBookByAuthorBadRequestAndGenre()'><b>testSearchBookByAuthorBadRequestAndGenre</b><br>Test class: book.GetBookByAuthorAndGenreTest<br>Test method: Test of search author by book Bad Request and Genre</td>
 <td></td>
 <td>0</td>
-<td>book.GetBookByAuthorAndGenreTest@f339eae</td></tr>
+<td>book.GetBookByAuthorAndGenreTest@9d7ccfe</td></tr>
 <tr>
 <td title='book.GetBookByAuthorTest.testSearchBookByAuthorThatNotExist()'><b>testSearchBookByAuthorThatNotExist</b><br>Test class: book.GetBookByAuthorTest<br>Test method: Test of search book by author that not exist</td>
 <td></td>
 <td>0</td>
-<td>book.GetBookByAuthorTest@53e3a87a</td></tr>
+<td>book.GetBookByAuthorTest@7c29adc8</td></tr>
 <tr>
 <td title='book.GetBookByAuthorAndGenreTest.testSearchBookByAuthorThatNotExistAndGenre()'><b>testSearchBookByAuthorThatNotExistAndGenre</b><br>Test class: book.GetBookByAuthorAndGenreTest<br>Test method: Test of search book by author that not exist and genre</td>
 <td></td>
 <td>0</td>
-<td>book.GetBookByAuthorAndGenreTest@f339eae</td></tr>
+<td>book.GetBookByAuthorAndGenreTest@9d7ccfe</td></tr>
 <tr>
 <td title='book.GetBookByAuthorAndGenreTest.testSearchBookByGenreBadRequestAndAuthor()'><b>testSearchBookByGenreBadRequestAndAuthor</b><br>Test class: book.GetBookByAuthorAndGenreTest<br>Test method: Test of search author by genre Bad Request and Author</td>
 <td></td>
 <td>0</td>
-<td>book.GetBookByAuthorAndGenreTest@f339eae</td></tr>
+<td>book.GetBookByAuthorAndGenreTest@9d7ccfe</td></tr>
 <tr>
 <td title='book.GetBookByAuthorAndGenreTest.testSearchBookByGenreThatNotExistAndAuthor()'><b>testSearchBookByGenreThatNotExistAndAuthor</b><br>Test class: book.GetBookByAuthorAndGenreTest<br>Test method: Test of search book by genre that not exist and author</td>
 <td></td>
 <td>0</td>
-<td>book.GetBookByAuthorAndGenreTest@f339eae</td></tr>
+<td>book.GetBookByAuthorAndGenreTest@9d7ccfe</td></tr>
 <tr>
 <td title='book.SearchBookTest.testSearchBookByName()'><b>testSearchBookByName</b><br>Test class: book.SearchBookTest<br>Test method: Test of search book by name</td>
 <td></td>
 <td>0</td>
-<td>book.SearchBookTest@546621c4</td></tr>
+<td>book.SearchBookTest@36ddaebf</td></tr>
 <tr>
 <td title='book.SearchBookTest.testSearchBookReturn5Results()'><b>testSearchBookReturn5Results</b><br>Test class: book.SearchBookTest<br>Test method: Test of search book returning 5 most relevant results</td>
 <td></td>
 <td>0</td>
-<td>book.SearchBookTest@546621c4</td></tr>
+<td>book.SearchBookTest@36ddaebf</td></tr>
 <tr>
 <td title='genre.SearchGenreTest.testSearchGenreBadRequest()'><b>testSearchGenreBadRequest</b><br>Test class: genre.SearchGenreTest<br>Test method: Test of search genre with Bad Request</td>
 <td></td>
 <td>0</td>
-<td>genre.SearchGenreTest@476a736d</td></tr>
+<td>genre.SearchGenreTest@6f4ade6e</td></tr>
 <tr>
 <td title='genre.GetGenreByAuthorTest.testSearchGenreByAuthor()'><b>testSearchGenreByAuthor</b><br>Test class: genre.GetGenreByAuthorTest<br>Test method: Test of search genre by author</td>
 <td></td>
 <td>0</td>
-<td>genre.GetGenreByAuthorTest@5fb7183b</td></tr>
+<td>genre.GetGenreByAuthorTest@11d4dbd6</td></tr>
 <tr>
 <td title='genre.GetGenreByAuthorTest.testSearchGenreByAuthorBadRequest()'><b>testSearchGenreByAuthorBadRequest</b><br>Test class: genre.GetGenreByAuthorTest<br>Test method: Test of search genre by author Bad Request</td>
 <td></td>
 <td>0</td>
-<td>genre.GetGenreByAuthorTest@5fb7183b</td></tr>
+<td>genre.GetGenreByAuthorTest@11d4dbd6</td></tr>
 <tr>
 <td title='genre.GetGenreByAuthorTest.testSearchGenreByAuthorThatNotExist()'><b>testSearchGenreByAuthorThatNotExist</b><br>Test class: genre.GetGenreByAuthorTest<br>Test method: Test of search Genre by author that not exist</td>
 <td></td>
 <td>0</td>
-<td>genre.GetGenreByAuthorTest@5fb7183b</td></tr>
+<td>genre.GetGenreByAuthorTest@11d4dbd6</td></tr>
 <tr>
 <td title='genre.SearchGenreTest.testSearchGenreByName()'><b>testSearchGenreByName</b><br>Test class: genre.SearchGenreTest<br>Test method: Test of search genre by name</td>
 <td></td>
 <td>0</td>
-<td>genre.SearchGenreTest@476a736d</td></tr>
+<td>genre.SearchGenreTest@6f4ade6e</td></tr>
 <tr>
 <td title='author.UpdateAuthorTest.testUpdateAuthorWithoutBody()'><b>testUpdateAuthorWithoutBody</b><br>Test class: author.UpdateAuthorTest<br>Test method: Test of Update Author without body</td>
 <td></td>
 <td>0</td>
-<td>author.UpdateAuthorTest@55ecbafe</td></tr>
+<td>author.UpdateAuthorTest@7fc7c4a</td></tr>
 <tr>
 <td title='book.UpdateBookTest.testUpdateBookThatNotFound()'><b>testUpdateBookThatNotFound</b><br>Test class: book.UpdateBookTest<br>Test method: Test of update book that not found</td>
 <td></td>
 <td>0</td>
-<td>book.UpdateBookTest@7e9da981</td></tr>
+<td>book.UpdateBookTest@4bbb49b0</td></tr>
 <tr>
 <td title='book.UpdateBookTest.testUpdateBookWithoutBody()'><b>testUpdateBookWithoutBody</b><br>Test class: book.UpdateBookTest<br>Test method: Test of Update book without body</td>
 <td></td>
 <td>0</td>
-<td>book.UpdateBookTest@7e9da981</td></tr>
+<td>book.UpdateBookTest@4bbb49b0</td></tr>
 <tr>
 <td title='genre.UpdateGenreTest.testUpdateGenreThatNotFound()'><b>testUpdateGenreThatNotFound</b><br>Test class: genre.UpdateGenreTest<br>Test method: Test of update genre that not found</td>
 <td></td>
 <td>0</td>
-<td>genre.UpdateGenreTest@35ff8fc9</td></tr>
+<td>genre.UpdateGenreTest@514cd540</td></tr>
 <tr>
 <td title='genre.UpdateGenreTest.testUpdateGenreWithoutBody()'><b>testUpdateGenreWithoutBody</b><br>Test class: genre.UpdateGenreTest<br>Test method: Test of Update genre without body</td>
 <td></td>
 <td>0</td>
-<td>genre.UpdateGenreTest@35ff8fc9</td></tr>
+<td>genre.UpdateGenreTest@514cd540</td></tr>
 <tr>
 <td title='author.UpdateAuthorTest.testUpdateUserThatNotFound()'><b>testUpdateUserThatNotFound</b><br>Test class: author.UpdateAuthorTest<br>Test method: Test of update author that not found</td>
 <td></td>
 <td>0</td>
-<td>author.UpdateAuthorTest@55ecbafe</td></tr>
+<td>author.UpdateAuthorTest@7fc7c4a</td></tr>
 </table><p>
 </body>
 </html>

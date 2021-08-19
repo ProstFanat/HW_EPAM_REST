@@ -1,6 +1,7 @@
 entity/Author.class
 entity/Book$Size.class
 client/HttpClient.class
+service/VerifyService.class
 entity/Book$Additional.class
 service/GenreService.class
 utils/EndpointBuilder.class
