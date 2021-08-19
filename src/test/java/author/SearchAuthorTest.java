@@ -2,16 +2,17 @@ package author;
 
 import entity.Author;
 import methods.AuthorMethods;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import response.BaseResponse;
 import service.AuthorService;
+import service.VerifyService;
 import utils.PropertiesReader;
 
 public class SearchAuthorTest {
 
     private final AuthorService authorService = new AuthorService();
+    private final VerifyService verifyService = new VerifyService();
     private Author author;
     private BaseResponse<Author> baseResponse;
 
@@ -19,26 +20,25 @@ public class SearchAuthorTest {
     public void setup(){
         author = AuthorMethods.generateAuthor();
         baseResponse = authorService.createAuthor(author);
-        Assert.assertEquals(baseResponse.getStatusCode(), 201);
+        verifyService.verifyCreatedSuccess(baseResponse, author);
     }
 
     @Test(description = "Test of search author by first name")
     private void testSearchAuthorByFirstName(){
         baseResponse = authorService.searchAuthor(author.getAuthorName().getFirst());
-        Assert.assertEquals(baseResponse.getListOfBody().get(0), author);
+        verifyService.verifyResponseBodyEqualsExpectedFromList(baseResponse, author);
     }
 
     @Test(description = "Test of search author by last name")
     private void testSearchAuthorByLastName(){
         baseResponse = authorService.searchAuthor(author.getAuthorName().getSecond());
-        Assert.assertEquals(baseResponse.getListOfBody().get(0), author);
+        verifyService.verifyResponseBodyEqualsExpectedFromList(baseResponse, author);
     }
 
     @Test(description = "Test of search author with Bad Request")
     private void testSearchAuthorBadRequest(){
         baseResponse = authorService.searchAuthor(PropertiesReader.getProperty("EMPTY"));
-        Assert.assertEquals(baseResponse.getStatusCode(), 400);
-        Assert.assertEquals(baseResponse.getErrorMessage(), PropertiesReader.getProperty("ERROR_MESSAGE_PHRASE_CANT_BE_BLANK"));
+        verifyService.verifyMessagePhaseCantBeBlankExist(baseResponse);
     }
 
 }

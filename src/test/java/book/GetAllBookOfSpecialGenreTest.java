@@ -7,18 +7,19 @@ import entity.Book;
 import methods.AuthorMethods;
 import methods.BookMethods;
 import methods.GenreMethods;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import response.BaseResponse;
 import service.AuthorService;
 import service.BookService;
 import service.GenreService;
+import service.VerifyService;
 import utils.PropertiesReader;
 
 public class GetAllBookOfSpecialGenreTest {
     private final BookService bookService = new BookService();
     private final GenreService genreService = new GenreService();
     private final AuthorService authorService = new AuthorService();
+    private final VerifyService verifyService = new VerifyService();
 
     @Test(description = "Test of get all books")
     private void testGetAllBooks(){
@@ -33,34 +34,26 @@ public class GetAllBookOfSpecialGenreTest {
 
             baseResponseAuthor = authorService.createAuthor(author);
             baseResponseBook = bookService.createBook(book, genre.getGenreId(), author.getAuthorId());
-            Assert.assertEquals(baseResponseBook.getStatusCode(), 201);
+            verifyService.verifyCreatedSuccess(baseResponseBook, book);
         }
         baseResponseBook = bookService.getBooksByGenre(new ListOptions().setPagination(false), genre.getGenreId());
-        Assert.assertEquals(baseResponseBook.getStatusCode(), 200);
-        Assert.assertEquals(baseResponseBook.getListOfBody().size(), 5);
+        verifyService.verifyThatResponseBodySizeEquals(baseResponseBook, 5);
     }
 
     @Test(description = "Test of get all books with wrong parameters")
     private void testGetBooksWithBadPageNumber(){
         Genre genre = GenreMethods.generateGenre();
         BaseResponse<Genre> baseResponseGenre = genreService.createGenre(genre);
-
         BaseResponse<Book> baseResponse = bookService.getBooksByGenre(new ListOptions().setPage(-1), genre.getGenreId());
-
-        Assert.assertEquals(baseResponse.getStatusCode(), 400);
-        Assert.assertEquals(baseResponse.getErrorMessage(),
-                String.format(PropertiesReader.getProperty("ERROR_MESSAGE_VALUE_MUST_BE_POSITIVE"), "page"));
+        verifyService.verifyRequestValueMustBePositive(baseResponse, PropertiesReader.getProperty("VALUE_PAGE"));
     }
 
     @Test(description = "Test of get all books with wrong parameters")
     private void testGetBooksWithBadPaginationValue(){
         Genre genre = GenreMethods.generateGenre();
         BaseResponse<Genre> baseResponseGenre = genreService.createGenre(genre);
-
         BaseResponse<Book> baseResponse = bookService.getBooksByGenre(new ListOptions().setSize(-1), genre.getGenreId());
+        verifyService.verifyRequestValueMustBePositive(baseResponse, PropertiesReader.getProperty("VALUE_SIZE"));
 
-        Assert.assertEquals(baseResponse.getStatusCode(), 400);
-        Assert.assertEquals(baseResponse.getErrorMessage(),
-                String.format(PropertiesReader.getProperty("ERROR_MESSAGE_VALUE_MUST_BE_POSITIVE"), "size"));
     }
 }
